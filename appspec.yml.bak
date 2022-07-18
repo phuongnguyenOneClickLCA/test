@@ -2,9 +2,18 @@ version: 0.0
 os: linux
 files:
   - source: /build/libs/app.war
-    destination: /tmp
+    destination: /home/maintenance
 hooks:
-  BeforeInstall:
-    - location: scripts/install.sh
+  ApplicationStop:
+    - location: scripts/stop_server.sh
       timeout: 300
-      runas: root
+      runas: yllapito
+  ApplicationStart:
+    - location: scripts/start_server.sh
+      timeout: 300
+      runas: yllapito
+
+  ValidateService:
+    - location: scripts/validate_service.sh
+      timeout: 300
+  
