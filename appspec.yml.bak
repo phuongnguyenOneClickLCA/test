@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
+files:
+  - source: /build/libs/app.war
+    destination: /tmp
 hooks:
   BeforeInstall:
     - location: scripts/install.sh
