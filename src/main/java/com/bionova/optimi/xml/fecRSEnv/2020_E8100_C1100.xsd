@@ -1,0 +1,65 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="2020_RSET_8100.xsd"/>
+	<xs:include schemaLocation="2020_RSEnv_1100.xsd"/>
+	<xs:element name="projet">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="RSEnv"/>
+				<xs:element ref="RSET"/>
+			</xs:all>
+			<xs:attribute name="num_PEBN" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Identifiant unique de l'opération dans la base de données PEBN</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="referentiel_ec">
+				<xs:annotation>
+					<xs:documentation>Version du Référentiel Energie-Carbone utilisé</xs:documentation>
+					<xs:appinfo>
+						<altova:exampleValues>
+							<altova:example value="2"/>
+						</altova:exampleValues>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="version" use="required">
+				<xs:annotation>
+					<xs:documentation>Numero de version du RS2E</xs:documentation>
+					<xs:appinfo>
+						<altova:exampleValues>
+							<altova:example value="1.1.0.3"/>
+						</altova:exampleValues>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="t_unique_entree_batiment">
+			<xs:selector xpath="RSEnv/entree_projet/batiment"/>
+			<xs:field xpath="index"/>
+		</xs:unique>
+		<xs:unique name="t_unique_entree_zone">
+			<xs:selector xpath="RSEnv/entree_projet/batiment/zone"/>
+			<xs:field xpath="index"/>
+		</xs:unique>
+		<xs:unique name="t_unique_sortie_batiment">
+			<xs:selector xpath="RSEnv/sortie_projet/batiment"/>
+			<xs:field xpath="index"/>
+		</xs:unique>
+		<xs:unique name="t_unique_sortie_zone">
+			<xs:selector xpath="RSEnv/sortie_projet/batiment/zone"/>
+			<xs:field xpath="index"/>
+		</xs:unique>
+		<xs:unique name="t_unique_data_batiment">
+			<xs:selector xpath="RSEnv/data_comp/batiment"/>
+			<xs:field xpath="index"/>
+		</xs:unique>
+	</xs:element>
+</xs:schema>

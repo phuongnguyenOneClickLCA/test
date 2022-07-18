@@ -1,0 +1,101 @@
+img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 340px;
+    margin-bottom: 20px;
+    max-height: 200px;
+    text-align: left;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #fff;
+    border-width: 0;
+    border-style: solid;
+    width: 100%;
+    max-width: 543px;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.tg td {
+    vertical-align: top;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 10px;
+    padding: 0 10px;
+    border-style: solid;
+    border-width: 0px;
+    word-break: normal;
+    overflow: hidden;
+    border-color: #ccc;
+    color: #333;
+    background-color: #fff;
+}
+
+.tg th {
+    vertical-align: top;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    word-break: normal;
+    color: #ffffff;
+    padding: 0 10px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    border-color: #ccc;
+    color: #333;
+    background-color: #88C440 !important;
+    color: #ffffff;
+    -webkit-print-color-adjust: exact;
+    max-width: 25% !important;
+}
+
+.tg .tg-4eph {
+    background-color: #f9f9f9 !important;
+    -webkit-print-color-adjust: exact;
+    max-width: 25% !important;
+}
+
+.tg-031e-vas {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 30%;
+}
+
+.tg-031e-oik {
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tg-031e-h3 {
+    text-align: right
+}
+
+div.pageBreak {
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    padding-top: 0;
+    padding-left: 50px;
+    height: 852px
+}
+
+img.entityImg {
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    width: 340px !important;
+    margin-bottom: 20px !important;
+    max-height: 200px !important;
+    text-align: left !important;
+}

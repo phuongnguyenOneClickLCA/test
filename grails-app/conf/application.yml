@@ -1,0 +1,191 @@
+---
+grails:
+    profile: web
+    codegen:
+        defaultPackage: com.bionova.optimi
+    spring:
+        transactionManagement:
+            proxies: false
+    gorm:
+        autowire: true
+
+info:
+    app:
+        name: '@info.app.name@'
+        version: '@info.app.version@'
+        grailsVersion: '@info.app.grailsVersion@'
+spring:
+    groovy:
+        template:
+            check-template-location: false
+    jmx:
+        unique-names: true
+
+management:
+    endpoints:
+        enabled-by-default: false
+#    endpoint:
+#        info:
+#            enabled: true
+#        health:
+#            enabled: true
+#            show-details: always
+#            show-components: always
+
+server:
+    port: 8080
+    servlet:
+        context-path: /app
+        session:
+            persistent: true
+            timeout: 28800
+    compression:
+        enabled: true
+        mime-types: application/json,application/xml,text/html,text/xml,text/plain,text/css,application/javascript
+---
+grails:
+    config:
+        locations:
+            - ~/.grails/dataSource.yml
+---
+
+grails:
+    cache:
+        clearAtStartup: true
+
+    mime:
+        disable:
+            accept:
+                header:
+                    userAgents:
+                        - Gecko
+                        - WebKit
+                        - Presto
+                        - Trident
+        types:
+            all: '*/*'
+            atom: application/atom+xml
+            css: text/css
+            csv: text/csv
+            form: application/x-www-form-urlencoded
+            html:
+              - text/html
+              - application/xhtml+xml
+            js: text/javascript
+            json:
+              - application/json
+              - text/json
+            multipartForm: multipart/form-data
+            pdf: application/pdf
+            rss: application/rss+xml
+            text: text/plain
+            hal:
+              - application/hal+json
+              - application/hal+xml
+            xml:
+              - text/xml
+              - application/xml
+    urlmapping:
+        cache:
+            maxsize: 1000
+    controllers:
+        defaultScope: singleton
+        upload:
+            maxFileSize: 9999999999
+            maxRequestSize: 9999999999
+    converters:
+        encoding: UTF-8
+    views:
+        default:
+            codec: html
+        gsp:
+            encoding: UTF-8
+            htmlcodec: xml
+            codecs:
+                expression: none
+                scriptlets: html
+                taglib: none
+                staticparts: none
+
+---
+grails:
+    mongodb:
+        engine: mapping
+
+---
+grails:
+    cors:
+        enabled: true
+
+---
+grails:
+    databinding:
+        dateFormats:
+            - 'dd.MM.yyyy'
+            - 'yyyy-MM-dd HH:mm:ss.S'
+
+
+spring:
+    cloud:
+        service-registry:
+            auto-registration:
+                enabled: false
+        consul:
+            enabled: false
+            host: localhost
+            port: 8500
+            discovery:
+                healthCheckPath: ${server.servlet.context-path}/health
+                health-check-critical-timeout: 15m
+                healthCheckInterval: 15s
+                preferIpAddress: false
+
+    devtools:
+        restart:
+            exclude:
+                - grails-app/views/**
+                - grails-app/i18n/**
+                - grails-app/conf/**
+
+oneclicklca:
+    email:
+        protectedEmailDomains:
+            - bionova.fi
+            - oneclicklca.com
+            - 360optimi.com
+            - scand.com
+        dbFixNotificationEmails:
+            - hung.nguyen@bionova.fi
+            - 360optimi-notification@bionova.fi
+        noReplyEmail: noreply@oneclicklca.com
+        notificationEmail: 360optimi-notification@bionova.fi
+        testsAutomationEmail: adminautomationtester@bionova.fi
+        testingEmail: testing.360optimi@gmail.com
+        registrationEmail: hello@bionova.fi
+        helloEmail: hello@bionova.fi
+        contactEmail: contact@360optimi.com
+        supportEmail: support@bionova.fi
+        activationFailedEmail: arturs.alsins@bionova.fi
+        kpiReportEmail: weekly-kpi-report@bionova.fi
+        userLicenceNotificationEmail: user-license-notification@bionova.fi
+        salesEmail: sales@bionova.fi
+        salesLeadEmail: sales-lead-notifications@bionova.fi
+        accountEmail: account@360optimi.com
+        devEmail: dev@360optimi.com
+    company:
+        url: https://www.oneclicklca.com
+        domainName: oneclicklca.com
+        name: One Click LCA
+    domain:
+        prodDomains:
+            - oneclicklcaapp.com
+            - www.360optimi.com
+        otherDomains:
+            - test.1clicklca.com
+            - 1clicklca.com
+            - config.1clicklca.com
+            - localhost:8080
+        nonProdMainDomain: .1clicklca.com
+    validIPs:
+        - 10.10.
+        - 10.61.

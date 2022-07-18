@@ -1,0 +1,4281 @@
+{
+  "name" : "unitM2ButImperial",
+  "parentName" : "UNIT CONVERSION test  DO NOT EDIT",
+  "datasets" : [ {
+    "manualId" : "5baba3588e202b0e1f9b5d00",
+    "questionId" : "serviceLifeDefault",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "calculationDefaults",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "serviceLifeTechnical" ],
+    "projectLevelDataset" : true,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5baba3588e202b0e1f9b5d01",
+    "questionId" : "projectType",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "lcaScope",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "newConstruction" ],
+    "projectLevelDataset" : true,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5baba3588e202b0e1f9b5d02",
+    "questionId" : "frameType",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "lcaScope",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "notDetermined" ],
+    "projectLevelDataset" : true,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c02223b3e49b6dea89115e9",
+    "questionId" : "localCompensationMethodVersion",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "calculationDefaults",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "10" ],
+    "projectLevelDataset" : true,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c7655208e202b425ed4a4e4",
+    "questionId" : "costRegion",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "costRegion",
+    "resourceId" : "finland",
+    "profileId" : "default",
+    "answerIds" : [ "finland" ],
+    "projectLevelDataset" : true,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "default",
+      "totalCost" : 0
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c7655208e202b425ed4a4e5",
+    "questionId" : "currencySymbol",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "currencyParameters",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "€" ],
+    "projectLevelDataset" : true,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c7655208e202b425ed4a4e6",
+    "questionId" : "currencyExchangeRate",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "currencyParameters",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "1.0" ],
+    "projectLevelDataset" : true,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5df5caaf259ac4f1f6c16939",
+    "questionId" : "lcaModel",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "calculationDefaults",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "10" ],
+    "projectLevelDataset" : true,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c59e85e90760d7845fcdd",
+    "questionId" : "buildingElectricityConsumption_kWh",
+    "queryId" : "buildingOperatingEnergyAndWater",
+    "sectionId" : "importedElectricitySection",
+    "resourceId" : "averageElectricityNewZealandEPD",
+    "profileId" : "IEA2018",
+    "answerIds" : [ "1" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "IEA2018",
+      "comment" : "",
+      "energyUse" : "overall",
+      "costPerUnit" : 0.13,
+      "totalCost" : 0
+    },
+    "userGivenUnit" : "kWh",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 1.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "kwh",
+    "calculatedMass" : 0.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c59f45e90760d7845fd0e",
+    "questionId" : "service_life_value",
+    "queryId" : "serviceLifeBuildingQuery",
+    "sectionId" : "serviceLife",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "60" ],
+    "projectLevelDataset" : null,
+    "quantity" : 60.0,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c5a035e90760d7845fd39",
+    "questionId" : "surfaceDefinitionsShared",
+    "queryId" : "surfaceDefinitionsShared",
+    "sectionId" : "surfaceDefinitionsShared",
+    "resourceId" : "surfaceGIFA",
+    "profileId" : "default",
+    "answerIds" : [ "1" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "default",
+      "comment" : ""
+    },
+    "userGivenUnit" : "m2",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 1.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 0.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c5a0b5e90760d7845fd3a",
+    "questionId" : "surfaceDefinitionsShared",
+    "queryId" : "surfaceDefinitionsShared",
+    "sectionId" : "surfaceDefinitionsShared",
+    "resourceId" : "surfaceGFA-sqft",
+    "profileId" : "default",
+    "answerIds" : [ "1" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "default",
+      "comment" : ""
+    },
+    "userGivenUnit" : "sq ft",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 0.09290304,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 0.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c59b95e90760d7845fcad",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ulStyrofoamBrandXPSProducts",
+    "profileId" : "Dupont2021",
+    "answerIds" : [ "100" ],
+    "projectLevelDataset" : null,
+    "quantity" : 100.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportResourceIdleg2" : "undefined",
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "applyLocalComps" : "noLocalCompensation",
+      "BREEAMIntlElement" : "1",
+      "thickness_mm" : "25,3",
+      "annualRepairRate" : "0.0",
+      "classification" : "",
+      "wasteShareInUsePhase" : "4",
+      "profileId" : "Dupont2021",
+      "comment" : " ",
+      "BionovaLtdBionovapc" : "bionova_noclassification",
+      "transportDistance_km" : "",
+      "serviceLife" : "default",
+      "compensationEnergyProfile" : "",
+      "thickness_in" : "0.99606299111",
+      "costPerUnit" : 6.03,
+      "totalCost" : 603,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "m2",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 100.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 68.10000000000001,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c5a29a3eb1fa63e4ff445",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ulStyrofoamBrandXPSProducts",
+    "profileId" : "Dupont2021",
+    "answerIds" : [ "1100" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1100.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportResourceIdleg2" : "undefined",
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "applyLocalComps" : "noLocalCompensation",
+      "BREEAMIntlElement" : "1",
+      "thickness_mm" : "25,3",
+      "annualRepairRate" : "0.0",
+      "classification" : "",
+      "wasteShareInUsePhase" : "4",
+      "profileId" : "Dupont2021",
+      "comment" : "",
+      "BionovaLtdBionovapc" : "bionova_noclassification",
+      "transportDistance_km" : "",
+      "serviceLife" : "default",
+      "compensationEnergyProfile" : "",
+      "thickness_in" : "0.99606299111",
+      "costPerUnit" : 0.56,
+      "totalCost" : 616,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "sq ft",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 102.19334400000001,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 69.59366726400002,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c5a2a095c40100330de11",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ulStyrofoamBrandXPSProducts",
+    "profileId" : "Dupont2021",
+    "answerIds" : [ "100" ],
+    "projectLevelDataset" : null,
+    "quantity" : 100.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportResourceIdleg2" : "undefined",
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "applyLocalComps" : "noLocalCompensation",
+      "BREEAMIntlElement" : "1",
+      "thickness_mm" : "50",
+      "annualRepairRate" : "0.0",
+      "classification" : "",
+      "wasteShareInUsePhase" : "4",
+      "profileId" : "Dupont2021",
+      "comment" : "",
+      "BionovaLtdBionovapc" : "bionova_noclassification",
+      "transportDistance_km" : "",
+      "serviceLife" : "default",
+      "compensationEnergyProfile" : "",
+      "thickness_in" : "1.968503935",
+      "costPerUnit" : 11.92,
+      "totalCost" : 1192,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "m2",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 197.62845849802372,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 134.58498023715416,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "612c5a2b44ff3a046b606439",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ulStyrofoamBrandXPSProducts",
+    "profileId" : "Dupont2021",
+    "answerIds" : [ "1100" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1100.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportResourceIdleg2" : "undefined",
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "applyLocalComps" : "noLocalCompensation",
+      "BREEAMIntlElement" : "1",
+      "thickness_mm" : "50",
+      "annualRepairRate" : "0.0",
+      "classification" : "",
+      "wasteShareInUsePhase" : "4",
+      "profileId" : "Dupont2021",
+      "comment" : "",
+      "BionovaLtdBionovapc" : "bionova_noclassification",
+      "transportDistance_km" : "",
+      "serviceLife" : "default",
+      "compensationEnergyProfile" : "",
+      "thickness_in" : "1.968503935",
+      "costPerUnit" : 1.11,
+      "totalCost" : 1218,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "sq ft",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 201.9631304347826,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 137.536891826087,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  } ],
+  "queryReady" : {
+    "buildingMaterialsQuery" : true,
+    "LCCConstructionQuery" : false,
+    "usePhaseScenariosQuery" : false,
+    "LCCProjectParametersQuery" : false,
+    "surfaceDefinitionsShared" : true,
+    "LCAParametersQuery" : true,
+    "sharedWaterQuery" : false,
+    "consturctionProcessQuery" : false,
+    "buildingOperatingEnergyAndWater" : true,
+    "serviceLifeBuildingQuery" : true,
+    "LCCOperatingQuery" : false
+  },
+  "disabledSections" : [ "externalAreas", "buildingTechnology" ],
+  "disabledIndicators" : [ "BuildingOperating-EnergyConsumption", "GHGProcotolScope1", "GHGProcotolScope3", "HotelCarbonFootprint", "emissionsToAir", "hotelEnvironmentalProgram", "infraLCA", "infraLCAEnvision", "infraLCAEnvisionIntl", "infraLCATRACI", "infraPAS2080", "infraPAS2080HS2", "wasteGeneration", "waterConsumption", "GHGProcotolScope2_location", "GHGProcotolScope2_market", "betie2020" ],
+  "scope" : {
+    "scopeId" : null,
+    "frameType" : "notDetermined",
+    "projectType" : "newConstruction",
+    "lcaCheckerList" : [ "foundation", "structure", "finishes" ]
+  },
+  "managerIds" : [ "5f9ec97cef87c13f02289088", "5ad995618e202b7601cef76a" ],
+  "defaults" : {
+    "serviceLife" : "serviceLifeTechnical"
+  },
+  "ribaStage" : 2,
+  "entityClass" : "design",
+  "queryReadyPerIndicator" : {
+    "globalLifeCycleCarbon" : {
+      "buildingMaterialsQuery" : true,
+      "usePhaseScenariosQuery" : false,
+      "surfaceDefinitionsShared" : true,
+      "LCAParametersQuery" : true,
+      "consturctionProcessQuery" : false,
+      "sharedWaterQuery" : false,
+      "buildingOperatingEnergyAndWater" : true,
+      "serviceLifeBuildingQuery" : true
+    },
+    "xBenchmarkEmbodied" : {
+      "buildingMaterialsQuery" : true,
+      "surfaceDefinitionsShared" : true,
+      "buildingOperatingEnergyAndWater" : true
+    },
+    "LCC_LCA_Automated" : {
+      "buildingMaterialsQuery" : true,
+      "LCCConstructionQuery" : false,
+      "LCCProjectParametersQuery" : false,
+      "LCAParametersQuery" : true,
+      "sharedWaterQuery" : false,
+      "buildingOperatingEnergyAndWater" : true,
+      "serviceLifeBuildingQuery" : true,
+      "LCCOperatingQuery" : false
+    }
+  },
+  "childEntities" : [ ],
+  "deleted" : false,
+  "commited" : false,
+  "master" : false,
+  "component" : false,
+  "tempCalculationResults" : [ ],
+  "calculationResults" : [ {
+    "result" : 17692.477028224508,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "A1-A3-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104321,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 17692.477028224508,
+      "612c5a0b5e90760d7845fd3a" : 17692.477028224508
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3004.4843136,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 5810.276679841897,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 5937.716034782608,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 2940.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 17692.477028224508
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "bio-CO2",
+    "resultCategoryId" : "A1-A3-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104322,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 0.0
+    }
+  }, {
+    "result" : 884.6238514112252,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "A1-A3-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104323,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 884.6238514112252,
+      "612c5a0b5e90760d7845fd3a" : 884.6238514112252
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 150.22421568,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 150.22 = 150224.22 * 0.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 290.5138339920949,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 290.51 = 290513.83 * 0.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 296.8858017391304,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 296.89 = 296885.8 * 0.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 147.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 147.0 = 147000.0 * 0.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 884.6238514112252
+    }
+  }, {
+    "result" : 707.6990811289803,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "A5w-material",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104324,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 707.6990811289803,
+      "612c5a0b5e90760d7845fd3a" : 707.6990811289803
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 120.179372544,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 120.18 = 12017.94 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 232.41106719367588,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 232.41 = 23241.11 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 237.50864139130434,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 237.51 = 23750.86 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 117.60000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 117.6 = 11760.0 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 707.6990811289803
+    }
+  }, {
+    "result" : 35.38495405644901,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "A5w-material",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104325,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 35.38495405644901,
+      "612c5a0b5e90760d7845fd3a" : 35.38495405644901
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 6.0089686272,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 600.9 = 600896.86 * 0.0,<b>Result multiplication factor:</b> 6.01 = 600.9 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 11.620553359683795,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 1162.06 = 1162055.34 * 0.0,<b>Result multiplication factor:</b> 11.62 = 1162.06 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 11.875432069565216,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 1187.54 = 1187543.21 * 0.0,<b>Result multiplication factor:</b> 11.88 = 1187.54 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 5.88,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 588.0 = 588000.0 * 0.0,<b>Result multiplication factor:</b> 5.88 = 588.0 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 35.38495405644901
+    }
+  }, {
+    "result" : 41.40537515229925,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "A5w-waste",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104326,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 41.40537515229925,
+      "612c5a0b5e90760d7845fd3a" : 41.40537515229925
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 7.031338797012441,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 7.03 = 703.13 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 13.597682522561515,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 13.6 = 1359.77 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 13.89592647630917,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 13.9 = 1389.59 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 6.880427356416127,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 6.88 = 688.04 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 41.40537515229925
+    }
+  }, {
+    "result" : 2.0702687576149628,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "A5w-waste",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104327,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 2.0702687576149628,
+      "612c5a0b5e90760d7845fd3a" : 2.0702687576149628
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.351566939850622,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 35.16 = 35156.69 * 0.0,<b>Result multiplication factor:</b> 0.35 = 35.16 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.6798841261280758,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 67.99 = 67988.41 * 0.0,<b>Result multiplication factor:</b> 0.68 = 67.99 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.6947963238154584,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 69.48 = 69479.63 * 0.0,<b>Result multiplication factor:</b> 0.69 = 69.48 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.34402136782080633,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 34.4 = 34402.14 * 0.0,<b>Result multiplication factor:</b> 0.34 = 34.4 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 2.0702687576149628
+    }
+  }, {
+    "result" : -25.516918189610983,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "A5w-benefit",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104328,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : -25.516918189610983,
+      "612c5a0b5e90760d7845fd3a" : -25.516918189610983
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -4.333207854942983,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -4.33 = -433.32 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -8.379852886738979,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -8.38 = -837.99 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -8.563651887239097,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -8.56 = -856.37 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -4.240205560689923,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -4.24 = -424.02 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : -25.516918189610983
+    }
+  }, {
+    "result" : -1.2758459094805492,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "A5w-benefit",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104329,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : -1.2758459094805492,
+      "612c5a0b5e90760d7845fd3a" : -1.2758459094805492
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -0.21666039274714916,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -21.67 = -21666.04 * 0.0,<b>Result multiplication factor:</b> -0.22 = -21.67 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -0.41899264433694894,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -41.9 = -41899.26 * 0.0,<b>Result multiplication factor:</b> -0.42 = -41.9 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -0.4281825943619548,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -42.82 = -42818.26 * 0.0,<b>Result multiplication factor:</b> -0.43 = -42.82 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -0.21201027803449615,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -21.2 = -21201.03 * 0.0,<b>Result multiplication factor:</b> -0.21 = -21.2 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : -1.2758459094805492
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "B3-material",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104330,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "B3-material",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104331,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "B3-waste",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104332,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "B3-waste",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104333,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "B3-benefit",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104334,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "B3-benefit",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104335,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -0.0,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 10.842,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "B6",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104336,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 10.842,
+      "612c5a0b5e90760d7845fd3a" : 10.842
+    },
+    "calculationResultDatasets" : {
+      "612c59e85e90760d7845fcdd" : {
+        "result" : 10.842,
+        "resourceId" : "averageElectricityNewZealandEPD",
+        "profileId" : "IEA2018",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 10.84 = 0.18 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.1807,
+      "45" : 0.1807,
+      "46" : 0.1807,
+      "47" : 0.1807,
+      "48" : 0.1807,
+      "49" : 0.1807,
+      "50" : 0.1807,
+      "51" : 0.1807,
+      "52" : 0.1807,
+      "53" : 0.1807,
+      "10" : 0.1807,
+      "54" : 0.1807,
+      "11" : 0.1807,
+      "55" : 0.1807,
+      "12" : 0.1807,
+      "56" : 0.1807,
+      "13" : 0.1807,
+      "57" : 0.1807,
+      "14" : 0.1807,
+      "58" : 0.1807,
+      "15" : 0.1807,
+      "59" : 0.1807,
+      "16" : 0.1807,
+      "17" : 0.1807,
+      "18" : 0.1807,
+      "19" : 0.1807,
+      "1" : 0.1807,
+      "2" : 0.1807,
+      "3" : 0.1807,
+      "4" : 0.1807,
+      "5" : 0.1807,
+      "6" : 0.1807,
+      "7" : 0.1807,
+      "8" : 0.1807,
+      "9" : 0.1807,
+      "60" : 0.1807,
+      "20" : 0.1807,
+      "21" : 0.1807,
+      "22" : 0.1807,
+      "23" : 0.1807,
+      "24" : 0.1807,
+      "25" : 0.1807,
+      "26" : 0.1807,
+      "27" : 0.1807,
+      "28" : 0.1807,
+      "29" : 0.1807,
+      "30" : 0.1807,
+      "31" : 0.1807,
+      "32" : 0.1807,
+      "33" : 0.1807,
+      "34" : 0.1807,
+      "35" : 0.1807,
+      "36" : 0.1807,
+      "37" : 0.1807,
+      "38" : 0.1807,
+      "39" : 0.1807,
+      "40" : 0.1807,
+      "41" : 0.1807,
+      "42" : 0.1807,
+      "43" : 0.1807
+    }
+  }, {
+    "result" : 0.5421,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "B6",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104337,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.5421,
+      "612c5a0b5e90760d7845fd3a" : 0.5421
+    },
+    "calculationResultDatasets" : {
+      "612c59e85e90760d7845fcdd" : {
+        "result" : 0.5421,
+        "resourceId" : "averageElectricityNewZealandEPD",
+        "profileId" : "IEA2018",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.01 = 9.04 * 0.0,<b>Result multiplication factor:</b> 0.54 = 0.01 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.009035,
+      "45" : 0.009035,
+      "46" : 0.009035,
+      "47" : 0.009035,
+      "48" : 0.009035,
+      "49" : 0.009035,
+      "50" : 0.009035,
+      "51" : 0.009035,
+      "52" : 0.009035,
+      "53" : 0.009035,
+      "10" : 0.009035,
+      "54" : 0.009035,
+      "11" : 0.009035,
+      "55" : 0.009035,
+      "12" : 0.009035,
+      "56" : 0.009035,
+      "13" : 0.009035,
+      "57" : 0.009035,
+      "14" : 0.009035,
+      "58" : 0.009035,
+      "15" : 0.009035,
+      "59" : 0.009035,
+      "16" : 0.009035,
+      "17" : 0.009035,
+      "18" : 0.009035,
+      "19" : 0.009035,
+      "1" : 0.009035,
+      "2" : 0.009035,
+      "3" : 0.009035,
+      "4" : 0.009035,
+      "5" : 0.009035,
+      "6" : 0.009035,
+      "7" : 0.009035,
+      "8" : 0.009035,
+      "9" : 0.009035,
+      "60" : 0.009035,
+      "20" : 0.009035,
+      "21" : 0.009035,
+      "22" : 0.009035,
+      "23" : 0.009035,
+      "24" : 0.009035,
+      "25" : 0.009035,
+      "26" : 0.009035,
+      "27" : 0.009035,
+      "28" : 0.009035,
+      "29" : 0.009035,
+      "30" : 0.009035,
+      "31" : 0.009035,
+      "32" : 0.009035,
+      "33" : 0.009035,
+      "34" : 0.009035,
+      "35" : 0.009035,
+      "36" : 0.009035,
+      "37" : 0.009035,
+      "38" : 0.009035,
+      "39" : 0.009035,
+      "40" : 0.009035,
+      "41" : 0.009035,
+      "42" : 0.009035,
+      "43" : 0.009035
+    }
+  }, {
+    "result" : 1035.1343788074812,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "C3-C4-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104338,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 1035.1343788074812,
+      "612c5a0b5e90760d7845fd3a" : 1035.1343788074812
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 175.783469925311,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 339.9420630640379,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 347.3981619077292,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 172.01068391040317,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 1035.1343788074812
+    }
+  }, {
+    "result" : 51.756718940374064,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "C3-C4-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104339,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 51.756718940374064,
+      "612c5a0b5e90760d7845fd3a" : 51.756718940374064
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 8.78917349626555,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 8.79 = 8789.17 * 0.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 16.997103153201895,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 17.0 = 16997.1 * 0.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 17.36990809538646,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 17.37 = 17369.91 * 0.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 8.600534195520158,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 8.6 = 8600.53 * 0.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 51.756718940374064
+    }
+  }, {
+    "result" : -637.9229547402746,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "D-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104340,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : -637.9229547402746,
+      "612c5a0b5e90760d7845fd3a" : -637.9229547402746
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -108.33019637357458,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -209.49632216847448,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -214.09129718097742,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -106.00513901724808,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "62" : -637.9229547402746
+    }
+  }, {
+    "result" : -31.89614773701373,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "D-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104341,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : -31.89614773701373,
+      "612c5a0b5e90760d7845fd3a" : -31.89614773701373
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -5.416509818678729,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -5.42 = -5416.51 * 0.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -10.474816108423724,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -10.47 = -10474.82 * 0.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -10.70456485904887,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -10.7 = -10704.56 * 0.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -5.300256950862404,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> -5.3 = -5300.26 * 0.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "62" : -31.89614773701373
+    }
+  }, {
+    "result" : 749.1044562812795,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "A5-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104342,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 749.1044562812795,
+      "612c5a0b5e90760d7845fd3a" : 749.1044562812795
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 127.21071134101244,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 120.18 = 12017.94 * 0.01,<b>Result multiplication factor:</b> 7.03 = 703.13 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 246.0087497162374,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 232.41 = 23241.11 * 0.01,<b>Result multiplication factor:</b> 13.6 = 1359.77 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 251.4045678676135,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 237.51 = 23750.86 * 0.01,<b>Result multiplication factor:</b> 13.9 = 1389.59 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 124.48042735641613,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 117.6 = 11760.0 * 0.01,<b>Result multiplication factor:</b> 6.88 = 688.04 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 749.1044562812795
+    }
+  }, {
+    "result" : 37.45522281406397,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "A5-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104343,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 37.45522281406397,
+      "612c5a0b5e90760d7845fd3a" : 37.45522281406397
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 6.360535567050622,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 6.01 = 600.9 * 0.01,<b>Result multiplication factor:</b> 0.35 = 35.16 * 0.01"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 12.300437485811871,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 11.62 = 1162.06 * 0.01,<b>Result multiplication factor:</b> 0.68 = 67.99 * 0.01"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 12.570228393380674,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 11.88 = 1187.54 * 0.01,<b>Result multiplication factor:</b> 0.69 = 69.48 * 0.01"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 6.224021367820806,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 5.88 = 588.0 * 0.01,<b>Result multiplication factor:</b> 0.34 = 34.4 * 0.01"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 37.45522281406397
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "B3-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104344,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 0.0
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "B3-full",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104345,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 0.0
+    }
+  }, {
+    "result" : 1035.1343788074812,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "C1-C4_EOL",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104346,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 1035.1343788074812,
+      "612c5a0b5e90760d7845fd3a" : 1035.1343788074812
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 175.783469925311,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 339.9420630640379,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 347.3981619077292,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 172.01068391040317,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 1035.1343788074812
+    }
+  }, {
+    "result" : 51.75671894037407,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "C1-C4_EOL",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104347,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 51.75671894037407,
+      "612c5a0b5e90760d7845fd3a" : 51.75671894037407
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 8.78917349626555,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 8.79 = 8789.17 * 0.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 16.997103153201895,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 17.0 = 16997.1 * 0.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 17.36990809538646,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 17.37 = 17369.91 * 0.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 8.600534195520158,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 8.6 = 8600.53 * 0.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 51.75671894037407
+    }
+  }, {
+    "result" : -663.4398729298855,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "D-complete",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104348,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : -663.4398729298855,
+      "612c5a0b5e90760d7845fd3a" : -663.4398729298855
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -112.66340422851756,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -4.33 = -433.32 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -217.87617505521345,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -8.38 = -837.99 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -222.65494906821652,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -8.56 = -856.37 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -110.24534457793801,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -4.24 = -424.02 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "62" : -663.4398729298855
+    }
+  }, {
+    "result" : -33.17199364649427,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "D-complete",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104349,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : -33.17199364649427,
+      "612c5a0b5e90760d7845fd3a" : -33.17199364649427
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : -5.633170211425878,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -0.22 = -21.67 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> -5.42 = -5416.51 * 0.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : -10.893808752760673,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -0.42 = -41.9 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> -10.47 = -10474.82 * 0.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : -11.132747453410825,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -0.43 = -42.82 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> -10.7 = -10704.56 * 0.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : -5.5122672288969,
+        "resourceId" : "eolIncinerationPlasticStageD",
+        "profileId" : null,
+        "calculationFormula" : "<b>Result multiplication factor:</b> -0.21 = -21.2 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> -5.3 = -5300.26 * 0.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "62" : -33.17199364649427
+    }
+  }, {
+    "result" : 19487.557863313268,
+    "calculationRuleId" : "GWP_failover",
+    "resultCategoryId" : "fullBuilding",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104350,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 19487.557863313268,
+      "612c5a0b5e90760d7845fd3a" : 19487.557863313268
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3307.4784948663237,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 6396.227492622173,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 6536.518764557951,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 3236.491111266819,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59e85e90760d7845fcdd" : {
+        "result" : 10.842,
+        "resourceId" : "averageElectricityNewZealandEPD",
+        "profileId" : "IEA2018",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 10.84 = 0.18 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 19487.557863313268
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "bio-CO2",
+    "resultCategoryId" : "fullBuilding",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104351,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 0.0
+    }
+  }, {
+    "result" : 974.3778931656633,
+    "calculationRuleId" : "socialCost_failover",
+    "resultCategoryId" : "fullBuilding",
+    "indicatorId" : "globalLifeCycleCarbon",
+    "id" : {
+      "timestamp" : 1635325078,
+      "counter" : 4104352,
+      "time" : 1635325078000,
+      "date" : 1635325078000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325078
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 974.3778931656633,
+      "612c5a0b5e90760d7845fd3a" : 974.3778931656633
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 165.37392474331617,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 150.22 = 150224.22 * 0.0,<b>Result multiplication factor:</b> 6.01 = 600.9 * 0.01,<b>Result multiplication factor:</b> 0.35 = 35.16 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 8.79 = 8789.17 * 0.0"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 319.81137463110866,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 290.51 = 290513.83 * 0.0,<b>Result multiplication factor:</b> 11.62 = 1162.06 * 0.01,<b>Result multiplication factor:</b> 0.68 = 67.99 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 17.0 = 16997.1 * 0.0"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 326.8259382278975,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 296.89 = 296885.8 * 0.0,<b>Result multiplication factor:</b> 11.88 = 1187.54 * 0.01,<b>Result multiplication factor:</b> 0.69 = 69.48 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 17.37 = 17369.91 * 0.0"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 161.82455556334097,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 147.0 = 147000.0 * 0.0,<b>Result multiplication factor:</b> 5.88 = 588.0 * 0.01,<b>Result multiplication factor:</b> 0.34 = 34.4 * 0.01,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 0.0 = 0.0 * 60.0,<b>Result multiplication factor:</b> 8.6 = 8600.53 * 0.0"
+      },
+      "612c59e85e90760d7845fcdd" : {
+        "result" : 0.5421,
+        "resourceId" : "averageElectricityNewZealandEPD",
+        "profileId" : "IEA2018",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.54 = 0.01 * 60.0"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 974.3778931656633
+    }
+  }, {
+    "result" : 3629.0,
+    "calculationRuleId" : "LCCdiscounted-automated",
+    "resultCategoryId" : "A0-A5-LCC4LCA",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104353,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 3629.0,
+      "612c5a0b5e90760d7845fd3a" : 3629.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 616.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 1192.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 1218.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 603.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 3629.0,
+    "calculationRuleId" : "LCCreal-automated",
+    "resultCategoryId" : "A0-A5-LCC4LCA",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104354,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 3629.0,
+      "612c5a0b5e90760d7845fd3a" : 3629.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 616.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 1192.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 1218.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 603.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "LCCdiscounted-automated",
+    "resultCategoryId" : "B6-LCC4LCA",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104355,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c59e85e90760d7845fcdd" : {
+        "result" : 0.0,
+        "resourceId" : "averageElectricityNewZealandEPD",
+        "profileId" : "IEA2018"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 0.0,
+    "calculationRuleId" : "LCCreal-automated",
+    "resultCategoryId" : "B6-LCC4LCA",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104356,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 0.0,
+      "612c5a0b5e90760d7845fd3a" : 0.0
+    },
+    "calculationResultDatasets" : {
+      "612c59e85e90760d7845fcdd" : {
+        "result" : 0.0,
+        "resourceId" : "averageElectricityNewZealandEPD",
+        "profileId" : "IEA2018"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "44" : 0.0,
+      "45" : 0.0,
+      "46" : 0.0,
+      "47" : 0.0,
+      "48" : 0.0,
+      "49" : 0.0,
+      "50" : 0.0,
+      "51" : 0.0,
+      "52" : 0.0,
+      "53" : 0.0,
+      "10" : 0.0,
+      "54" : 0.0,
+      "11" : 0.0,
+      "55" : 0.0,
+      "12" : 0.0,
+      "56" : 0.0,
+      "13" : 0.0,
+      "57" : 0.0,
+      "14" : 0.0,
+      "58" : 0.0,
+      "15" : 0.0,
+      "59" : 0.0,
+      "16" : 0.0,
+      "17" : 0.0,
+      "18" : 0.0,
+      "19" : 0.0,
+      "1" : 0.0,
+      "2" : 0.0,
+      "3" : 0.0,
+      "4" : 0.0,
+      "5" : 0.0,
+      "6" : 0.0,
+      "7" : 0.0,
+      "8" : 0.0,
+      "9" : 0.0,
+      "60" : 0.0,
+      "20" : 0.0,
+      "21" : 0.0,
+      "22" : 0.0,
+      "23" : 0.0,
+      "24" : 0.0,
+      "25" : 0.0,
+      "26" : 0.0,
+      "27" : 0.0,
+      "28" : 0.0,
+      "29" : 0.0,
+      "30" : 0.0,
+      "31" : 0.0,
+      "32" : 0.0,
+      "33" : 0.0,
+      "34" : 0.0,
+      "35" : 0.0,
+      "36" : 0.0,
+      "37" : 0.0,
+      "38" : 0.0,
+      "39" : 0.0,
+      "40" : 0.0,
+      "41" : 0.0,
+      "42" : 0.0,
+      "43" : 0.0
+    }
+  }, {
+    "result" : 4.857010391900683,
+    "calculationRuleId" : "LCCdiscounted-automated",
+    "resultCategoryId" : "C1-C4-LCC4LCA",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104357,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 4.857010391900683,
+      "612c5a0b5e90760d7845fd3a" : 4.857010391900683
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.8244470656960101,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.82 = 32.98 * 0.03"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 1.595358607645526,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 1.6 = 63.81 * 0.03"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 1.630156698080747,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 1.63 = 65.21 * 0.03"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.8070480204783994,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 0.81 = 32.28 * 0.03"
+      }
+    }
+  }, {
+    "result" : 304.9035180040882,
+    "calculationRuleId" : "LCCreal-automated",
+    "resultCategoryId" : "C1-C4-LCC4LCA",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104358,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 304.9035180040882,
+      "612c5a0b5e90760d7845fd3a" : 304.9035180040882
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 51.75546075792735,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 51.76 = 2070.22 * 0.03"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 100.15017731079448,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 100.15 = 4006.01 * 0.03"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 102.33466104408362,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 102.33 = 4093.39 * 0.03"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 50.66321889128278,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "null,<b>Result multiplication factor:</b> 50.66 = 2026.53 * 0.03"
+      }
+    }
+  }, {
+    "result" : 3629.0,
+    "calculationRuleId" : "LCCdiscounted-automated",
+    "resultCategoryId" : "A0-A5-virtual",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104359,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 3629.0,
+      "612c5a0b5e90760d7845fd3a" : 3629.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 616.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 1192.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 1218.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 603.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 3629.0
+    }
+  }, {
+    "result" : 3629.0,
+    "calculationRuleId" : "LCCreal-automated",
+    "resultCategoryId" : "A0-A5-virtual",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104360,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 3629.0,
+      "612c5a0b5e90760d7845fd3a" : 3629.0
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 616.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 1192.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 1218.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 603.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 3629.0
+    }
+  }, {
+    "result" : 4.857010391900682,
+    "calculationRuleId" : "LCCdiscounted-automated",
+    "resultCategoryId" : "C1-C4-virtual",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104361,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 4.857010391900682,
+      "612c5a0b5e90760d7845fd3a" : 4.857010391900682
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 0.8244470656960101,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.82 = 32.98 * 0.03"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 1.595358607645526,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 1.6 = 63.81 * 0.03"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 1.630156698080747,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 1.63 = 65.21 * 0.03"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 0.8070480204783994,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 0.81 = 32.28 * 0.03"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 4.857010391900682
+    }
+  }, {
+    "result" : 304.90351800408826,
+    "calculationRuleId" : "LCCreal-automated",
+    "resultCategoryId" : "C1-C4-virtual",
+    "indicatorId" : "LCC_LCA_Automated",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104362,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "resultByDenominator" : {
+      "612c5a035e90760d7845fd39" : 304.90351800408826,
+      "612c5a0b5e90760d7845fd3a" : 304.90351800408826
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 51.75546075792735,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 51.76 = 2070.22 * 0.03"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 100.15017731079448,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 100.15 = 4006.01 * 0.03"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 102.33466104408362,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 102.33 = 4093.39 * 0.03"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 50.66321889128278,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021",
+        "calculationFormula" : "<b>Result multiplication factor:</b> 50.66 = 2026.53 * 0.03"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 304.90351800408826
+    }
+  }, {
+    "result" : 17692.477028224508,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "A1-A3-full",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104363,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3004.4843136,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 5810.276679841897,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 5937.716034782608,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 2940.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 17692.477028224508
+    }
+  }, {
+    "result" : 409.81553932724114,
+    "calculationRuleId" : "mass",
+    "resultCategoryId" : "A1-A3-full",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104364,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 69.59366726400002,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 134.58498023715416,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 137.536891826087,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 68.10000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "0" : 409.81553932724114
+    }
+  }, {
+    "result" : 1035.1343788074812,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "C1-C4-full",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104365,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 175.783469925311,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 339.9420630640379,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 347.3981619077292,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 172.01068391040317,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 1035.1343788074812
+    }
+  }, {
+    "result" : 17692.477028224508,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "aboveGroundBuilding",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104366,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3004.4843136,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 5810.276679841897,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 5937.716034782608,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 2940.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 409.81553932724114,
+    "calculationRuleId" : "mass",
+    "resultCategoryId" : "aboveGroundBuilding",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104367,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 69.59366726400002,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 134.58498023715416,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 137.536891826087,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 68.10000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 17692.477028224508,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "verticalStructures",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104368,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3004.4843136,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 5810.276679841897,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 5937.716034782608,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 2940.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 409.81553932724114,
+    "calculationRuleId" : "mass",
+    "resultCategoryId" : "verticalStructures",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104369,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 69.59366726400002,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 134.58498023715416,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 137.536891826087,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 68.10000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 17692.477028224508,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "xpsInsulation",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104370,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3004.4843136,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 5810.276679841897,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 5937.716034782608,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 2940.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 409.81553932724114,
+    "calculationRuleId" : "mass",
+    "resultCategoryId" : "xpsInsulation",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104371,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 69.59366726400002,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 134.58498023715416,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 137.536891826087,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 68.10000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 1035.1343788074812,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "C1-C4_EOL",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104372,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 175.783469925311,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 339.9420630640379,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 347.3981619077292,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 172.01068391040317,
+        "resourceId" : "eolIncinerationPlasticStageC4",
+        "profileId" : "recycling"
+      }
+    },
+    "resultPerOccurencePeriod" : {
+      "61" : 1035.1343788074812
+    }
+  }, {
+    "result" : 18727.611407031985,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "Total_60",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104373,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3180.2677835253107,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 6150.218742905935,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 6285.114196690338,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 3112.0106839104033,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 409.81553932724114,
+    "calculationRuleId" : "mass",
+    "resultCategoryId" : "Total_60",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104374,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 69.59366726400002,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 134.58498023715416,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 137.536891826087,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 68.10000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 17692.477028224508,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "plasticBased",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104375,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3004.4843136,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 5810.276679841897,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 5937.716034782608,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 2940.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 409.81553932724114,
+    "calculationRuleId" : "mass",
+    "resultCategoryId" : "plasticBased",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104376,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 69.59366726400002,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 134.58498023715416,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 137.536891826087,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 68.10000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 17692.477028224508,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "superStructure",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104377,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 3004.4843136,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 5810.276679841897,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 5937.716034782608,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 2940.0,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  }, {
+    "result" : 409.81553932724114,
+    "calculationRuleId" : "mass",
+    "resultCategoryId" : "superStructure",
+    "indicatorId" : "xBenchmarkEmbodied",
+    "id" : {
+      "timestamp" : 1635325079,
+      "counter" : 4104378,
+      "time" : 1635325079000,
+      "date" : 1635325079000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635325079
+    },
+    "calculationResultDatasets" : {
+      "612c5a29a3eb1fa63e4ff445" : {
+        "result" : 69.59366726400002,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2a095c40100330de11" : {
+        "result" : 134.58498023715416,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c5a2b44ff3a046b606439" : {
+        "result" : 137.536891826087,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      },
+      "612c59b95e90760d7845fcad" : {
+        "result" : 68.10000000000001,
+        "resourceId" : "ulStyrofoamBrandXPSProducts",
+        "profileId" : "Dupont2021"
+      }
+    }
+  } ],
+  "calculationTotalResults" : [ {
+    "indicatorId" : "globalLifeCycleCarbon",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "bio-CO2" : 0.0,
+      "socialCost_failover" : 974.3778931656633,
+      "GWP_failover" : 19487.557863313268
+    },
+    "denominatorValues" : {
+      "612c5a035e90760d7845fd39" : 1.0,
+      "612c5a0b5e90760d7845fd3a" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "B3-transport" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5w-transport-leg2" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4_EOL" : null,
+      "D-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-carbonisation" : {
+        "usePhaseScenariosQuery" : [ "carbonisationPhase" ]
+      },
+      "A5w-benefit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B3-waste" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "A5" : {
+        "consturctionProcessQuery" : [ "constructionEnergyUseSection", "constructionWaterSection", "constructionWasteSection", "averageSiteImpacts", "materialUseOnSiteSection" ]
+      },
+      "A5m-benefit" : {
+        "consturctionProcessQuery" : "materialUseOnSiteSection"
+      },
+      "B4-B5b-leg2" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full-leg2" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "B4-B5-sum" : null,
+      "C3-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-refrigerantLossF" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "fullBuilding" : null,
+      "B4-B5a" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5w-material" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-refrigerantLoss" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "B3-benefit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5d" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5b" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B3-full" : null,
+      "B4-B5c" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B3-transport-leg2" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5m-waste" : {
+        "consturctionProcessQuery" : "materialUseOnSiteSection"
+      },
+      "D-complete" : null,
+      "A5-transport" : {
+        "consturctionProcessQuery" : [ "constructionWasteSection" ]
+      },
+      "B1-vegetation" : {
+        "usePhaseScenariosQuery" : [ "vegetationImpacts" ]
+      },
+      "B1" : null,
+      "A4-2legs" : null,
+      "B3-material" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B6" : {
+        "buildingOperatingEnergyAndWater" : [ "heatingFuelsSection", "districtHeatingSection", "importedElectricitySection", "districtCoolingSection" ]
+      },
+      "B7" : {
+        "sharedWaterQuery" : [ "water" ]
+      },
+      "B1-refrigerantLeakage" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "A5w-waste" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5-full" : null,
+      "A5w-transport" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "D-exported-energy" : {
+        "buildingOperatingEnergyAndWater" : [ "exportedEnergySection" ]
+      }
+    }
+  }, {
+    "indicatorId" : "LCC_LCA_Automated",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "LCCdiscounted-automated" : 3633.8570103919005,
+      "LCCreal-automated" : 3933.9035180040883
+    },
+    "denominatorValues" : {
+      "612c5a035e90760d7845fd39" : 1.0,
+      "612c5a0b5e90760d7845fd3a" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "A0-A5-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      },
+      "B1-B3-LCCextra" : {
+        "LCCOperatingQuery" : ""
+      },
+      "B6-LCC4LCA" : {
+        "buildingOperatingEnergyAndWater" : ""
+      },
+      "A0-A5-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5-virtual" : null,
+      "A0-A5-virtual" : null,
+      "B4-B5-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B7-LCC4LCA" : {
+        "sharedWaterQuery" : ""
+      },
+      "C1-C4-virtual" : null,
+      "B4-B5-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      },
+      "C1-C4-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "xBenchmarkEmbodied",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "GWP" : 18727.61140703199,
+      "mass" : 409.81553932724114
+    },
+    "denominatorValues" : null,
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "carpets" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "superStructure" : null,
+      "ventilationDuctsChannels" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixFoundations" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "precastCmu" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "fiberboard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glue" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "insulatedWoodElements" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticBased" : null,
+      "energyProdSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "acousticInsulationPanels" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "alumiumWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "gypsumPlaster" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "communicationSystem" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "ceramicTiles" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "pirInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "purInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "tileAdhesive" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixWallsFloors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "othermetal" : null,
+      "bricksceramics" : null,
+      "timberwood" : null,
+      "specialGypsymBoard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "specialtyConcrete" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "zinc" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "othermaterials" : null,
+      "otherElements" : null,
+      "specialConcreteFiber" : null,
+      "plumbingAndPipes" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "doorswindows" : null,
+      "foundations" : {
+        "buildingMaterialsQuery" : "foundations"
+      },
+      "allSteel" : null,
+      "lighting" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "suspendedCeilingSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "raisedFlooringSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "steelFramedGlassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "doorWindowParts" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "rockwoolInsulationBatted" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-core-TRACI-km" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "gypsumBased" : null,
+      "organicInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "cellularGlassInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aeratedConcrete" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "regularGlass" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "woodenDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "coatedGlass" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "sealants" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "regularGypsumBoard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "etics" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "internalWallSystemsWindowless" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "partitioningWallSystemsWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "woodenFramedGlassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "precastStructural" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "copper" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherStructuresMaterials" : {
+        "buildingMaterialsQuery" : "otherStructuresMaterials"
+      },
+      "precastFibreCement" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aluminiumFramedGlassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "externalAreas" : {
+        "buildingMaterialsQuery" : "externalAreas"
+      },
+      "precastSlab" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "sandwitchPanelMetal" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "coatingsPastes" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "paints" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "cement" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "buildingTechSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "softwood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aluminium" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "metalDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "galvanizedSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aboveGroundBuilding" : {
+        "buildingMaterialsQuery" : [ "horizontalStructures", "verticalStructures", "otherStructuresMaterials", "buildingTechnology" ]
+      },
+      "electrificationSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "treatedWood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "asphaltRoadParking" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readymix" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "Total_60" : null,
+      "foilMembrane" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "earthMasses" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "textiles" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4_EOL" : null,
+      "precastOther" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "HVAC" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "furniture" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "brickClay" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "cltWood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "verticalStructures" : {
+        "buildingMaterialsQuery" : [ "verticalStructures" ]
+      },
+      "xpsInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glasswoolInsulationBatted" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "naturalStone" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "horizontalStructures" : {
+        "buildingMaterialsQuery" : [ "horizontalStructures" ]
+      },
+      "recycledEarthMasses" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherFlooring" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixHighStrength" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glass" : null,
+      "cables" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherChemicals" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "asphaltBindersBitumens" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "laminateFlooring" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "refrigerants" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "partitioningSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "laminatedGlass" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "insulation" : null,
+      "buildingTechnology" : {
+        "buildingMaterialsQuery" : "buildingTechnology"
+      },
+      "resin" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "sanitaryware" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherMetals" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "woodenWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticFlooring" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "linoleum" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "structuralSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "flooring" : null,
+      "specialConcrete" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "mortar" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "bitumenRoofing" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticMembraneRoofing" : null,
+      "cementBased" : null,
+      "readyMixLightweight" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "allopenings" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plywood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "pvcWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "alternativeConcreteBinders" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "particleboard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "reinforcement" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "earthmassesAsphalt" : null,
+      "pipes" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "stainlessSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "concreteMasonryUnit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "epsInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticsOther" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "allconcrete" : null,
+      "otherSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixStructures" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "wallElementUninsulated" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "technology" : null,
+      "engineeredAggregates" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "windowGlazing" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "elevators" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full-bench" : null,
+      "levelingScreed" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-core-miles" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "concreteAdmixtures" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "osb" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  } ],
+  "lcaCheckerResult" : {
+    "letter" : "E",
+    "color" : "#F7AC64",
+    "percentage" : 29,
+    "resultByCheck" : {
+      "check19" : null,
+      "check39" : 0.0,
+      "check17" : null,
+      "check18" : null,
+      "check15" : 100.0,
+      "check37" : 0.0,
+      "check38" : 0.0,
+      "check16" : null,
+      "check35" : null,
+      "check14" : 1.0,
+      "check36" : 0.0,
+      "check11" : null,
+      "check33" : null,
+      "check34" : null,
+      "check31" : null,
+      "check10" : null,
+      "check32" : null,
+      "check30" : null,
+      "check8" : 18727.611407031985,
+      "check9" : 409.81553932724114,
+      "check28" : 409.81553932724114,
+      "check1" : 0.0,
+      "check29" : 0.0,
+      "check2" : 409.81553932724114,
+      "check26" : null,
+      "check4" : 0.0,
+      "check25" : 0.0,
+      "check5" : null,
+      "check22" : 409.81553932724114,
+      "check6" : null,
+      "check23" : 0.0,
+      "check20" : null,
+      "check21" : null,
+      "check40" : 0.0
+    },
+    "passed" : [ "check2", "check9", "check23", "check28", "check39" ],
+    "acceptable" : [ ],
+    "failed" : [ "check1", "check4", "check8", "check14", "check15", "check22", "check25", "check29", "check36", "check37", "check38", "check40", "check5", "check6", "check10", "check11", "check16", "check17", "check18", "check19", "check20", "check21", "check30", "check31", "check32", "check33", "check34", "check35", "check26" ]
+  }
+}

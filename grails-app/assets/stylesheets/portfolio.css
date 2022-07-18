@@ -1,0 +1,151 @@
+div.portfolioview {
+}
+.portfolioview ul {
+    list-style: none;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.portfolioview li {
+    font-size: 1.2em;
+    line-height: 25px;
+    height: 25px;
+    padding: 3px 8px 3px 8px;
+    text-wrap: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.portfolioview li.active {
+    border-bottom: 0;
+    border-top: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #FFF;
+}
+
+.portfolionav {
+    float: left;
+}
+.portfolionav ul {
+    list-style: none;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+.portfolionav li {
+    font-size: 1.2em;
+    line-height: 25px;
+    height: 25px;
+    padding: 3px 8px 3px 8px;
+    text-wrap: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.portfolionav a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    transition: .3s background-color;
+}
+
+.portfolionav a.active {
+    cursor: default;
+}
+
+.benchmarknav {
+    float: left;
+}
+.benchmarknav ul {
+    list-style: none;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+.benchmarknav li {
+    font-size: 1.0em;
+    line-height: 20px;
+    height: 20px;
+    padding: 3px 8px 3px 8px;
+    background-color: #dbdedc;
+    text-wrap: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 2px;
+    border-radius: 3px;
+    border: 1px solid #d8d8d8;
+}
+
+.benchmarknav li:hover {
+    background-color: #ffffff;
+}
+
+.benchmarknav li.active {
+    background-color: #ffffff;
+}
+
+.benchmarknav a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    transition: .3s background-color;
+}
+
+.benchmarknav a.active {
+    cursor: default;
+}
+
+.portfoliobody {
+    border: 1px solid #d8d8d8;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    clear: both;
+    height:100% !important;
+    width:100% !important;
+}
+
+.benchmarkBody {
+    margin-bottom: 15px;
+    clear: both;
+}
+
+.smallSelect {
+    height: 25px;
+}
+
+.benchmarkIndicator {
+    border: 0 !important; padding: 8px;
+    vertical-align: middle;
+    height: 25px;
+}
+
+.screenheader {
+    min-height: 80px !important;
+}
+
+.nograph {
+    float: left;
+    padding-top: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+.portfoliolegend {
+    display: inline-block;
+}
+
+.portFolioLegendSpan {
+    display: inline-block;
+    width: 30px; height: 10px;
+}

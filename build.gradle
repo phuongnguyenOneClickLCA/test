@@ -1,0 +1,234 @@
+
+buildscript {
+    repositories {
+        mavenLocal()
+        /**
+         * We have issue with the grails core repo being unavailable on 07.06.21. This might be a temporary fix?
+         * Can revert when they fix the official repo.
+         * Follow Github issue: https://github.com/grails/grails-core/issues/11825
+         * - AnnieS
+         maven { url "https://repo.grails.org/grails/core" }
+         */
+        maven { url "https://repo.grails.org/artifactory/core" }
+        maven { url "http://repo.grails.org/grails/plugins" }
+        maven { url "http://download.java.net/maven/2" }
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+        classpath "gradle.plugin.com.github.erdi.webdriver-binaries:webdriver-binaries-gradle-plugin:2.0"
+        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:3.0.10"
+        classpath "com.bertramlabs.plugins:sass-asset-pipeline:3.0.10"
+    }
+}
+
+version "0.6.0"
+
+group "com.bionova.optimi"
+
+apply plugin:"eclipse"
+apply plugin:"idea"
+apply plugin:"war"
+apply plugin:"org.grails.grails-web"
+apply plugin:"com.github.erdi.webdriver-binaries"
+apply plugin:"org.grails.grails-gsp"
+apply plugin:"com.bertramlabs.asset-pipeline"
+
+repositories {
+    mavenLocal()
+    /**
+     * We have issue with the grails core repo being unavailable on 07.06.21. This might be a temporary fix?
+     * Can revert when they fix the official repo.
+     * Follow Github issue: https://github.com/grails/grails-core/issues/11825
+     * - AnnieS
+     maven { url "https://repo.grails.org/grails/core" }
+     */
+    maven { url "https://repo.grails.org/artifactory/core" }
+    maven { url "http://snambi.github.com/maven/" }
+    maven { url "http://maven.java.net/content/repositories/staging/" }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.grails:grails-bom:$grailsVersion"
+    }
+    applyMavenExclusions false
+}
+
+configurations {
+    runtime.exclude group: "org.slf4j", module: "slf4j-log4j12"
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
+ext['mongodb.version']='3.10.2'
+
+dependencies {
+    developmentOnly("org.springframework.boot:spring-boot-devtools")
+    compile "org.springframework.boot:spring-boot-starter-logging"
+    compile "org.springframework.boot:spring-boot-autoconfigure"
+    compile "org.grails:grails-core"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-tomcat"
+    compile "org.grails:grails-web-boot"
+    compile "org.grails:grails-logging"
+    compile "org.grails:grails-plugin-rest"
+    compile "org.grails:grails-plugin-databinding"
+    compile "org.grails:grails-plugin-i18n"
+    compile "org.grails:grails-plugin-services"
+    compile "org.grails:grails-plugin-url-mappings"
+    compile "org.grails:grails-plugin-interceptors"
+    compile ("org.grails.plugins:cache") {
+        exclude group: "org.codehaus.groovy", module: "groovy-all"
+    }
+    compile "org.grails.plugins:async"
+    compile "org.grails.plugins:scaffolding"
+    compile "org.grails.plugins:events"
+    compile "org.grails.plugins:gsp"
+    compile 'org.grails.plugins:converters:4.0.0'
+    compile 'org.grails.plugins:remote-pagination:0.5.0'
+
+    compileOnly "io.micronaut:micronaut-inject-groovy"
+    console "org.grails:grails-console"
+    profile "org.grails.profiles:web"
+    runtime "org.grails.plugins:grails-console:2.1.1"
+    runtime "org.glassfish.web:el-impl:2.2.1-b05"
+    runtime "org.apache.tomcat:tomcat-jdbc"
+    runtime "com.bertramlabs.plugins:asset-pipeline-grails:3.0.10"
+    testCompile "org.grails:grails-gorm-testing-support"
+    testCompile "org.mockito:mockito-core"
+    testCompile "org.grails:grails-web-testing-support"
+    testCompile "org.grails.plugins:geb"
+    testCompile "org.seleniumhq.selenium:selenium-remote-driver:3.14.0"
+    testCompile "org.seleniumhq.selenium:selenium-api:3.14.0"
+    testCompile "org.seleniumhq.selenium:selenium-support:3.14.0"
+    testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:3.14.0"
+    testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:3.14.0"
+    compile "org.grails.plugins:external-config:2.0.0.RC1"
+    compile 'org.grails.plugins:spring-security-core:4.0.0'
+
+    compile ('org.grails.plugins:spring-security-rest:3.0.1') {
+        exclude group: 'org.grails.plugins', module: 'spring-security-core'
+    }
+
+    compile group: 'org.mongodb', name: 'bson', version: '3.10.2'
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.10.2'
+    compile group: 'org.mongodb', name: 'mongodb-driver-core', version: '3.10.2'
+    compile group: 'org.mongodb', name: 'mongodb-driver', version: '3.10.2'
+
+    compile 'org.grails.plugins:mongodb:7.0.0'
+    compile group: 'com.gmongo', name: 'gmongo', version: '1.5'
+
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.3'
+    compile group: 'org.apache.poi', name: 'poi', version: '4.1.2'
+    compile('org.apache.poi:poi-ooxml:4.1.2') {
+        exclude group: 'dom4j', module: 'dom4j'
+        exclude group: 'stax', module: 'stax-api'
+    }
+    compile group: 'org.apache.poi', name: 'ooxml-schemas', version: '1.4'
+    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+    compile group: 'net.coobird', name: 'thumbnailator', version: '0.4.8'
+
+    compile files('libs/log4j-rolling-appender-20150607-2059.jar')
+    compile files('libs/excel-import-3.0.0.BUILD-SNAPSHOT-sources.jar')  //added excel-plugin jar, grails 3 version not yet published
+    compile files('libs/grails-marshallers-1.0.0-SNAPSHOT.jar')   //added marshallers jar, grails 3 version not yet published
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.20'
+    compile group: 'org.apache.pdfbox', name: 'fontbox', version: '2.0.20'
+    compile group: 'org.apache.pdfbox', name: 'jbig2-imageio', version: '3.0.3'
+
+    compile group: 'org.docx4j', name: 'docx4j', version: '6.1.2'
+    compile group: 'org.docx4j', name: 'docx4j-ImportXHTML', version: '8.0.0'
+
+    compile group: 'net.sf.trove4j', name: 'trove4j', version: '3.0.3'
+
+    compile ('org.grails:grails-datastore-rest-client:6.1.12.RELEASE') {
+        exclude group: 'org.grails', module: 'grails-plugin-converters'
+    }
+    compile 'org.grails.plugins:browser-detection:3.3.0'
+    compile 'org.jboss.aerogear:aerogear-otp-java:1.0.0'
+    compile 'org.grails.plugins:mail:3.0.0'
+    compile 'com.blueconic:browscap-java:1.2.8'
+    compile group: 'com.github.ua-parser', name: 'uap-java', version: '1.5.2'
+
+    runtime('org.dom4j:dom4j:2.1.1') {
+        exclude group: 'xml-apis', module: 'xml-apis'
+    }
+    //runtime 'org.glassfish.jaxb:jaxb-runtime'
+    compile group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.2'
+    compile "commons-fileupload:commons-fileupload:1.4"
+    compile "com.maxmind.geoip2:geoip2:2.12.0"
+    compile('com.github.groovy-wslite:groovy-wslite:1.1.3') {
+        exclude group: 'org.codehaus.groovy', module: 'groovy-all'
+    }
+    compile 'org.grails.plugins:grails-melody-plugin:1.80.0'
+    compile group: 'com.twelvemonkeys.imageio', name: 'imageio-jpeg', version: '3.4.1'
+    compile group: 'org.codehaus.groovy', name: 'groovy-dateutil', version: '2.5.8'
+    compile group: 'com.monitorjbl', name: 'xlsx-streamer', version: '2.1.0'
+
+    implementation group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
+    implementation group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.13'
+
+    implementation 'com.github.jai-imageio:jai-imageio-core:1.4.0'
+    implementation 'com.github.jai-imageio:jai-imageio-jpeg2000:1.4.0'
+    compile "com.ecwid.consul:consul-api:1.2.5"
+    implementation "org.modelmapper:modelmapper:2.1.1"
+    testCompile "org.modelmapper:modelmapper:2.1.1"
+    testCompile "com.github.java-json-tools:json-patch:1.13"
+    implementation group: 'org.graalvm.js', name: 'js', version: '22.1.0'
+    implementation 'org.graalvm.js:js-scriptengine:22.1.0'
+}
+
+bootRun {
+    jvmArgs(
+            '-Dpolyglot.engine.WarnInterpreterOnly=false',
+            '-Dspring.output.ansi.enabled=always',
+            '-noverify',
+            '-XX:TieredStopAtLevel=1',
+            '-Xmx4096m',
+            '-XX:+IgnoreUnrecognizedVMOptions',
+            '--illegal-access=permit')
+    sourceResources sourceSets.main
+    String springProfilesActive = 'spring.profiles.active'
+    systemProperty springProfilesActive, System.getProperty(springProfilesActive)
+    systemProperty "islocalhost", System.getProperty("islocalhost")
+}
+
+//webdriverBinaries {
+//    chromedriver '2.45.0'
+//    geckodriver '0.24.0'
+//}
+
+tasks.withType(Test) {
+    systemProperty "geb.env", System.getProperty('geb.env')
+    systemProperty "geb.build.reportsDir", reporting.file("geb/integrationTest")
+    systemProperty "webdriver.chrome.driver", System.getProperty('webdriver.chrome.driver')
+    systemProperty "webdriver.gecko.driver", System.getProperty('webdriver.gecko.driver')
+}
+
+// Sets memory options for GradleWorkerMain, default is 512m
+tasks.withType(GroovyCompile) {
+    options.fork = true
+    options.forkOptions.jvmArgs = ["-Xmx2g","-XX:MaxMetaspaceSize=1g"]
+}
+
+bootWar {
+    archiveName 'app.war'
+}
+
+assets {
+    minifyJs = true
+    minifyCss = true
+    includes = ["**/_*.*"]
+}
+
+springBoot {
+    mainClassName = 'com.bionova.optimi.Application'
+}
+
+test {
+    testLogging.showStandardStreams = true
+    testLogging.exceptionFormat = 'full'
+}

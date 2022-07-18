@@ -1,0 +1,179 @@
+<!--#include virtual="./includes/static_header.html" --> 
+<!--#include virtual="./includes/static_navi.html" -->
+<div class="container contentscreen">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="row-fluid">
+        <div class="span4" style="position:relative;">
+          <div class="content-area">
+            <div data-spy="affix" data-offset-top="35">
+              <div style="padding: 8px 0;" class="well">
+                <ul class="nav nav-list" id="querynav">
+                  <li class="nav-header">Ohjeet</li>
+                  <li><a href="#rakennuksien_hallinta">Rakennuksien hallinta</a></li>
+                  <li><a href="#kyselyiden_tayttaminen">Kyselyiden täyttäminen</a></li>
+                  <li><a href="#raportit">Raportit</a></li>
+                  <li><a href="#terminologia">Terminologia</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span8">
+          <div class="content-area">
+            <h1><i class="layout-icon-help"></i><b>Ohjeet</b></h1>
+            <h2 id="rakennuksien_hallinta">Rakennuksien hallinta</h2>
+            <h3>Palvelun tilaaminen</h3>
+            <p>Asiakas voi tehdä tilauksen Palvelussa, sähköpostissa, puhelimitse tai kirjeitse. Näiden toimitusehtojen
+              mukainen sitova kauppasopimus tulee voimaan, kun Toimittaja on sähköpostilla lähettänyt Asiakkaalle
+              tilausvahvistuksen tai käyttöoikeustiedot Palveluun.</p>
+            <h3>Palvelun toimitus</h3>
+            <p>Palvelu toimitetaan Asiakkaalle, kun tilaus on saatu ja Palvelun ensimmäinen lasku on maksettu, jos muuten
+              ei erikseen sovita. Toimitus on tapahtunut ja hyväksytty, kun Toimittaja on lähettänyt sähköpostissa
+              Asiakkaalle tunnuksen ja salasanan Palveluun, tai kun käyttöoikeus on muuten aktivoitu Palvelussa.</p>
+            <p>Mikäli toimitettu Palvelu on virheellinen tai väärä tai kyseessä on muu Toimittajan virhe, tulee Asiakkaan
+              ilmoittaa asiasta välittömästi virheen ilmettyä Toimittajalle. Toimittaja korjaa virheellisen toimituksen.</p>
+            <h3>Palvelun käytön keskeyttäminen ehtojen rikkomuksen johdosta</h3>
+            <p>Toimittajalla on oikeus ennalta ilmoittamatta keskeyttää ja estää sellainen Palvelun käyttö sekä poistaa
+              sellainen materiaali, jonka viranomainen, kolmas osapuoli tai Toimittaja perustellusti toteaa loukkaavan
+              hyvää tapaa tai lain määräystä. Toimittajalla on oikeus keskeyttää Palvelun käyttäminen, jos Asiakas ei ole
+              huolehtinut Palvelun maksuvelvoitteistaan ja viivästys on kestänyt yli 14 vuorokautta. Toimittajalla on
+              oikeus periä voimassa olevan hinnaston mukainen maksu Palvelun uudelleen avaamisesta.</p>
+            <p>Toimittajalla on oikeus Asiakasta tai Käyttäjää kuulematta estää Asiakkaan tai Käyttäjän pääsy Palveluun,
+              jos Toimittaja perustellusti epäilee Asiakkaan tai Käyttäjän kuormittavan tai käyttävän Palvelua tavalla, joka
+              ei vastaa Palvelun kuvausta, käyttää Palvelua sovitun käytön vastaisesti tai vaarantaa Palvelun tuottamisen.</p>
+            <h2 id="kyselyiden_tayttaminen">Kyselyiden täyttäminen</h2>
+            <h3>Asiakkaan käyttöoikeus ja vastuu Palvelun käytöstä</h3>
+            <p>Asiakkaalla on oikeus käyttää Palvelua käyttöoikeuden voimassaolon ajan toiminnassaan ja Toimittajalta
+              tilatun käyttöoikeuden sallimassa laajuudessa. Asiakas voi pääkäyttäjäoikeuksilla määritellä Asiakkaan
+              Käyttäjille yleiset ja kohdekohtaiset käyttöoikeudet.</p>
+            <p>Asiakas vastaa siitä, että ne, joilla on käyttöoikeus Palveluun Asiakkaan puolesta tai tarkoituksessa, omalta
+              osaltaan sitoutuvat noudattamaan Ehtoja. Selvyyden vuoksi todetaan, että Asiakas vastaa
+              alihankkijoidensa, yhteistyökumppaniensa ja sidosryhmiensä Palvelun käytöstä kuten omastaan. </p>
+            <p>Asiakas vastaa siitä, että pääkäyttäjäjillä on toimintaansa riittävät valtuudet, osaaminen ja pätevyys.
+              Pääkäyttäjäoikeuksilla voidaan esimerkiksi lisätä ja poistaa käyttäjiä ja tilata lisäkäyttöoikeuksia.</p>
+            <h3>Asiakkaan ja Käyttäjän vastuut </h3>
+            <p>Asiakkaan ja Käyttäjien tulee noudattaa verkkopalveluehtoja ja käyttöohjeita.</p>
+            <p>Asiakkaan tulee maksaa Palvelun käyttömaksut. Asiakas kustantaa omat ja Käyttäjiensä laitteet, ohjelmistot
+              ja tietoliikenneyhteydet, joita tarvitaan Palvelun käytössä, sekä vastaa niiden toimivuudesta. Toimittaja ei
+              vastaa Asiakkaan ja Käyttäjien käyttämien ohjelmistojen ja laitteiden yhteensopivuudesta Palveluun. </p>
+            <p>Asiakas ja Käyttäjä käyttävät Palvelua omalla vastuullaan. Asiakas ja Käyttäjä vastaavat Palveluun
+              tallennetuista teksteistä, ohjelmista, tiedoista ja kaikesta muusta sähköisessä muodossa olevasta
+              informaatiosta sekä niiden tekijän- ja teollisoikeuksista, kustannuksesta ja laillisuudesta. </p>
+            <p>Asiakas ja Käyttäjä ovat vastuussa käyttämästään tiedosta, aineistosta ja sen oikeellisuudesta.
+              Asiakas vastaa, että Asiakas sekä Palvelua käyttävät Asiakkaan Käyttäjät säilyttävät käyttäjätunnuksensa ja
+              salasanansa huolellisesti eivätkä paljasta niitä kolmansille osapuolille. Asiakas on vastuussa Käyttäjiensä
+              käyttäjätunnuksilla ja salasanalla tapahtuneesta luvattomasta Palvelun käytöstä ja sen seurauksista. </p>
+            <p>Asiakkaan on aina toimitettava Toimittajalle ajantasaiset yhteystietonsa sekä yhteyshenkilön tiedot.</p>
+            <h3> Palvelun jälleenmyyminen ja tarjoaminen kolmansille </h3>
+            <p>Asiakas ei saa jälleenmyydä tai tarjota vastikkeetta käyttöön Palvelua tai sen osaa, kuten käyttäjäoikeuksia,
+              oman palvelunsa tai tuotteensa osana tai muuten tarjota Palvelua sovitun käyttölaajuuden ulkopuolisille
+              käyttäjille ilman Toimittajan kirjallista suostumusta.</p>
+            <h2 id="raportit"> Raportit</h2>
+            <h3> Ehtojen hyväksyminen </h3>
+            <p>Käyttäjä hyväksyy Palvelun Ehdot rekisteröitymällä Palvelun käyttäjäksi. Käyttäjä hyväksyy mahdolliset
+              Ehtojen muutokset jatkamalla Palvelun käyttöä.</p>
+            <p> Käyttäjä rekisteröityy Palveluun antamalla nimensä, sähköpostiosoitteensa sekä muut pyydetyt tiedot.
+              Käyttäjä vastaa siitä, että annetut tiedot ovat tosia ja sitoutuu päivittämään tietoja niiden muuttuessa.</p>
+            <p> Käyttäjä voi miloin tahansa lopettaa Palvelun käytön poistamalla oman käyttäjätunnuksensa Palvelusta. </p>
+            <h3>Henkilötietojen käsittely</h3>
+            <p> Käyttäjä hyväksyy, että Toimittaja tallentaa Käyttäjän antamat henkilötiedot rekisteriinsä. Henkilötietoja
+              tarvitaan ja käytetään käyttäjien käyttöoikeuksien selvittämiseen ja hallintaan sekä käyttäjän kanssa
+              yhteydenpitoon Palveluun liittyvissä asioissa. Toimittaja ja tarvittavat Toimittajan alihankkijat voivat käyttää
+              henkilötietoja vain Palvelun ja käyttäjätuen toimittamiseen ja Palveluun liittyvään viestintään, kuten
+              päivityksiin, uutiskirjeisiin tai käyttäjätyytyväisyyskyselyihin. </p>
+            <p>Toimittaja ei myy tai muutoin luovuta henkilötietoja kolmansille osapuolille. </p>
+            <p>Palvelun käyttäminen vaatii evästeiden sallimista. Evästeitä käytetään käyttäjän yhteyden hallintaan. </p>
+            <h3>Käyttäjän velvollisuudet ja käyttöoikeudet</h3>
+            <p> Käyttäjää koskevat ja sitovat myös kappaleessa Asiakkaan käyttöoikeus ja vastuu Palvelun käytöstä.</p>
+            <p> Asiakkaalla on oikeus käyttää Palvelua käyttöoikeuden voimassaolon ajan toiminnassaan ja Toimittajalta
+              tilatun käyttöoikeuden sallimassa laajuudessa. Asiakas voi pääkäyttäjäoikeuksilla määritellä Asiakkaan
+              Käyttäjille yleiset ja kohdekohtaiset käyttöoikeudet.</p>
+            <p> Asiakas vastaa siitä, että ne, joilla on käyttöoikeus Palveluun Asiakkaan puolesta tai tarkoituksessa, omalta
+              osaltaan sitoutuvat noudattamaan Ehtoja. Selvyyden vuoksi todetaan, että Asiakas vastaa
+              alihankkijoidensa, yhteistyökumppaniensa ja sidosryhmiensä Palvelun käytöstä kuten omastaan. </p>
+            <p>Asiakas vastaa siitä, että pääkäyttäjäjillä on toimintaansa riittävät valtuudet, osaaminen ja pätevyys.
+              Pääkäyttäjäoikeuksilla voidaan esimerkiksi lisätä ja poistaa käyttäjiä ja tilata lisäkäyttöoikeuksia. </p>
+            <p>Asiakkaan ja Käyttäjän vastuut luetellut velvoitteet.</p>
+            <p> Käyttäjä voi saada käyttöoikeuksia Palveluun siltä osin, kuin Asiakas on niitä Käyttäjälle hankkinut. </p>
+            <h3>Palvelun sallittu ja kielletty käyttö </h3>
+            <p>Käyttöoikeus ja siihen liittyvät käyttäjätunnus ja salasana ovat henkilökohtaisia ja niitä ei saa luovuttaa
+              kolmansille osapuolille. Käyttäjä on vastuussa omien käyttäjätunnustensa avulla tapahtuneesta Palvelun
+              väärinkäytöstä sekä siitä aiheutuvista vahingoista ja kustannuksista. </p>
+            <p>Palvelun käyttö, hyödyntäminen tai tekninen analysointi millään muulla tavalla kuin painamalla Palvelun
+              käyttöliittymän tarjoamia www-selaimen linkkejä on ehdottomasti kielletty.</p>
+            <h2 id="terminologia">Terminologia</h2>
+            <dl class="dl-horizontal">
+              <dt>Toimittaja</dt>
+              <dd>One Click LCA, Askonkatu 9C, 15100 Lahti. Y-tunnus 1739154-6.</dd>
+              <dt>Asiakas</dt>
+              <dd>Yritys tai julkinen organisaatio, joka ostaa käyttöoikeuden Palveluun Toimittajalta.</dd>
+              <dt>Käyttäjä</dt>
+              <dd>Käyttäjä voi olla joko Asiakkaan tai Asiakkaan alihankkijan työntekijä tai muun palvelua
+                oikeutetusti käyttävän organisaation työntekijä, joka on rekisteröitynyt Palveluun.</dd>
+              <dt>Palvelu</dt>
+              <dd>Palvelu on 360optimi-nimellä markkinoitava verkkosovellus, jonka avulla Asiakas voi hallita ja
+                koostaa toimintatietojaan ja laskea erilaisia tunnuslukuja ja indikaattoreita toimintansa
+                kehittämiseksi. Palvelu voi tarjota tunnuslukujen vertailutilastoja. Palvelu on saatavissa
+                verkon kautta osoitteessa www.360optimi.com. Palvelun käyttöohjeet ovat saatavilla
+                Palvelun verkkosivustolta. Palvelu toimitetaan sellaisena, kuin se toimitushetkellä on.</dd>
+              <dt>Asiakastiedot</dt>
+              <dd>Asiakkaan kohteita ja niiden ominaisuuksia kuvaavat tiedot, jotka Käyttäjät ovat Palveluun
+                syöttäneet tai jotka on sinne siirretty ja ne tunnusluvut, joita Palvelu on tiedoista laskenut.</dd>
+              <dt>Ehdot</dt>
+              <dd>Verkkopalveluehtojen uusin versio, joka löytyy osoitteesta www.360optimi.com/terms/.</dd>
+            </dl>
+            <p>&nbsp;</p>
+            <h2 id="testcontent">Testisisältö</h2>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Consectetuer adipiscing elit. <a href="#">Suspendisse urna neque</a>, viverra at, ultrices nec, rutrum condimentum, urna. Suspendisse justo purus, convallis sit amet, auctor a, mattis in, lectus. Aliquam mollis. Pellentesque blandit leo. Suspendisse pharetra congue odio. </p>
+            <h2>Nunc eleifend interdum dolor</h2>
+            <p><a href="http://materiaali.agileus.fi/testikuvat/kotisivupoika.jpg" target="_blank"><img src="http://materiaali.agileus.fi/testikuvat/kotisivupoika.jpg" alt="skidi" width="276" height="183" class="tasaa-kuva-vasemmalle" /></a>Duis nunc justo, lobortis at, varius a, adipiscing at, augue. In egestas, nisl congue porta dignissim, dui tortor aliquam enim, vitae rhoncus odio metus vel diam. Nam sit amet nisl id urna dignissim dapibus. Sed gravida luctus eros. Quisque eget eros. <a href="#">Nunc tristique malesuada purus</a>. Nulla facilisi. </p>
+            <h3>Pellentesque est</h3>
+            <p>Vivamus ac enim. Pellentesque lacinia turpis eu ligula. Nam vehicula convallis ligula. Nullam ipsum lacus, porttitor id, dignissim a, scelerisque a, felis. Ut id risus. Quisque tortor ligula, semper eu, bibendum vitae, suscipit vel, metus. Mauris imperdiet. Vivamus tincidunt felis a neque. </p>
+            <br>
+            <ul>
+              <li>Nullam blandit. </li>
+              <li>Nam tincidunt tempor pede. </li>
+              <li>Nullam fringilla, lorem et venenatis aliquet, nulla felis imperdiet orci, </li>
+              <li>consequat ornare pede ipsum lobortis ipsum. </li>
+            </ul>
+            <p>Donec condimentum dui et nunc. Nulla facilisi. Morbi vehicula. Duis posuere, nulla ac convallis dictum, dui neque imperdiet sem, vitae tincidunt metus quam non diam. Nullam commodo viverra diam. Aenean odio neque, malesuada nec, tincidunt et, pellentesque a, nisi. </p>
+            <p>Use table-styles from: <a href="http://twitter.github.com/bootstrap/base-css.html#tables">http://twitter.github.com/bootstrap/base-css.html#tables</a></p>
+            <table class="table table-bordered" width="100%" border="0" cellspacing="0" cellpadding="4">
+              <tr>
+                <th>&nbsp;</th>
+                <th>Lorem ipsum</th>
+                <th>Donec elementum</th>
+              </tr>
+              <tr>
+                <th> Curabitur odio</th>
+                <td>praesent accumsan</td>
+                <td>vulputate</td>
+              </tr>
+              <tr>
+                <th>Aliquam</th>
+                <td>lobortis</td>
+                <td>fringilla</td>
+              </tr>
+              <tr>
+                <th>Sed ac nis</th>
+                <td>pharetra</td>
+                <td>malesuada</td>
+              </tr>
+            </table>
+            <h4>Maecenas non ante </h4>
+            <p>Nullam nulla. Nulla vulputate, magna placerat placerat volutpat, purus dui egestas diam, sed hendrerit erat augue in quam. Nam sit amet est. Nam sollicitudin nunc sit amet arcu. Sed laoreet vehicula velit. Donec porta fringilla nulla. In porta nunc in nulla. </p>
+            <ol>
+              <li><a href="#">Vivamus consectetuer enim eget nisi. </a></li>
+              <li><a href="#">Duis tempor. Fusce pellentesque ligula. </a></li>
+              <li><a href="#">Nulla in ante vitae purus condimentum porttitor. </a></li>
+            </ol>
+            <p><img src="http://materiaali.agileus.fi/testikuvat/pizza.jpg" alt="skidi" width="264" height="194" class="tasaa-kuva-oikealle" />Donec elementum, metus eget tincidunt blandit, ante nisl tempor ligula, vel vulputate libero elit ac erat. Aliquam malesuada dui et magna. Sed ac nisi a lacus malesuada euismod. Curabitur odio nisi, euismod eget, tempus sit amet, fringilla sit amet, sem. Nunc nec risus. Praesent accumsan. Donec accumsan laoreet turpis. Nulla lobortis erat suscipit quam. Aliquam bibendum adipiscing urna. Morbi sed lorem. Etiam faucibus. Cras quis odio eu ligula pharetra euismod. </p>
+            Sitten vielä testi ilman muotoilua </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--#include virtual="./includes/footer.html" -->

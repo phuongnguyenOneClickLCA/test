@@ -1,0 +1,78 @@
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+div.navfix {
+    height: 40px
+}
+
+* + html div.navfix {
+    height: 21px
+}
+
+.contentscreen .row-fluid div.span4 .content-area {
+    padding: 0 20px 0 20px
+}
+
+.contentscreen .row-fluid div.span4:first-child .content-area {
+    padding: 0 0 0 20px
+}
+
+.contentscreen .row-fluid div.span4:first-child + div.span4 .content-area {
+    padding: 0 0 0 20px
+}
+
+.contentscreen .row-bordered {
+    display: block
+}
+
+.contentscreen .row-bordered div.span4 {
+    display: block;
+    float: left
+}
+
+.contentscreen .row-bordered div.span4 .content-area {
+    padding: 0 20px 0 20px
+}
+
+.contentscreen .row-bordered div.span4:first-child .content-area {
+    padding: 0 0 0 20px
+}
+
+.contentscreen .row-bordered div.span4:first-child + div.span4 .content-area {
+    padding: 0 0 0 20px
+}
+
+div.building-item-view div.row-no-spacing {
+    padding-bottom: 15px
+}
+
+* + html div.building-item-view div.row-no-spacing {
+    padding-bottom: 0
+}
+
+.navbar-inner {
+    height: auto;
+
+    z-index: 2 !important;
+}
+
+.navbar-inner .container .nav-collapse {
+    position: absolute;
+    z-index: 999999 !important;
+    overflow: visible !important;
+    display: block !important;
+    height: auto !important;
+    width: 940px;
+}
+
+.navbar-inner .container .nav-collapse .pull-nav-left {
+    margin-left: 160px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 999999999999 !important;
+}
+
+.contentscreen {
+    overflow: hidden;
+    z-index: 0 !important;
+}

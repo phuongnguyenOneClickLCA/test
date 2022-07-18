@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Testing index page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/360Construction/?lang=fi</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=_action_createAccount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Sähköposti ei voi olla tyhjä</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Salasana ei voi olla tyhjä</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Etunimi ei voi olla tyhjä</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Sukunimi ei voi olla tyhjä</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstname</td>
+	<td>Matti</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Möttönen</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=organizationId</td>
+	<td>label=One Click LCA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>matti.mottonen@bionova.fi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>salasana</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=_action_createAccount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Tunnukseksi on luotu. Saat järjestelmänvalvojalta ilmoituksen, kun tunnuksesi on voimassa</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>pmmakela@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>pazzword</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.btn-primary</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

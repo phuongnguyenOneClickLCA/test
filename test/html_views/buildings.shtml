@@ -1,0 +1,33 @@
+<!--#include virtual="./includes/header.html" -->
+<!--#include virtual="./includes/navi.html" -->
+<div class="container contentscreen">	      
+	      <div class="row-fluid">
+		  <div class="span12">
+    <div class="row-fluid">
+	  <div class="span12">
+	    <div class="content-area">
+		  <h1>
+			<i class="layout-icon-buildings"></i> 
+			Rakennukset
+		  </h1>		  
+		  <p>Etsi haluamasi rakennukset kirjoittamalla avainsanat alla olevaan kenttään</p>         
+		  <table 
+			id="building-search" 
+			data-select-search-column="1,2,3,4,5,6,7" 
+			data-external-button-href="/360optimi/sec/entity/form?new=true"
+			data-external-button-caption="Uusi rakennus"
+			class="table table-striped table-condensed table-data dataTable">
+		    <thead>
+			  <tr role="row"><th>Nimi ja osoite</th><th>Bruttopinta-ala (m²)</th><th>Rakennusvuosi</th><th>Tyyppi</th><th>Status</th><th>Projektipäällikkö</th><th>Omistaja</th><th>Päivitetty</th><th>&nbsp;</th></tr>
+			</thead>
+		  <tbody></tbody>
+		  </table>
+		</div>
+	  </div>
+	</div>
+  
+   	 	
+       	  </div>
+      	  </div>
+      	  </div>
+<!--#include virtual="./includes/footer.html" -->

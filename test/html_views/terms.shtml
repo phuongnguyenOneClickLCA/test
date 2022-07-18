@@ -1,0 +1,284 @@
+<!--#include virtual="./includes/static_header.html" --> 
+<!--#include virtual="./includes/static_navi.html" -->
+<div class="container contentscreen">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="content-area">
+		  <button class="btn btn-primary btn-small pull-right hide-on-print" rel="tooltip" title="Tulosta" onclick="window.print();" ><i class="icon-print icon-white"></i></button>
+            <p><b>Henkilörekisteriseloste, verkkopalvelu 15.1.2013</b></p>
+            <h2>Tämä on Henkilötietolain (523/1999) 10 § mukainen rekisteriseloste.</h2>
+			<table class="terms">
+				<tr>
+					<th>Rekisterinpitäjä</th>
+					<td>One Click LCA, Askonkatu 9C, 15100 Lahti</td>
+				</tr>				
+				<tr>
+					<th>Yhteyshenkilö</th>
+					<td>Tytti Bruce</td>
+				</tr>				
+				<tr>
+					<th>Rekisterin nimi</th>
+					<td>Verkkopalvelurekisteri</td>
+				</tr>				
+				<tr>
+					<th>Henkilötietojen käsittelyn tarkoitus</th>
+					<td>Henkilötietoja tarvitaan ja käytetään käyttäjien käyttöoikeuksien selvittämiseen ja hallintaan sekä yhteydenpitoon kanssa käyttäjän palveluun liittyvissä asioissa. Henkilötietoja voidaan luovuttaa alihankkijoille palvelun ja käyttäjätuen toimittamiseen sekä palveluun liittyvän viestinnän toteuttamiseksi.</td>
+				</tr>				
+				<tr>
+					<th>Henkilötietojen käsittelyn tarkoitus</th>
+					<td>Henkilötietoja tarvitaan ja käytetään käyttäjien käyttöoikeuksien selvittämiseen ja hallintaan sekä yhteydenpitoon kanssa käyttäjän palveluun liittyvissä asioissa. Henkilötietoja voidaan luovuttaa alihankkijoille palvelun ja käyttäjätuen toimittamiseen sekä palveluun liittyvän viestinnän toteuttamiseksi.</td>
+				</tr>				
+				<tr>
+					<th>Rekisterin tietosisältö</th>
+					<td>Käyttäjän nimi, sähköpostiosoite, puhelinnumero, työtehtävä, työnantajan nimi.</td>
+				</tr>				
+				<tr>
+					<th>Säännönmukaiset tietolähteet</th>
+					<td>Käyttäjän verkkopalveluun syöttämät tiedot.</td>
+				</tr>				
+				<tr>
+					<th>Tietojen säännönmukaiset luovutukset</th>
+					<td>Henkilötietoja ei luovuteta.</td>
+				</tr>				
+				<tr>
+					<th>Tietojen siirto EU:n tai ETA:n ulkopuolelle</th>
+					<td>Tietoja ei siirretä EU:n tai ETA:n ulkopuolelle.</td>
+				</tr>				
+				<tr>
+					<th>Rekisterin suojauksen periaatteet</th>
+					<td>Rekisteritietoja säilytetään turvallisilla palvelimilla, ja niihin on pääsy ainoastaan ylläpito- tai tuotetukioikeudet omaavilla käyttäjillä.</td>
+				</tr>
+			</table>
+					  
+            <h2>1. Käsitteiden määrittely</h2>
+            <dl class="dl-horizontal">
+              <dt>Toimittaja</dt>
+              <dd>One Click LCA, Askonkatu 9C, 15100 Lahti. Y-tunnus 1739154-6.</dd>
+            </dl>
+            <dl class="dl-horizontal">
+              <dt>Asiakas</dt>
+              <dd>Yritys tai julkinen organisaatio, joka ostaa käyttöoikeuden Palveluun Toimittajalta.</dd>
+            </dl>
+            <dl class="dl-horizontal">
+              <dt>Käyttäjä</dt>
+              <dd>Käyttäjä voi olla joko Asiakkaan tai Asiakkaan alihankkijan työntekijä tai muun palvelua
+                oikeutetusti käyttävän organisaation työntekijä, joka on rekisteröitynyt Palveluun.</dd>
+            </dl>
+            <dl class="dl-horizontal">
+              <dt>Palvelu</dt>
+              <dd>Palvelu on 360optimi-nimellä markkinoitava verkkosovellus, jonka avulla Asiakas voi hallita ja
+                koostaa toimintatietojaan ja laskea erilaisia tunnuslukuja ja indikaattoreita toimintansa
+                kehittämiseksi. Palvelu voi tarjota tunnuslukujen vertailutilastoja. Palvelu on saatavissa
+                verkon kautta osoitteessa www.360optimi.com. Palvelun käyttöohjeet ovat saatavilla
+                Palvelun verkkosivustolta. Palvelu toimitetaan sellaisena, kuin se toimitushetkellä on.</dd>
+            </dl>
+            <dl class="dl-horizontal">
+              <dt>Asiakastiedot</dt>
+              <dd>Asiakkaan kohteita ja niiden ominaisuuksia kuvaavat tiedot, jotka Käyttäjät ovat Palveluun
+                syöttäneet tai jotka on sinne siirretty ja ne tunnusluvut, joita Palvelu on tiedoista laskenut.</dd>
+            </dl>
+            <dl class="dl-horizontal">
+              <dt>Ehdot</dt>
+              <dd>Verkkopalveluehtojen uusin versio, joka löytyy osoitteesta www.360optimi.com/terms/.</dd>
+            </dl>
+            <h2>2. Palvelu</h2>
+            <h3>Palvelun tilaaminen</h3>
+            <p>Asiakas voi tehdä tilauksen Palvelussa, sähköpostissa, puhelimitse tai kirjeitse. Näiden toimitusehtojen
+              mukainen sitova kauppasopimus tulee voimaan, kun Toimittaja on sähköpostilla lähettänyt Asiakkaalle
+              tilausvahvistuksen tai käyttöoikeustiedot Palveluun.</p>
+            <h3>Palvelun toimitus</h3>
+            <p>Palvelu toimitetaan Asiakkaalle, kun tilaus on saatu ja Palvelun ensimmäinen lasku on maksettu, jos muuten
+              ei erikseen sovita. Toimitus on tapahtunut ja hyväksytty, kun Toimittaja on lähettänyt sähköpostissa
+              Asiakkaalle tunnuksen ja salasanan Palveluun, tai kun käyttöoikeus on muuten aktivoitu Palvelussa.</p>
+            <p>Mikäli toimitettu Palvelu on virheellinen tai väärä tai kyseessä on muu Toimittajan virhe, tulee Asiakkaan
+              ilmoittaa asiasta välittömästi virheen ilmettyä Toimittajalle. Toimittaja korjaa virheellisen toimituksen.</p>
+            <h3>Palvelun käytön keskeyttäminen ehtojen rikkomuksen johdosta</h3>
+            <p>Toimittajalla on oikeus ennalta ilmoittamatta keskeyttää ja estää sellainen Palvelun käyttö sekä poistaa
+              sellainen materiaali, jonka viranomainen, kolmas osapuoli tai Toimittaja perustellusti toteaa loukkaavan
+              hyvää tapaa tai lain määräystä. Toimittajalla on oikeus keskeyttää Palvelun käyttäminen, jos Asiakas ei ole
+              huolehtinut Palvelun maksuvelvoitteistaan ja viivästys on kestänyt yli 14 vuorokautta. Toimittajalla on
+              oikeus periä voimassa olevan hinnaston mukainen maksu Palvelun uudelleen avaamisesta.</p>
+            <p>Toimittajalla on oikeus Asiakasta tai Käyttäjää kuulematta estää Asiakkaan tai Käyttäjän pääsy Palveluun,
+              jos Toimittaja perustellusti epäilee Asiakkaan tai Käyttäjän kuormittavan tai käyttävän Palvelua tavalla, joka
+              ei vastaa Palvelun kuvausta, käyttää Palvelua sovitun käytön vastaisesti tai vaarantaa Palvelun tuottamisen.</p>
+            <h2>3. Asiakkaan oikeudet ja vastuut</h2>
+            <h3>Asiakkaan käyttöoikeus ja vastuu Palvelun käytöstä</h3>
+            <p>Asiakkaalla on oikeus käyttää Palvelua käyttöoikeuden voimassaolon ajan toiminnassaan ja Toimittajalta
+              tilatun käyttöoikeuden sallimassa laajuudessa. Asiakas voi pääkäyttäjäoikeuksilla määritellä Asiakkaan
+              Käyttäjille yleiset ja kohdekohtaiset käyttöoikeudet.</p>
+            <p>Asiakas vastaa siitä, että ne, joilla on käyttöoikeus Palveluun Asiakkaan puolesta tai tarkoituksessa, omalta
+              osaltaan sitoutuvat noudattamaan Ehtoja. Selvyyden vuoksi todetaan, että Asiakas vastaa
+              alihankkijoidensa, yhteistyökumppaniensa ja sidosryhmiensä Palvelun käytöstä kuten omastaan. </p>
+            <p>Asiakas vastaa siitä, että pääkäyttäjäjillä on toimintaansa riittävät valtuudet, osaaminen ja pätevyys.
+              Pääkäyttäjäoikeuksilla voidaan esimerkiksi lisätä ja poistaa käyttäjiä ja tilata lisäkäyttöoikeuksia.</p>
+            <h3>Asiakkaan ja Käyttäjän vastuut </h3>
+            <p>Asiakkaan ja Käyttäjien tulee noudattaa verkkopalveluehtoja ja käyttöohjeita.</p>
+            <p>Asiakkaan tulee maksaa Palvelun käyttömaksut. Asiakas kustantaa omat ja Käyttäjiensä laitteet, ohjelmistot
+              ja tietoliikenneyhteydet, joita tarvitaan Palvelun käytössä, sekä vastaa niiden toimivuudesta. Toimittaja ei
+              vastaa Asiakkaan ja Käyttäjien käyttämien ohjelmistojen ja laitteiden yhteensopivuudesta Palveluun. </p>
+            <p>Asiakas ja Käyttäjä käyttävät Palvelua omalla vastuullaan. Asiakas ja Käyttäjä vastaavat Palveluun
+              tallennetuista teksteistä, ohjelmista, tiedoista ja kaikesta muusta sähköisessä muodossa olevasta
+              informaatiosta sekä niiden tekijän- ja teollisoikeuksista, kustannuksesta ja laillisuudesta. </p>
+            <p>Asiakas ja Käyttäjä ovat vastuussa käyttämästään tiedosta, aineistosta ja sen oikeellisuudesta.
+              Asiakas vastaa, että Asiakas sekä Palvelua käyttävät Asiakkaan Käyttäjät säilyttävät käyttäjätunnuksensa ja
+              salasanansa huolellisesti eivätkä paljasta niitä kolmansille osapuolille. Asiakas on vastuussa Käyttäjiensä
+              käyttäjätunnuksilla ja salasanalla tapahtuneesta luvattomasta Palvelun käytöstä ja sen seurauksista. </p>
+            <p>Asiakkaan on aina toimitettava Toimittajalle ajantasaiset yhteystietonsa sekä yhteyshenkilön tiedot.</p>
+            <h3> Palvelun jälleenmyyminen ja tarjoaminen kolmansille </h3>
+            <p>Asiakas ei saa jälleenmyydä tai tarjota vastikkeetta käyttöön Palvelua tai sen osaa, kuten käyttäjäoikeuksia,
+              oman palvelunsa tai tuotteensa osana tai muuten tarjota Palvelua sovitun käyttölaajuuden ulkopuolisille
+              käyttäjille ilman Toimittajan kirjallista suostumusta.</p>
+            <h2> 4. Käyttäjän oikeudet ja velvollisuudet</h2>
+            <h3> Ehtojen hyväksyminen </h3>
+            <p>Käyttäjä hyväksyy Palvelun Ehdot rekisteröitymällä Palvelun käyttäjäksi. Käyttäjä hyväksyy mahdolliset
+              Ehtojen muutokset jatkamalla Palvelun käyttöä.</p>
+            <p> Käyttäjä rekisteröityy Palveluun antamalla nimensä, sähköpostiosoitteensa sekä muut pyydetyt tiedot.
+              Käyttäjä vastaa siitä, että annetut tiedot ovat tosia ja sitoutuu päivittämään tietoja niiden muuttuessa.</p>
+            <p> Käyttäjä voi miloin tahansa lopettaa Palvelun käytön poistamalla oman käyttäjätunnuksensa Palvelusta. </p>
+            <h3>Henkilötietojen käsittely</h3>
+            <p> Käyttäjä hyväksyy, että Toimittaja tallentaa Käyttäjän antamat henkilötiedot rekisteriinsä. Henkilötietoja
+              tarvitaan ja käytetään käyttäjien käyttöoikeuksien selvittämiseen ja hallintaan sekä käyttäjän kanssa
+              yhteydenpitoon Palveluun liittyvissä asioissa. Toimittaja ja tarvittavat Toimittajan alihankkijat voivat käyttää
+              henkilötietoja vain Palvelun ja käyttäjätuen toimittamiseen ja Palveluun liittyvään viestintään, kuten
+              päivityksiin, uutiskirjeisiin tai käyttäjätyytyväisyyskyselyihin. </p>
+            <p>Toimittaja ei myy tai muutoin luovuta henkilötietoja kolmansille osapuolille. </p>
+            <p>Palvelun käyttäminen vaatii evästeiden sallimista. Evästeitä käytetään käyttäjän yhteyden hallintaan. </p>
+            <h3>Käyttäjän velvollisuudet ja käyttöoikeudet</h3>
+            <p> Käyttäjää koskevat ja sitovat myös kappaleessa Asiakkaan käyttöoikeus ja vastuu Palvelun käytöstä.</p>
+            <p> Asiakkaalla on oikeus käyttää Palvelua käyttöoikeuden voimassaolon ajan toiminnassaan ja Toimittajalta
+              tilatun käyttöoikeuden sallimassa laajuudessa. Asiakas voi pääkäyttäjäoikeuksilla määritellä Asiakkaan
+              Käyttäjille yleiset ja kohdekohtaiset käyttöoikeudet.</p>
+            <p> Asiakas vastaa siitä, että ne, joilla on käyttöoikeus Palveluun Asiakkaan puolesta tai tarkoituksessa, omalta
+              osaltaan sitoutuvat noudattamaan Ehtoja. Selvyyden vuoksi todetaan, että Asiakas vastaa
+              alihankkijoidensa, yhteistyökumppaniensa ja sidosryhmiensä Palvelun käytöstä kuten omastaan. </p>
+            <p>Asiakas vastaa siitä, että pääkäyttäjäjillä on toimintaansa riittävät valtuudet, osaaminen ja pätevyys.
+              Pääkäyttäjäoikeuksilla voidaan esimerkiksi lisätä ja poistaa käyttäjiä ja tilata lisäkäyttöoikeuksia. </p>
+            <p>Asiakkaan ja Käyttäjän vastuut luetellut velvoitteet.</p>
+            <p> Käyttäjä voi saada käyttöoikeuksia Palveluun siltä osin, kuin Asiakas on niitä Käyttäjälle hankkinut. </p>
+            <h3>Palvelun sallittu ja kielletty käyttö </h3>
+            <p>Käyttöoikeus ja siihen liittyvät käyttäjätunnus ja salasana ovat henkilökohtaisia ja niitä ei saa luovuttaa
+              kolmansille osapuolille. Käyttäjä on vastuussa omien käyttäjätunnustensa avulla tapahtuneesta Palvelun
+              väärinkäytöstä sekä siitä aiheutuvista vahingoista ja kustannuksista. </p>
+            <p>Palvelun käyttö, hyödyntäminen tai tekninen analysointi millään muulla tavalla kuin painamalla Palvelun
+              käyttöliittymän tarjoamia www-selaimen linkkejä on ehdottomasti kielletty.</p>
+            <h2> 5. Tietoturva ja asiakastiedot </h2>
+            <h3>Tietoturva ja tietojen säilyttäminen </h3>
+            <p>Toimittaja noudattaa Henkilötietolakia ja pyrkii mahdollisimman korkeaan tietoturvan tasoon. Toimittaja
+              vastaa siitä, Asiakastietoja voivat käsitellä vain ne tahot, joille käyttöoikeus on näissä Ehdoissa annettu.</p>
+            <p> Palveluun syötetyt ja ladatut tiedot tallennetaan palvelimille, sekä erillisille varmuuskopiointipalvelimille.
+              Palvelimia säilytetään turvallisissa, internetpalveluiden toimittamiseen erikoistuneissa konesaleissa. </p>
+            <h3>Pääsy tietoihin </h3>
+            <p>Pääsy Asiakkaan hallinnoimaan tietoon ja kohteisiin on niillä Käyttäjillä, joille valtuutettu Käyttäjä tämän
+              oikeuden antaa. Käyttöoikeudet ja valtuutukset voivat olla luonteeltaan joko luku- tai muokkausoikeuksia ja
+              niitä voidaan antaa koskemaan joko kaikkea tietoa ja kaikkia kohteita tai vain osaa näistä.</p>
+            <p> Jos valtuutettu Käyttäjä määrittää osan tietoa tai tietyn kohteen tiedot julkisiksi, pääsevät kaikki Palvelun
+              Käyttäjät katsomaan näitä tietoja. Muilla käyttäjillä ei ole kuitenkaan muokkausoikeutta. </p>
+            <h3>Asiakastietojen käyttö </h3>
+            <p>Asiakastiedot kuuluvat Asiakkaalle, mutta Toimittajalla on vapaa ja pysyvä käyttöoikeus käyttää
+              Asiakastietoja Palvelun ja käyttäjätuen toimittamiseksi. Toimittaja voi hyödyntää Palvelun toimittamisessa
+              alihankkijoita ja mahdollistaa näille Palvelun toimittamisessa tarvittavan pääsyn Asiakastietoihin. </p>
+            <p>Lisäksi Toimittaja saa hyödyntää vapaasti ja pysyvästi anonymisoituja Asiakastietoja benchmarkkien ja
+              tilastojen laadintaan sekä Palvelun kehittämiseen. Anonyymejä tilastoja voidaan luovuttaa tai julkaista. </p>
+            <p>Toimittaja vastaa siitä, että Toimittajan henkilöstöä sekä alihankkijoita sitoo salassapito- ja
+              vaitiolovelvollisuus sen Asiakastiedon osalta, jonka he saavat tietoonsa Palvelun toimittamisen kautta.</p>
+            <p> Palvelu tallentaa lisäksi anonyymejä tietoja, kuten Palvelun käyttötapaa, toimenpiteitä ja tapahtumia
+              koskevia tietoja. Näitä tietoja hyödynnetään Palvelun kehittämiseen. </p>
+            <h3>Asiakastietojen käyttö sponsoroiduissa palveluissa</h3>
+            <p> Asiakkaalle tai Käyttäjälle voidaan tarjota Palvelunssa sponsoroituja palveluita. Sponsoroidut palvelut ovat
+              kolmannen osapuolen rahoittamia palveluita, jotka tarjotaan Asiakkaan tai Käyttäjän käyttöön vastikkeetta
+              tai normaalia edullisemmin ehdoin. Sponsoroitujen palvelujen käytön yhteydessä luovutetut Asiakastiedot
+              voidaan luovutttaa osittain tai kokonaan sponsoroidun palvelun rahoittavalle taholle. Asiakas ja Käyttäjä
+              hyväksyvät sponsoroidun palvelun Asiakastietojen käsittelyehdot käyttämällä sponsoroitua palvelua. </p>
+            <h3>Asiakastietojen palautus</h3>
+            <p> Toimittaja on velvollinen toimittamaan Palveluun tallennetut Asiakastiedot Asiakkaalle sähköisessä
+              muodossa etukäteen maksettua, voimassa olevan hinnaston mukaista korvausta vastaan.</p>
+            <h3> Asiakkaan käyttö markkinoinnissa</h3>
+            <p> Toimittajalla on oikeus mainita Asiakkaan nimi ja logo markkinoinnissaan. </p>
+            <h3>Salassapitovelvoite</h3>
+            <p> Toimittaja ja Asiakas sitoutuvat pitämään salassa toisen osapuolen luovuttamat luottamukselliset tiedot
+              myös niiltä osin, kuin tietoja ei luovuteta Palvelun kautta tai osana Palvelua. </p>
+            <h2>6. Käyttäjätuki, huollot ja häiriöt </h2>
+            <h3>Palvelutaso</h3>
+            <p> Toimittaja vastaa siitä, että Palvelun ylläpito, käyttäjätuki, varmuuskopiointi ja muut Palvelun
+              toimittamiseen liittyvät tehtävät suoritetaan ammattitaitoisesti ja tämän sopimuksen ehtojen mukaisesti.</p>
+            <h3> Käyttäjätuki</h3>
+            <p> Asiakkaan yhteydenottoja käyttäjätukeen voidaan tehdä vain sopimuksessa esitettyjen tahojen tai
+              Käyttäjien toimesta. Käyttäjätuki on tarkoitettu virhe- ja ongelmatilanteiden selvittämiseen. </p>
+            <h3>Huollot ja häiriöt </h3>
+            <p>Palvelun huollot suoritetaan ajankohtina, jolloin siitä aiheutuva muu häiriö käyttäjille on mahdollisimman
+              pieni. Häiriöt ja viat korjataan normaalina työaikana. Korjaaminen aloitetaan viivytyksettä häiriön tai vian
+              ilmettyä. Mikäli Asiakas ilmoittaa Toimittajalle Palvelun viasta, jonka syy on Asiakkaan laitteissa tai
+              ohjelmistoissa, vastaa Asiakas Toimittajalle aiheutuneista kuluista. </p>
+            <h2>7. Kehitys- ja koulutus- ja tukipalvelut </h2>
+            <h3>Kehityspalvelut</h3>
+            <p> Toimittaja ja Asiakas voivat sopia Palvelun kehittämisestä ja laajentamisesta Asiakkaan tarpeisiin. Toimittaja
+              vastaa kehitystoimenpiteiden toteuttamisesta ja Asiakas maksaa Toimittajalle tästä sovitun mukaisen
+              korvauksen. Kaikkien Palvelun laajennusten ja ominaisuuksien tekijänoikeudet, immateriaaliset oikeudet ja
+              muut oikeudet jäävät Toimittajalle. Asiakas saa niihin sopimuksensa mukaisen käyttöoikeuden.</p>
+            <h3> Koulutus-, konsultointi- ja tukipalvelut</h3>
+            <p> Toimittaja voi tarjota Asiakkaalle koulutus-, konsultointi- ja tukipalveluita. Koulutus-, konsultointi- ja
+              tukipalveluiden sisältö ja voimassa olevat hinnat esitetään Toimittajan hinnastossa. </p>
+            <h2>8. Hinnat ja ehtojen muutokset</h2>
+            <h3> Hinnat ja laskutus</h3>
+            <p> Toimittaja veloittaa Palvelun käytöstä Asiakkaalta hinnastonsa mukaisen tai erikseen sovitun hinnan.
+              Palvelun käyttöoikeus veloitetaan Asiakkaalta joko projektikaupan koko arvona tai alkavalta 12 kuukauden
+              jaksolta. Tätä lyhyemmästä laskutusvälistä veloitetaan hinnaston mukainen lisähinta. </p>
+            <p>Palvelun kehittämisestä, käyttökoulutuksista tai muista erikseen tilatuista toimenpiteistä veloitetaan
+              voimassa olevan hinnaston mukainen tai Toimittajan tarjouksen mukainen hinta.</p>
+            <p> Kaikki hinnat ilmoitetaan euroissa ja hintoihin lisätään soveltuva, senhetkinen arvonlisävero. </p>
+            <h3>Hintojen muutokset </h3>
+            <p>Hintojen muutoksista on ilmoitettava Asiakkaalle kuukautta ennen muutosten voimaantuloa Palvelussa.
+              Hintamuutokset eivät vaikuta Asiakkaalta jo laskutetun ajanjakson palveluhintoihin. Jos Asiakkaan Palvelun
+              
+              käyttölaajuus kasvaa yli 10 % Palvelun toimitushetkellä määritellystä laajuudesta, on Toimittajalla oikeus
+              tarkistaa hintaa suhteessa kasvaneeseen käyttöön.</p>
+            <h3> Ehtojen muutokset </h3>
+            <p>Näitä Ehtoja voidaan päivittää ilmoittamalla tästä Palvelussa vähintään kuukautta ennen muutosten
+              voimaantuloa. Jos Ehdot huonontavat Asiakkaan asemaa tai saamaa Palvelua olennaisesti, voi Asiakas
+              halutessaan irtisanoa Palvelun ja saada tällöin käyttöoikeusmaksunsa takaisin käyttämättömältä ajalta. </p>
+            <h2>9. Sopimusjakso ja sopimuksen päättyminen </h2>
+            <p>Sopimus on voimassa toistaiseksi. Projektikaupassa sopimus on kuitenkin voimassa, kunnes projekti on
+              valmistunut, tai määritelty projektin enimmäiskesto saavutetaan. </p>
+            <p>Sopimus voidaan irtisanoa kirjallisesti. Toimittajalla on oikeus irtisanoa sopimus päättyväksi 12 kuukauden
+              irtisanomisajalla. Asiakkaalla on oikeus irtisanoa sopimus 3 kuukauden irtisanomisajalla, kuitenkin
+              aikaisintaan kuluvan laskutuskauden päätteeksi.</p>
+            <p> Jos Asiakas rikkoo tätä sopimusta ja eikä oikaise tilannetta 30 päivän kuluessa Toimittajan kirjallisesta
+              huomautuksesta, Toimittajalla on oikeus purkaa sopimus. </p>
+            <p>Asiakkaalla on oikeus purkaa sopimus, jos Toimittaja rikkoo olennaisesti sopimuksen ehtoja eikä oikaise
+              tilannetta 30 päivän kuluessa saatuaan Asiakkaalta asiaa koskevan kirjallisen huomautuksen. </p>
+            <p>Toimittajalla on oikeus siirtää sopimus ja siihen liittyvät Palvelu ja Asiakastieto ilmoittamalla tästä
+              Asiakkaalle vähintään 30 päivää etukäteen.</p>
+            <h2> 10. Immateriaaliset ja muut oikeudet </h2>
+            <h3>Palvelun oikeudet </h3>
+            <p>Kaikki tekijänoikeudet ja muut immateriaalioikeudet sekä muut oikeudet Palveluun, sen toiminnallisuuksiin
+              ja sovelluksiin sekä sitä koskeviin suunnitelmiin ja parannusehdotuksiin kuuluvat Toimittajalle. Asiakas saa
+              Palveluun sopimuksen mukaisen, rajoitetun käyttöoikeuden, joka on voimassa rajoitetun ajan.</p>
+            <p> Jos todetaan, että Toimittajan Palveluun liittyvien ohjelmistojen sopimuksen mukainen käyttö rikkoo
+              kolmannen osapuolen immateriaalioikeuksia, on Toimittajalla oikeus hankkia omalla kustannuksellaan
+              oikeus käytön jatkamiseen, korvata käyttö toiminnallisesti vastaavalla tavalla tai muuttaa tuotteita tai
+              palveluja niin, ettei kolmannen oikeuksia loukata. </p>
+            <h3>Vastuunrajoitus</h3>
+            <p> Toimittaja ei vastaa Asiakkaalle aiheutuneista välillisistä eikä epäsuorista vahingoista. Toimittaja ei vastaa
+              haitoista, jotka johtuvat esimerkiksi siitä, että Palvelu ei vastaa Asiakkaan tarpeita tai Asiakkaan antamien
+              tietojen puutteista tai virheistä. Toimittaja ei vastaa internet-yhteyden häiriöistä ja katkoksista. </p>
+            <p>Toimittaja vastaa vain Asiakkaalle aiheutuneista välittömistä vahingoista, jotka johtuvat Toimittajan
+              tekemästä sopimusrikkomuksesta. Toimittajan vastuu sopimusrikkomuksen kohteena olevan Palvelun
+              osalta rajoittuu aina enintään Asiakkaan voimassa olevan sopimuksen kuutta kuukausimaksua vastaavaan
+              summaan tai projektikaupoissa Palvelun käyttöoikeuden arvoon. </p>
+            <h2>11. Ylivoimainen este (Force majeure) </h2>
+            <p>Toimittaja ei vastaa siitä, että Palvelun toimitus estyy, vaikeutuu tai myöhästyy Toimittajan
+              vaikutusmahdollisuuksien ulkopuolella olevasta seikasta, kuten sodasta, luonnonmullistuksesta, vienti- tai
+              tuontikiellosta, lakosta, vakavan sähkö- tai tietoliikenneinfrastruktuurin toimintahäiriöstä, viranomaisen
+              päätöksestä, yleisen liikenteen häiriintymisestä tai muusta vastaavasta Toimittajan tai Toimittajan
+              alihankkijan toimintaa vaikeuttavasta tai estävästä toiminnasta. </p>
+            <h2>12. Sovellettava laki ja sopimusriidat </h2>
+            <p>Tähän sopimukseen sovelletaan Suomen lakia. Sopimusriitojen ratkaisupaikka on Helsingin käräjäoikeus. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--#include virtual="./includes/footer.html" -->

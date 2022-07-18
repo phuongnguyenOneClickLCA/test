@@ -1,0 +1,3518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="indicateurs_performance_collection">
+		<xs:annotation>
+			<xs:documentation>Indicateurs de la performance environnementale</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="indicateurs_performance" minOccurs="6" maxOccurs="6">
+					<xs:annotation>
+						<xs:documentation>Indicateurs de la performance environnementale</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="valeur" type="xs:decimal">
+								<xs:annotation>
+									<xs:documentation>Valeur de l'indicateur sur tout le cycle de vie</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="nom" type="p_string500" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Nom de l'indicateur (peut être déduit de la référence)</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="unite" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Unité de l'indicateur (peut être déduit de la référence)</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:whiteSpace value="collapse"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="ref" use="required">
+							<xs:annotation>
+								<xs:documentation>Liste d'énumération des indicateurs calculés lors du calcul :
+1 - Eges [kg éq. CO2/m²SDP]
+2 - Egesmax1 [kg éq. CO2/m²SDP]
+3 - Egesmax2 [kg éq. CO2/m²SDP]
+4 - EgesPCE [kg éq. CO2/m²SDP]
+5 - EgesPCE,max1 [kg éq. CO2/m²SDP]
+6 - EgesPCE,max2 [kg éq. CO2/m²SDP]</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:enumeration value="1"/>
+									<xs:enumeration value="2"/>
+									<xs:enumeration value="3"/>
+									<xs:enumeration value="4"/>
+									<xs:enumeration value="5"/>
+									<xs:enumeration value="6"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="t_unique_ind_performance">
+			<xs:selector xpath="indicateurs_performance"/>
+			<xs:field xpath="@ref"/>
+		</xs:unique>
+	</xs:element>
+	<xs:simpleType name="p_string2000">
+		<xs:annotation>
+			<xs:documentation>Contraintes supplémentaires sur le type "String" (maxLen:2000)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:whiteSpace value="collapse"/>
+			<xs:maxLength value="2000"/>
+			<xs:pattern value="[^-|_|0|\s]{1}|[\w\W]{2,}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="p_string500">
+		<xs:annotation>
+			<xs:documentation>Contraintes supplémentaires sur le type "String" (maxLen:500)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:whiteSpace value="collapse"/>
+			<xs:maxLength value="500"/>
+			<xs:pattern value="[^-|_|0|\s]{1}|[\w\W]{2,}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="RSEnv">
+		<xs:annotation>
+			<xs:documentation>Volet environnemental
+1.1.0.0 - v1.2 - 28/01/2020</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="entree_projet">
+					<xs:annotation>
+						<xs:documentation>Données d'entrée du projet</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="batiment" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Données d'entrée relatives aux bâtiments</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="index" type="xs:int">
+											<xs:annotation>
+												<xs:documentation>Index</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="nom" type="p_string500">
+											<xs:annotation>
+												<xs:documentation>Nom du bâtiment</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="zone" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Zone</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="index" type="xs:int">
+														<xs:annotation>
+															<xs:documentation>Index</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="usage">
+														<xs:annotation>
+															<xs:documentation>Usage de la zone 
+(donnée RSET)
+0 - Autre usage
+1 - Bâtiment à usage d'habitation - maison individuelle ou accolée
+2 - Bâtiment à usage d'habitation - logement collectif
+3 - Etablissement d'accueil de la petite enfance (crèche, halte-garderie)
+4 - Enseignement primaire
+5 - Enseignement secondaire (partie jour)
+6 - Enseignement secondaire (partie nuit)
+7 - Enseignement - université
+8 - Bâtiment à usage d'habitation - Foyer de jeunes travailleurs
+10 - Hôtel 0* et 1* (partie nuit)
+11 - Hôtel 2* (partie nuit)
+12 - Hôtel 3* (partie nuit)
+13 - Hôtel 4* et 5* (partie nuit)
+14 - Hôtel 0*, 1* et 2* (partie jour)
+15 - Hôtel 3*, 4* et 5* (partie jour)
+16 - Bureaux
+17 - Restauration commerciale en continue (18h/j 7j/7)
+18 - Restauration - 1 repas/jour, 5j/7
+19 - Restauration - 2 repas/jour, 7j/7
+20 - Restauration - 2 repas/jour, 6177
+22 - Commerce, magasin, zones commerciales
+24 - Etablissement sportif scolaire
+26 - Bâtiment à usage d'habitation - Etablissement sanitaire avec hébergement
+27 - Hôpital (partie nuit)
+28 - Hôpital (partie jour)
+29 - Transport - aérogare
+30 - Bâtiment à usage d'habitation - Cité universitaire
+32 - Industrie - 3x8h
+33 - Industrie - 8h 3 18h
+34 - Tribunal
+36 - Etablissement sportif municipal ou privé
+37 - Restauration scolaire - 1 repas/jour, 5j/7
+38 - Restauration scolaire - 3 repas/jour, 5j/7</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+																<xs:enumeration value="16"/>
+																<xs:enumeration value="17"/>
+																<xs:enumeration value="18"/>
+																<xs:enumeration value="19"/>
+																<xs:enumeration value="20"/>
+																<xs:enumeration value="22"/>
+																<xs:enumeration value="24"/>
+																<xs:enumeration value="26"/>
+																<xs:enumeration value="27"/>
+																<xs:enumeration value="28"/>
+																<xs:enumeration value="29"/>
+																<xs:enumeration value="30"/>
+																<xs:enumeration value="32"/>
+																<xs:enumeration value="33"/>
+																<xs:enumeration value="34"/>
+																<xs:enumeration value="36"/>
+																<xs:enumeration value="37"/>
+																<xs:enumeration value="38"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="sdp">
+														<xs:annotation>
+															<xs:documentation>surface de plancher de la zone [m²]</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="contributeur" minOccurs="4" maxOccurs="4">
+														<xs:annotation>
+															<xs:documentation>Contributeur</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:choice minOccurs="0">
+																<xs:element name="donnees_service" maxOccurs="unbounded">
+																	<xs:annotation>
+																		<xs:documentation>Service du contributeur "Energie" ou "Eau" ou "Chantier"</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="id_base" default="0">
+																				<xs:annotation>
+																					<xs:documentation>Identifiant de la base de données d'où provient l'élément</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:int"/>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="id_fiche" type="p_string500">
+																				<xs:annotation>
+																					<xs:documentation>Identifiant de la fiche FDES/EPD/Autre de l'élément </xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="id_produit" type="p_string500">
+																				<xs:annotation>
+																					<xs:documentation>Clé nationale du produit / Serial Identifier</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="quantite">
+																				<xs:annotation>
+																					<xs:documentation>Quantité de UF de l'élément</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:decimal">
+																						<xs:minExclusive value="0"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element ref="unite_uf"/>
+																			<xs:element name="chantier_consommations" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Type de chantier
+1 - Electricité
+2 - Gaz naturel ou GPL (butane ou propane)
+3 - Fioul domestique
+4 - Bois granulés
+5 - Bois bûches
+6 - Bois plaquettes
+7 - Réseau de fourniture
+8 - Charbon
+9 - Eau potable
+10 - Assainissement eaux usées
+11 - Traitements terres
+12 - Transport terres
+13 - Gazole non routier</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:int">
+																						<xs:enumeration value="1"/>
+																						<xs:enumeration value="2"/>
+																						<xs:enumeration value="3"/>
+																						<xs:enumeration value="4"/>
+																						<xs:enumeration value="5"/>
+																						<xs:enumeration value="6"/>
+																						<xs:enumeration value="7"/>
+																						<xs:enumeration value="8"/>
+																						<xs:enumeration value="9"/>
+																						<xs:enumeration value="10"/>
+																						<xs:enumeration value="11"/>
+																						<xs:enumeration value="12"/>
+																						<xs:enumeration value="13"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="energie_vecteur" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Vecteur énergétique
+(donnees RSET)
+1 - Electricité
+2 - Gaz naturel ou GPL (butane ou propane)
+3 - Fioul domestique
+4 - Bois granulés
+5 - Bois bûches
+6 - Bois plaquettes
+7 - Réseau de fourniture
+8 - Charbon</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:int">
+																						<xs:enumeration value="1"/>
+																						<xs:enumeration value="2"/>
+																						<xs:enumeration value="3"/>
+																						<xs:enumeration value="4"/>
+																						<xs:enumeration value="5"/>
+																						<xs:enumeration value="6"/>
+																						<xs:enumeration value="7"/>
+																						<xs:enumeration value="8"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="energie_usage" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Postes de consommation
+(donnees RSET)
+1 - chauffage
+2 - refroidissement
+3 - ECS
+4 - éclairage
+5 - auxiliaires de ventilation
+6 - auxiliaires de distribution
+7 - autres usages  </xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:int">
+																						<xs:enumeration value="1"/>
+																						<xs:enumeration value="2"/>
+																						<xs:enumeration value="3"/>
+																						<xs:enumeration value="4"/>
+																						<xs:enumeration value="5"/>
+																						<xs:enumeration value="6"/>
+																						<xs:enumeration value="7"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="eau_type" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Type d'eau consommée :
+1 - Eau potable
+2 - Assainissement
+3 - Eaux pluviales</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:int">
+																						<xs:enumeration value="1"/>
+																						<xs:enumeration value="2"/>
+																						<xs:enumeration value="3"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="commentaire" type="p_string500" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Commentaire libre lié à l'élément</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																		</xs:all>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="lot" minOccurs="2" maxOccurs="14">
+																	<xs:annotation>
+																		<xs:documentation>Lot du contributeur "Composant"</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:choice minOccurs="0">
+																			<xs:element name="donnees_composant" type="t_donnee_composant" maxOccurs="unbounded">
+																				<xs:annotation>
+																					<xs:documentation>Composant d'un lot</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="sous_lot" maxOccurs="unbounded">
+																				<xs:annotation>
+																					<xs:documentation>Sous-lot du contributeur "Composant"</xs:documentation>
+																				</xs:annotation>
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="donnees_composant" type="t_donnee_composant" maxOccurs="unbounded">
+																							<xs:annotation>
+																								<xs:documentation>Composant d'un sous-lot</xs:documentation>
+																							</xs:annotation>
+																						</xs:element>
+																					</xs:sequence>
+																					<xs:attribute name="ref" type="xs:int" use="required">
+																						<xs:annotation>
+																							<xs:documentation>Numéro du sous-lot
+(liste d'énumérations trop longue pour être affichée)</xs:documentation>
+																						</xs:annotation>
+																					</xs:attribute>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:choice>
+																		<xs:attribute name="ref" use="required">
+																			<xs:annotation>
+																				<xs:documentation>Numéro du lot
+1 - VRD
+2 - Fondations et infrastructures
+3 - Superstructure - Maçonnerie
+4 - Couverture - Etanchéité - Charpente - Zinguerie
+5 - Cloisonnement - Doublage - Plafonds suspendus - Menuiseries intérieures
+6 - Façades et menuiseries extérieures
+7 - Revêtements des sols, murs et plafonds - Chape - Peintures - Produits de décoration
+8 - CVC
+9 - Plomberie-sanitaire
+10 - Réseaux d’énergie (courant fort)
+11 - Réseaux de communication (courant faible)
+12 - Appareils élévateurs
+13 - Equipements de production locale d'électricité
+14 - Fluides frigorigènes</xs:documentation>
+																			</xs:annotation>
+																			<xs:simpleType>
+																				<xs:restriction base="xs:int">
+																					<xs:enumeration value="1"/>
+																					<xs:enumeration value="2"/>
+																					<xs:enumeration value="3"/>
+																					<xs:enumeration value="4"/>
+																					<xs:enumeration value="5"/>
+																					<xs:enumeration value="6"/>
+																					<xs:enumeration value="7"/>
+																					<xs:enumeration value="8"/>
+																					<xs:enumeration value="9"/>
+																					<xs:enumeration value="10"/>
+																					<xs:enumeration value="11"/>
+																					<xs:enumeration value="12"/>
+																					<xs:enumeration value="13"/>
+																					<xs:enumeration value="14"/>
+																				</xs:restriction>
+																			</xs:simpleType>
+																		</xs:attribute>
+																	</xs:complexType>
+																	<xs:unique name="t_unique_entree_souslot">
+																		<xs:selector xpath="sous_lot"/>
+																		<xs:field xpath="@ref"/>
+																	</xs:unique>
+																</xs:element>
+															</xs:choice>
+															<xs:attribute name="ref" use="required">
+																<xs:annotation>
+																	<xs:documentation>1 - Composant
+2 - Energie
+3 - Eau
+4 - Chantier</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:int">
+																		<xs:enumeration value="1"/>
+																		<xs:enumeration value="2"/>
+																		<xs:enumeration value="3"/>
+																		<xs:enumeration value="4"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+														</xs:complexType>
+														<xs:unique name="t_unique_entree_lot">
+															<xs:selector xpath="lot"/>
+															<xs:field xpath="@ref"/>
+														</xs:unique>
+													</xs:element>
+													<xs:element name="partie_commune" default="0">
+														<xs:annotation>
+															<xs:documentation>Zone commune ?
+0 - Non
+1 - Oui</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:minInclusive value="0"/>
+																<xs:maxInclusive value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="calculette_eau" type="t_calculette_eau" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Données d'entrée de la calculette du contributeur EAU</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="calculette_chantier" type="t_calculette_chantier" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Données d'entrée de la calculette du contributeur CHANTIER</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+											<xs:unique name="t_unique_entree_contributeur">
+												<xs:selector xpath="contributeur"/>
+												<xs:field xpath="@ref"/>
+											</xs:unique>
+										</xs:element>
+										<xs:element name="periode_reference" type="xs:int" default="50">
+											<xs:annotation>
+												<xs:documentation>Période de référence [an]</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="production_pv" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Production photovoltaïque [kWhEF/(m²SRT.an)] 
+(Donnée RSET)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="autoconsommation_pv" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Autoconsommation de la production photovoltaïque
+[kWhEF/(m²SRT.an)] 
+(Donnée RSET)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="cogeneration" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Production d'électricité par cogénération
+[kWhEF/(m²SRT.an)] 
+(Donnée RSET)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="autoconsommation_cogeneration" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Autoconsommation de la cogénération
+[kWhEF/(m²SRT.an)] 
+(Donnée RSET)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="date_etude" type="xs:date">
+								<xs:annotation>
+									<xs:documentation>Date de réalisation de l'étude économique financière. Format YYYY-MM-JJ</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="sortie_projet">
+					<xs:annotation>
+						<xs:documentation>Données de sortie du projet</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="batiment" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Bâtiment de la branche Sortie</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="index" type="xs:int">
+											<xs:annotation>
+												<xs:documentation>Index</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="contributeur" minOccurs="4" maxOccurs="4">
+											<xs:annotation>
+												<xs:documentation>Contributeur de la branche Sortie</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="indicateurs_collection" type="t_indicateur">
+														<xs:annotation>
+															<xs:documentation>Collection d'indicateurs</xs:documentation>
+														</xs:annotation>
+														<xs:unique name="t_unique_bat_contrib_ind">
+															<xs:selector xpath="indicateur"/>
+															<xs:field xpath="@ref"/>
+														</xs:unique>
+													</xs:element>
+													<xs:element name="lot" minOccurs="0" maxOccurs="14">
+														<xs:annotation>
+															<xs:documentation>Lot de la branche Sortie</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="indicateurs_collection" type="t_indicateur">
+																	<xs:annotation>
+																		<xs:documentation>Collection d'indicateurs</xs:documentation>
+																	</xs:annotation>
+																	<xs:unique name="t_unique_bat_contrib_lot_ind">
+																		<xs:selector xpath="indicateur"/>
+																		<xs:field xpath="@ref"/>
+																	</xs:unique>
+																</xs:element>
+																<xs:element name="sous_lot" minOccurs="0" maxOccurs="unbounded">
+																	<xs:annotation>
+																		<xs:documentation>Sous-lot de la branche Sortie</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:all>
+																			<xs:element name="indicateurs_collection" type="t_indicateur">
+																				<xs:annotation>
+																					<xs:documentation>Collection d'indicateurs</xs:documentation>
+																				</xs:annotation>
+																				<xs:unique name="t_unique_bat_contrib_sous_lot_ind">
+																					<xs:selector xpath="indicateur"/>
+																					<xs:field xpath="@ref"/>
+																				</xs:unique>
+																			</xs:element>
+																		</xs:all>
+																		<xs:attribute name="ref" use="required">
+																			<xs:annotation>
+																				<xs:documentation>Référence du sous-lot</xs:documentation>
+																			</xs:annotation>
+																			<xs:simpleType>
+																				<xs:restriction base="xs:int"/>
+																			</xs:simpleType>
+																		</xs:attribute>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="ref" use="required">
+																<xs:annotation>
+																	<xs:documentation>1 - VRD
+2 - Fondations et infrastructures
+3 - Superstructure - Maçonnerie
+4 - Couverture - Etanchéité - Charpente - Zinguerie
+5 - Cloisonnement - Doublage - Plafonds suspendus - Menuiseries intérieures
+6 - Façades et menuiseries extérieures
+7 - Revêtements des sols, murs et plafonds - Chape - Peintures - Produits de décoration
+8 - CVC
+9 - Plomberie-sanitaire
+10 - Réseaux d’énergie (courant fort)
+11 - Réseaux de communication (courant faible)
+12 - Appareils élévateurs
+13 - Equipements de production locale d'électricité
+14 - Fluides frigorigènes</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:int">
+																		<xs:enumeration value="1"/>
+																		<xs:enumeration value="2"/>
+																		<xs:enumeration value="3"/>
+																		<xs:enumeration value="4"/>
+																		<xs:enumeration value="5"/>
+																		<xs:enumeration value="6"/>
+																		<xs:enumeration value="7"/>
+																		<xs:enumeration value="8"/>
+																		<xs:enumeration value="9"/>
+																		<xs:enumeration value="10"/>
+																		<xs:enumeration value="11"/>
+																		<xs:enumeration value="12"/>
+																		<xs:enumeration value="13"/>
+																		<xs:enumeration value="14"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+														</xs:complexType>
+														<xs:unique name="t_unique_sortie_bat_souslot">
+															<xs:selector xpath="sous_lot"/>
+															<xs:field xpath="@ref"/>
+														</xs:unique>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="ref" use="required">
+													<xs:annotation>
+														<xs:documentation>1 - Composant
+2 - Energie
+3 - Eau
+4 - Chantier</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:int">
+															<xs:enumeration value="1"/>
+															<xs:enumeration value="2"/>
+															<xs:enumeration value="3"/>
+															<xs:enumeration value="4"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+											<xs:unique name="t_unique_sortie_bat_lot">
+												<xs:selector xpath="lot"/>
+												<xs:field xpath="@ref"/>
+											</xs:unique>
+										</xs:element>
+										<xs:element name="zone" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Zone de la branche Sortie</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="index" type="xs:int">
+														<xs:annotation>
+															<xs:documentation>Index</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="contributeur" minOccurs="4" maxOccurs="4">
+														<xs:annotation>
+															<xs:documentation>Contributeur de la branche Sortie</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="indicateurs_collection" type="t_indicateur">
+																	<xs:annotation>
+																		<xs:documentation>Collection d'indicateurs</xs:documentation>
+																	</xs:annotation>
+																	<xs:unique name="t_unique_zone_ind">
+																		<xs:selector xpath="indicateur"/>
+																		<xs:field xpath="@ref"/>
+																	</xs:unique>
+																</xs:element>
+																<xs:element name="lot" minOccurs="0" maxOccurs="14">
+																	<xs:annotation>
+																		<xs:documentation>Sorties par lot</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="indicateurs_collection" type="t_indicateur">
+																				<xs:annotation>
+																					<xs:documentation>Collection d'indicateurs</xs:documentation>
+																				</xs:annotation>
+																				<xs:unique name="t_unique_zone_lot_ind">
+																					<xs:selector xpath="indicateur"/>
+																					<xs:field xpath="@ref"/>
+																				</xs:unique>
+																			</xs:element>
+																			<xs:element name="valeur_forfaitaire" default="1">
+																				<xs:annotation>
+																					<xs:documentation>Utilisation d'une valeur forfaitaire?
+0 - Faux
+1 - Vrai</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:int">
+																						<xs:enumeration value="0"/>
+																						<xs:enumeration value="1"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="sous_lot" minOccurs="0" maxOccurs="unbounded">
+																				<xs:annotation>
+																					<xs:documentation>Sous-lot</xs:documentation>
+																				</xs:annotation>
+																				<xs:complexType>
+																					<xs:all>
+																						<xs:element name="indicateurs_collection" type="t_indicateur">
+																							<xs:annotation>
+																								<xs:documentation>Collection d'indicateurs</xs:documentation>
+																							</xs:annotation>
+																							<xs:unique name="t_unique_zone_sous_lot_ind">
+																								<xs:selector xpath="indicateur"/>
+																								<xs:field xpath="@ref"/>
+																							</xs:unique>
+																						</xs:element>
+																					</xs:all>
+																					<xs:attribute name="ref" use="required">
+																						<xs:annotation>
+																							<xs:documentation>Référence du sous-lot</xs:documentation>
+																						</xs:annotation>
+																						<xs:simpleType>
+																							<xs:restriction base="xs:int"/>
+																						</xs:simpleType>
+																					</xs:attribute>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																		<xs:attribute name="ref" use="required">
+																			<xs:annotation>
+																				<xs:documentation>1 - VRD
+2 - Fondations et infrastructures
+3 - Superstructure - Maçonnerie
+4 - Couverture - Etanchéité - Charpente - Zinguerie
+5 - Cloisonnement - Doublage - Plafonds suspendus - Menuiseries intérieures
+6 - Façades et menuiseries extérieures
+7 - Revêtements des sols, murs et plafonds - Chape - Peintures - Produits de décoration
+8 - CVC
+9 - Plomberie-sanitaire
+10 - Réseaux d’énergie (courant fort)
+11 - Réseaux de communication (courant faible)
+12 - Appareils élévateurs
+13 - Equipements de production locale d'électricité
+14 - Fluides frigorigènes</xs:documentation>
+																			</xs:annotation>
+																			<xs:simpleType>
+																				<xs:restriction base="xs:int">
+																					<xs:enumeration value="1"/>
+																					<xs:enumeration value="2"/>
+																					<xs:enumeration value="3"/>
+																					<xs:enumeration value="4"/>
+																					<xs:enumeration value="5"/>
+																					<xs:enumeration value="6"/>
+																					<xs:enumeration value="7"/>
+																					<xs:enumeration value="8"/>
+																					<xs:enumeration value="9"/>
+																					<xs:enumeration value="10"/>
+																					<xs:enumeration value="11"/>
+																					<xs:enumeration value="12"/>
+																					<xs:enumeration value="13"/>
+																					<xs:enumeration value="14"/>
+																				</xs:restriction>
+																			</xs:simpleType>
+																		</xs:attribute>
+																	</xs:complexType>
+																	<xs:unique name="t_unique_sortie_zone_souslot">
+																		<xs:selector xpath="sous_lot"/>
+																		<xs:field xpath="@ref"/>
+																	</xs:unique>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="ref" use="required">
+																<xs:annotation>
+																	<xs:documentation>1 - Composant
+2 - Energie
+3 - Eau
+4 - Chantier</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:int">
+																		<xs:enumeration value="1"/>
+																		<xs:enumeration value="2"/>
+																		<xs:enumeration value="3"/>
+																		<xs:enumeration value="4"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+														</xs:complexType>
+														<xs:unique name="t_unique_sortie_zone_lot">
+															<xs:selector xpath="lot"/>
+															<xs:field xpath="@ref"/>
+														</xs:unique>
+													</xs:element>
+													<xs:element ref="indicateurs_performance_collection"/>
+													<xs:element name="coefficients_modulateurs">
+														<xs:annotation>
+															<xs:documentation>Coefficients modulateurs de détermination de EGESmax et EGESmaxPCE</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="mgctype" type="xs:float"/>
+																<xs:element name="mgcgeo" type="xs:float"/>
+																<xs:element name="mgcalt" type="xs:float"/>
+																<xs:element name="mgcsurf" type="xs:float"/>
+																<xs:element name="mpark" type="xs:float" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Mpark au niveau de la zone (à répartir depuis la valeur "mpark" du bâtiment au proprata de la SDP de la zone)</xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+																<xs:element name="valeurs_seuils" minOccurs="8" maxOccurs="8">
+																	<xs:annotation>
+																		<xs:documentation>Valeurs seuils intervenant dans la détermination de EGESmax et EGESmaxPCE</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="valeur" type="xs:decimal">
+																				<xs:annotation>
+																					<xs:documentation>Valeur du seuil</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
+																			<xs:element name="nom" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Nom du seuil (peut être déduit de la référence)</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string"/>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="unite" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>Unité du seuil (peut être déduit de la référence)</xs:documentation>
+																				</xs:annotation>
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="1"/>
+																						<xs:whiteSpace value="collapse"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																		<xs:attribute name="ref" use="required">
+																			<xs:annotation>
+																				<xs:documentation>Liste d'énumération des valeurs seuils nécessaires au calculs :
+1 - a_1
+2 - a_2
+3 - a_pce_1
+4 - a_pce_2
+5 - m_1
+6 - m_2
+7 - alpha_1
+8 - alpha_2</xs:documentation>
+																			</xs:annotation>
+																			<xs:simpleType>
+																				<xs:restriction base="xs:int">
+																					<xs:enumeration value="1"/>
+																					<xs:enumeration value="2"/>
+																					<xs:enumeration value="3"/>
+																					<xs:enumeration value="4"/>
+																					<xs:enumeration value="5"/>
+																					<xs:enumeration value="6"/>
+																					<xs:enumeration value="7"/>
+																					<xs:enumeration value="8"/>
+																				</xs:restriction>
+																			</xs:simpleType>
+																		</xs:attribute>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+											<xs:unique name="t_unique_sortie_zone_contributeur">
+												<xs:selector xpath="contributeur"/>
+												<xs:field xpath="@ref"/>
+											</xs:unique>
+										</xs:element>
+										<xs:element name="part_donnees_generiques">
+											<xs:annotation>
+												<xs:documentation>Part de données génériques 
+(valeur comprise entre 0 et 1)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+													<xs:maxInclusive value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="part_impact_donnees_generiques" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Part des impacts environnementaux des données génériques sur l'indicateur Réchauffement Climatique uniquement
+(valeur comprise entre 0 et 1)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+													<xs:maxInclusive value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="indicateur_completude" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Définition en cours à la date du premier semestre 2019</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal"/>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element ref="indicateurs_performance_collection"/>
+										<xs:element name="coefficients_modulateurs">
+											<xs:annotation>
+												<xs:documentation>Coefficients modulateurs de détermination de EGESmax et EGESmaxPCE</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="mpark" type="xs:float">
+														<xs:annotation>
+															<xs:documentation>Mpark au niveau du bâtiment</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+								<xs:unique name="t_unique_sortie_bat_contributeur">
+									<xs:selector xpath="contributeur"/>
+									<xs:field xpath="@ref"/>
+								</xs:unique>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="data_comp">
+					<xs:annotation>
+						<xs:documentation>Données complémentaires du projet</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="donnees_generales">
+								<xs:annotation>
+									<xs:documentation>Données générales relatives à l'opération et à ses acteurs principaux</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="maitre_ouvrage">
+											<xs:annotation>
+												<xs:documentation>Données relatives à la maitrise d'ouvrage</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom / Raison sociale de la maitrise d'ouvrage</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="type" nillable="false">
+														<xs:annotation>
+															<xs:documentation>1 - Personne morale           2 - personne physique</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="adresse" type="t_adresse">
+														<xs:annotation>
+															<xs:documentation>Adresse de la maitrise d'ouvrage</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="SIRET" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Numéro de SIRET de la maîtrise d'ouvrage
+(14 chiffres)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:length value="14"/>
+																<xs:whiteSpace value="collapse"/>
+																<xs:pattern value="[0-9]{14}"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="bureau_etude_acv" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Données relatives au bureau d'étude qui réalise l'ACV du projet et au logiciel utilisé</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom / Raison du bureau d'étude</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="adresse" type="t_adresse">
+														<xs:annotation>
+															<xs:documentation>Adresse du bureau d'étude</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="SIRET">
+														<xs:annotation>
+															<xs:documentation>Numéro de SIRET de la maîtrise du BE
+(14 chiffres)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:length value="14"/>
+																<xs:whiteSpace value="collapse"/>
+																<xs:pattern value="[0-9]{14}"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="maitre_oeuvre" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Données relatives au maître d'oeuvre</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom / Raison sociale</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="entreprise" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Données relatives aux entreprises</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom / Raison sociale</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="logiciel">
+											<xs:annotation>
+												<xs:documentation>Logiciel ACV utilisé</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="editeur" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Editeur du logiciel ACV utilisé</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom du logiciel ACV utilisé</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="version">
+														<xs:annotation>
+															<xs:documentation>Version du logiciel ACV utilisé</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:whiteSpace value="collapse"/>
+																<xs:minLength value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="operation">
+											<xs:annotation>
+												<xs:documentation>Données générales sur l'opération</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom de l'opération</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="description" type="p_string2000" nillable="true" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Description succincte de l'opération</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="adresse" type="t_adresse">
+														<xs:annotation>
+															<xs:documentation>Adresse de la parcelle</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="date_depot_PC">
+														<xs:annotation>
+															<xs:documentation>Date de dépot du permis de construire (donnée RSET)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:date"/>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="date_obtention_PC" type="xs:date" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Date d'obtention du permis de construire (donnée RSET)</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="date_livraison" type="xs:date" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Date de livraison du projet. Format YYYY-MM-JJ</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="num_permis" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Numéro de permis de construire (donnée RSET)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:whiteSpace value="collapse"/>
+																<xs:pattern value="PC[A-B0-9]{3}[0-9]{3}[0-2][0-9][A-Z0-9]{5}"/>
+																<xs:pattern value="en cours"/>
+																<xs:pattern value="EN COURS"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="surface_parcelle">
+														<xs:annotation>
+															<xs:documentation>Superficie de la parcelle [m²]</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="nb_batiment">
+														<xs:annotation>
+															<xs:documentation>Nombre de bâtiments</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:minInclusive value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="surface_arrosee">
+														<xs:annotation>
+															<xs:documentation>Surface arrosée [m²]</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="surface_veg" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Surface végétalisée [m²]</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="surface_imper" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Surface imperméabilisée [m²]</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="geotech" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Nature géotechnique du sol:
+1 - Limons, argiles limoneuse
+2 - Terre végétale sèche
+3 - Terre végétale humide
+4 - Terre végétale saturée d'eau
+5 - Remblai anciens stabilisés
+6 - Argile sèche
+7 - Argile humide
+8 - Argile plastique
+9 - Argile sèche sableuse
+10 - Argile graveleuse humide
+11 - Argile sèche compacte
+12 - Sable
+13 - Gravier
+14 - Marne compacte
+15 - Marne très compacte
+16 - Craie
+17 - Mâchefer
+18 - Tourbe
+19 - Vase
+20 - Roche en formation stratifiée
+21 - Roche en formation massive</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+																<xs:enumeration value="16"/>
+																<xs:enumeration value="17"/>
+																<xs:enumeration value="18"/>
+																<xs:enumeration value="19"/>
+																<xs:enumeration value="20"/>
+																<xs:enumeration value="21"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="sol_pollution" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Pollution du sol
+0 - Faux
+1 - Vrai</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="zone_climatique">
+														<xs:annotation>
+															<xs:documentation>Zone climatique 
+(donnée RSET)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:whiteSpace value="collapse"/>
+																<xs:minLength value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="altitude">
+														<xs:annotation>
+															<xs:documentation>Altitude 
+(donnée RSET)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="zone_sismique">
+														<xs:annotation>
+															<xs:documentation>Zone sismique de l'opération 1 - Très faible
+2 - Faible
+3 - Modérée
+4 - Moyenne
+5 - Forte</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="commentaire_acv" type="p_string2000" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Commentaires particuliers sur l'ACV réalisée</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="cadastre" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Données cadastrales</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="reference_cadastrale" maxOccurs="unbounded">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:whiteSpace value="collapse"/>
+																			<xs:pattern value="[0-9]{3}[a-zA-Z0-9]{2}[0-9]{4}"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="reseau" minOccurs="0" maxOccurs="2">
+											<xs:annotation>
+												<xs:documentation>Données sur les réseaux de chaleur et de froid</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="type">
+														<xs:annotation>
+															<xs:documentation>Type de réseau :
+1 - Chaud
+2 - Froid</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom du réseau</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="localisation" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Commune d'implantation du réseau</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="taux_enr">
+														<xs:annotation>
+															<xs:documentation>Part d'énergie renouvelable</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+																<xs:maxInclusive value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="part_cogeneration">
+														<xs:annotation>
+															<xs:documentation>Part de chaleur cogénérée</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:decimal">
+																<xs:minInclusive value="0"/>
+																<xs:maxInclusive value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="contenu_co2">
+														<xs:annotation>
+															<xs:documentation>Contenu CO2 [kg/kWh]</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:float">
+																<xs:minInclusive value="0"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="batiment" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Bâtiment</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="index" type="xs:int">
+											<xs:annotation>
+												<xs:documentation>Index</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="usage_principal">
+											<xs:annotation>
+												<xs:documentation>Usage principal selon les 34 usages RT
+0 - Autres usages
+1 - Bâtiment à usage d'habitation - maison individuelle ou accolée
+2 - Bâtiment à usage d'habitation - logement collectif
+3 - Etablissement d'accueil de la petite enfance (crèche, halte-garderie)
+4 - Enseignement primaire
+5 - Enseignement secondaire (partie jour)
+6 - Enseignement secondaire (partie nuit)
+7 - Enseignement - université
+8 - Bâtiment à usage d'habitation - Foyer de jeunes travailleurs
+10 - Hôtel 0* et 1* (partie nuit)
+11 - Hôtel 2* (partie nuit)
+12 - Hôtel 3* (partie nuit)
+13 - Hôtel 4* et 5* (partie nuit)
+14 - Hôtel 0*, 1* et 2* (partie jour)
+15 - Hôtel 3*, 4* et 5* (partie jour)
+16 - Bureaux
+17 - Restauration commerciale en continue (18h/j 7j/7)
+18 - Restauration - 1 repas/jour, 5j/7
+19 - Restauration - 2 repas/jour, 7j/7
+20 - Restauration - 2 repas/jour, 6177
+22 - Commerce, magasin, zones commerciales
+24 - Etablissement sportif scolaire
+26 - Bâtiment à usage d'habitation - Etablissement sanitaire avec hébergement
+27 - Hôpital (partie nuit)
+28 - Hôpital (partie jour)
+29 - Transport - aérogare
+30 - Bâtiment à usage d'habitation - Cité universitaire
+32 - Industrie - 3x8h
+33 - Industrie - 8h 3 18h
+34 - Tribunal
+36 - Etablissement sportif municipal ou privé
+37 - Restauration scolaire - 1 repas/jour, 5j/7
+38 - Restauration scolaire - 3 repas/jour, 5j/7</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:enumeration value="1"/>
+													<xs:enumeration value="2"/>
+													<xs:enumeration value="3"/>
+													<xs:enumeration value="4"/>
+													<xs:enumeration value="5"/>
+													<xs:enumeration value="6"/>
+													<xs:enumeration value="7"/>
+													<xs:enumeration value="8"/>
+													<xs:enumeration value="10"/>
+													<xs:enumeration value="11"/>
+													<xs:enumeration value="12"/>
+													<xs:enumeration value="13"/>
+													<xs:enumeration value="14"/>
+													<xs:enumeration value="15"/>
+													<xs:enumeration value="16"/>
+													<xs:enumeration value="17"/>
+													<xs:enumeration value="18"/>
+													<xs:enumeration value="19"/>
+													<xs:enumeration value="20"/>
+													<xs:enumeration value="22"/>
+													<xs:enumeration value="24"/>
+													<xs:enumeration value="26"/>
+													<xs:enumeration value="27"/>
+													<xs:enumeration value="28"/>
+													<xs:enumeration value="29"/>
+													<xs:enumeration value="30"/>
+													<xs:enumeration value="32"/>
+													<xs:enumeration value="33"/>
+													<xs:enumeration value="34"/>
+													<xs:enumeration value="36"/>
+													<xs:enumeration value="37"/>
+													<xs:enumeration value="38"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="precisions_usage" type="p_string500" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Précision sur l'usage principal du bâtiment</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="cadre_rt" default="1">
+											<xs:annotation>
+												<xs:documentation>Bâtiment couvert par la RT :
+0 - Non
+1 - Oui</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:enumeration value="0"/>
+													<xs:enumeration value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="commentaires" type="p_string2000" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Commentaires libres</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="nb_unite_fonctionnalite" type="xs:decimal" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Nombre d'unités assurant la fonctionnalité du bâtiment</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="nb_occupant" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Nombre d'occupants</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="sdp">
+											<xs:annotation>
+												<xs:documentation>Surface de Plancher [m²]</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minExclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="srt" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Surface RT [m²] 
+(donnees RSET)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="shab" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Surface Habitable Brute [m²]
+(donnees RSET)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="surt" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Surface Utile [m²]
+(donnees RSET)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="emprise_au_sol">
+											<xs:annotation>
+												<xs:documentation>Surface d'emprise du bâtiment au sol [m²]</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minExclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="nb_niv_ssol">
+											<xs:annotation>
+												<xs:documentation>Nombre de niveaux en sous-sol</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="nb_niv_surface">
+											<xs:annotation>
+												<xs:documentation>Nombre de niveaux en surface</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="duree_chantier">
+											<xs:annotation>
+												<xs:documentation>Durée du chantier  [mois]</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minExclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="ccmi" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Si maison individuelle, recours à un CCMI
+0 - Non
+1 - Oui</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:enumeration value="0"/>
+													<xs:enumeration value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="signe_qualite" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Labels, Certifications, Référentiels...</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="label" minOccurs="0" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation>Labels :
+1 - Label E+C-
+2 - Effinergie 
+4 - BBCA
+6 - Bâtiment Biosourcé
+7 - Passiv Haus
+8 - Minergie</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="label_autre" type="p_string500" minOccurs="0" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation>Label non listé</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="certification" minOccurs="0" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation>Certifications :
+2 - LEED
+3 - BREAM
+4 - DGNB
+9 - Maison Haute Performance délivrée par Céquami
+10 - Label E+C- certifié par Céquami
+11 - Certification NF Habitat délivrée par Céquami
+12 - Certification NF Habitat délivrée par Cerqual
+13 - Certification HQE Bâtiments Durables délivrée par Certivéa
+14 - Label E+C- certifié par Certivéa
+15 - Certification Bâtiment Energie Environnement délivrée par Prestaterre
+16 - Certification Promotelec Habitat Neuf
+17 - Certification Promotelec Services Label Performance
+18 - Certification Promotelec Services Energie Carbone</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:pattern value="[^-|_|0|\s]{1}|[\w\W]{2,}"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+																<xs:enumeration value="16"/>
+																<xs:enumeration value="17"/>
+																<xs:enumeration value="18"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="certification_autre" type="p_string500" minOccurs="0" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation>Certification non listée</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="demarche_environnementale" type="p_string500" minOccurs="0" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation>Démarche environnementale</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="gps" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Coordonnées GPS
+(WGS84)</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="longitude">
+														<xs:annotation>
+															<xs:documentation>Longitude</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="1"/>
+																<xs:whiteSpace value="collapse"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="latitude">
+														<xs:annotation>
+															<xs:documentation>Latitude</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:whiteSpace value="collapse"/>
+																<xs:minLength value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="verificateur" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Coordonnées du vérificateur</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom ou raison sociale du vérificateur</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="adresse" type="t_adresse">
+														<xs:annotation>
+															<xs:documentation>Adresse du vérificateur</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="date_verification" type="xs:date">
+														<xs:annotation>
+															<xs:documentation>Date de la vérification du batiment. Format YYYY-MM-JJ</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="certificateur" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Coordonnées du certificateur</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="nom" type="p_string500">
+														<xs:annotation>
+															<xs:documentation>Nom ou raison sociale du certificateur</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="adresse" type="t_adresse">
+														<xs:annotation>
+															<xs:documentation>Adresse du certificateur</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="donnees_techniques">
+											<xs:annotation>
+												<xs:documentation>Données techniques</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="commentaires_donnees_techniques" type="p_string500" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Commenntaire libre sur les données techniques</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="type_structure_principale">
+														<xs:annotation>
+															<xs:documentation>Type de structure porteuse :
+1 - Maçonnerie
+2 - Poteaux/poutres
+3 - Voiles porteurs
+4 - Ossature</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="commentaires_structure" type="p_string500" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Commentaires libre sur la structure</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="elements_prefabriques" default="0">
+														<xs:annotation>
+															<xs:documentation>Eléments préfabriqués :
+0 - Non
+1 - Oui</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:pattern value="0"/>
+																<xs:pattern value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="materiau_principal">
+														<xs:annotation>
+															<xs:documentation>Matériau principal de la structure :
+0 - Autre
+1 - Béton 
+2 - Béton cellulaire
+3 - Béton de chanvre 
+4 - Béton de bois
+5 - Béton fibré
+6 - Béton haute performance
+7 - Terre cuite
+8 - Terre crue
+9 - Bois massif 
+10 - Bois massif reconstitué
+11 - Acier
+12 - Mixte: bois-béton
+13 - Mixte: béton-acier
+14 - Mixte: bois-acier
+15 - Pierre
+16 - Autre (supprimé)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="materiau_remplissage_facade">
+														<xs:annotation>
+															<xs:documentation>Matériau principal de remplissage de la façade :
+1 - béton ordinaire
+2 - béton haute performance
+3 - bloc de béton manufacturé (parpaing...)
+4 - béton cellulaire
+5 - béton fibré
+6 - béton de chanvre
+7 - béton de bois
+8 - terre cuite
+9 - terre crue
+1 - verre
+11 - panneaux sandwich
+12 - bois massif
+13 - bois massif reconstitué
+14 - panneaux de particules et de fibres de bois (ossature bois...)
+15 - paille
+16 - pierre
+17 - autre matériau biosourcé
+18 - autre (avec saisie libre)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+																<xs:enumeration value="16"/>
+																<xs:enumeration value="17"/>
+																<xs:enumeration value="18"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="materiau_remplissage_facade_autre" type="p_string500" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Champ libre (si "autre" a été saisi pour le champ "materiau_remplissage_facade")</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="mur_mode_isolation">
+														<xs:annotation>
+															<xs:documentation>Mode d'isolation des parois verticales extérieures :
+0 - Autre
+1 - Isolation Thermique Répartie (ITR)
+2 - Isolation Thermique entre ossature
+3 - Isolation Thermique par l’Intérieur (ITI)
+4 - Isolation Thermique par l’Extérieur (ITE)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="mur_nature_isolant">
+														<xs:annotation>
+															<xs:documentation>Nature de l'isolation des parois verticales extérieures :
+0 - Autre
+1 - Laine de roche
+2 - Laine de verre
+3 - Polystyrène
+4 - Polyuréthane
+5 - Laine de bois
+6 - Laine de lin
+7 - Laine de chanvre
+8 - Ouate de cellulose
+9 - Laines textiles
+10 - Autre matériaux biosourcés
+11 - Produits réfléchissant</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="mur_revetement_ext">
+														<xs:annotation>
+															<xs:documentation>Revêtement extérieur des parois verticales extérieures :
+0 - Autre
+1 - Enduit simple
+2 - Enduit isolant
+3 - Peinture
+4 - Bardage métallique
+5 - Bardage bois
+6 - Bardage composite</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="type_fondation">
+														<xs:annotation>
+															<xs:documentation>Types de fondations :
+0 - Autre
+1 - Superficielle: semelles filantes
+2 - Superficielle: plots
+3 - Superficielle: Radier
+4 - Superficielle: micro-pieux
+5 - Profonde: pieux
+6 - Profonde: parois</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="type_plancher">
+														<xs:annotation>
+															<xs:documentation>Type principal de plancher :
+1 - Poutrelles-hourdis
+2 - Bois
+3 - Collaborant
+4 - Prédalle
+5 - Dalle pleine
+</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="plancher_mode_isolation">
+														<xs:annotation>
+															<xs:documentation>Mode d'isolation desplancher bas : 
+0 - Autre
+1 - Sous face
+2 - Sous chape
+3 - Entre solive
+4 - Duo (sous face et chape)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="plancher_nature_isolant">
+														<xs:annotation>
+															<xs:documentation>Nature de l'isolation des parois verticales extérieures :
+0 - Autre
+1 - Laine de roche
+2 - Laine de verre
+3 - Polystyrène
+4 - Polyuréthane
+5 - Laine de bois
+6 - Laine de lin
+7 - Laine de chanvre
+8 - Ouate de cellulose
+9 - Laines textiles
+10 - Autre matériaux biosourcés
+11 - Produits réfléchissant</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="plancher_nature_espace">
+														<xs:annotation>
+															<xs:documentation>Nature de l'espace sous plancher : 
+0 - Autre
+1 - Vide sanitaire
+2 - Terre-plein
+3 - Sous-sol
+4 - Extérieur
+5 - Parking</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="type_toiture">
+														<xs:annotation>
+															<xs:documentation>Type principal de toiture :
+1 - Terrasse (indéterminée)
+2 - Monopente
+3 - 2 pans
+4 - 3 pans et plus
+5 - Terrasse non accessible
+6 - Terrasse accessible</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="toiture_mode_isolation">
+														<xs:annotation>
+															<xs:documentation>Mode d'isolation des toitures :
+0 - Autre
+1 - Sarking
+2 - En combles perdus
+3 - Sous rampants
+4 - Isolation conventionnelle (toiture-terrasse)
+5 - Isolation inversée (toiture-terrasse)</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="toiture_nature_isolant">
+														<xs:annotation>
+															<xs:documentation>Nature de l'isolation des parois verticales extérieures :
+0 - Autre
+1 - Laine de roche
+2 - Laine de verre
+3 - Polystyrène
+4 - Polyuréthane
+5 - Laine de bois
+6 - Laine de lin
+7 - Laine de chanvre
+8 - Ouate de cellulose
+9 - Laines textiles
+10 - Autre matériaux biosourcés
+11 - Produits réfléchissant</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="toiture_vegetalisee" default="0">
+														<xs:annotation>
+															<xs:documentation>La toiture est-t-elle végétalisée
+0 - Non
+1 - Oui</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="toiture_pente" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Pente de la toiture, exprimée en degré (°) par rapport au plan horizontal</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:float">
+																<xs:minInclusive value="0"/>
+																<xs:maxInclusive value="90"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="toiture_couverture">
+														<xs:annotation>
+															<xs:documentation>Type de couverture de la toiture : 
+0 - Autre
+1 - Tuile
+2 - Ardoise
+3 - Tôles bac acier
+4 - Plancher béton
+5 - Bois
+6 - Verre
+7 - Matériaux biosourcés</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="type_menuiserie">
+														<xs:annotation>
+															<xs:documentation>Type de menuiseries : 
+0 - Bois
+1 - Mixte (Bois / Alu)
+2 - PVC
+3 - Alu à rupture de pont
+4 - Sans objet</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="type_pm">
+														<xs:annotation>
+															<xs:documentation>Type de pprotections mobiles des menuiseries : 
+0 - Sans protection mobile
+1 - Volet avec gestion automatique
+2 - Volet avec gestion manuelle non motorisée
+3 - Volet avec gestion manuelle motorisée
+4 - Store enroulable avec gestion automatique
+5 - Store enroulable avec gestion manuelle non motorisée
+6 - Store enroulable avec gestion manuelle motorisée
+7 - Store à lame orientable avec gestion Sun Tracking
+8 - Store à lame orientable avec gestion manuelle lame fixe
+9 - Store à lame orientable avec gestion automatique 45° fixe</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="vecteur_energie_principal_ch">
+														<xs:annotation>
+															<xs:documentation>Vecteur énergétique principal pour le chauffage : 
+1 - Electricité
+2 - Gaz naturel ou GPL (butane ou propane)
+3 - Fioul domestique
+4 - Bois granulés
+5 - Bois bûches
+6 - Bois plaquettes
+7 - Réseau de fourniture
+8 - Charbon
+9 - Solaire</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="vecteur_energie_principal_ecs">
+														<xs:annotation>
+															<xs:documentation>Vecteur énergétique principal pour l'ECS :
+1 - Electricité
+2 - Gaz naturel ou GPL (butane ou propane)
+3 - Fioul domestique
+4 - Bois granulés
+5 - Bois bûches
+6 - Bois plaquettes
+7 - Réseau de fourniture
+8 - Charbon
+9 - Solaire</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="vecteur_energie_principal_fr">
+														<xs:annotation>
+															<xs:documentation>Vecteur énergétique principal pour la production de froid : 
+0 - Sans
+1 - Electricité
+2 - Gaz naturel ou GPL (butane ou propane)
+3 - Fioul domestique
+4 - Bois granulés
+5 - Bois bûches
+6 - Bois plaquettes
+7 - Réseau de fourniture
+8 - Charbon</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="generateur_principal_ch">
+														<xs:annotation>
+															<xs:documentation>
+Générateur principal de chauffage :
+1 - Chaudière gaz à condensation
+2 - Chaudière gaz basse température
+3 - Chaudière gaz standard
+4 - Radiateurs gaz
+5 - Générateur d’air chaud standard
+6 - Générateur d’air chaud à condensation
+7 - Tube radiant gaz
+8 - Panneau radiant au gaz
+9 - Mini cogénération (de 36 kWe à 215 kWe) à appoint séparé ou intégré
+10 - Micro cogénération (inférieure à 36 kWe) à appoint séparé ou intégré
+11 - Réseau de chaleur 
+12 - Poêles à bois 
+13 - Insert au bois
+14 - Convecteurs électriques, Panneaux rayonnants électriques
+15 - PAC air / eau
+16 - PAC air extérieur / air recyclé
+17 - PAC air extrait / air neuf
+18 - PAC eau de nappe / eau
+19 - PAC eau glycolée / eau
+20 - PAC eau de nappe / air
+21 - PAC eau de boucle /air
+22 - PAC air extrait/eau
+23 - PAC air ambiant / eau 
+24 - PAC sol/eau 
+25 - PAC sol/sol
+27 - Thermofrigopompes
+28 - Système DRV
+29 - GAHP air / eau classique
+30 - GAHP air / eau haute température
+31 - GAHP eau glycolée / eau classique
+32 - GAHP eau glycolée / eau haute température
+33 - GAHP eau / eau
+41 - Générateur SSC Système solaire combiné avec appoint chauffage indépendant
+42 - Générateur SSC Système solaire combiné avec appoint chauffage raccordé à l’assemblage
+43 - Chaudière fioul à condensation
+44 - Chaudière fioul basse température
+45 - Chaudière fioul standard
+46 - Chaudière bois (granulés ou bûches)
+47 - PAC moteur gaz sur air 
+48 - PAC moteur gaz sur eau glycolée
+49 - PAC moteur gaz sur eau</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+																<xs:enumeration value="16"/>
+																<xs:enumeration value="17"/>
+																<xs:enumeration value="18"/>
+																<xs:enumeration value="19"/>
+																<xs:enumeration value="20"/>
+																<xs:enumeration value="21"/>
+																<xs:enumeration value="22"/>
+																<xs:enumeration value="23"/>
+																<xs:enumeration value="24"/>
+																<xs:enumeration value="25"/>
+																<xs:enumeration value="27"/>
+																<xs:enumeration value="28"/>
+																<xs:enumeration value="29"/>
+																<xs:enumeration value="30"/>
+																<xs:enumeration value="31"/>
+																<xs:enumeration value="32"/>
+																<xs:enumeration value="33"/>
+																<xs:enumeration value="41"/>
+																<xs:enumeration value="42"/>
+																<xs:enumeration value="43"/>
+																<xs:enumeration value="44"/>
+																<xs:enumeration value="45"/>
+																<xs:enumeration value="46"/>
+																<xs:enumeration value="47"/>
+																<xs:enumeration value="48"/>
+																<xs:enumeration value="49"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="generateur_ch_liaison">
+														<xs:annotation>
+															<xs:documentation>Le générateur principal de chauffage assure les fonctions suivantes :
+0 - Chauffage uniquement
+1 - Chauffage + ECS
+2 - Chauffage + ventilation
+3 - Chauffage + refroidissement
+4 - Chauffage + refroidissement + ventilation
+5 - Chauffage + ECS + ventilation
+6 - Chauffage + ECS + refroidissement
+7 - Chauffage + ECS + refroidissement + ventilation
+</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="emetteur_principal_ch">
+														<xs:annotation>
+															<xs:documentation>Type des principaux emetteurs de chauffage : 
+0 - Autre
+1 - Plancher chauffant
+2 - Radiateurs à eau
+3 - Air pulsé</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="generateur_appoint_ch" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Eventuel générateur d'appoint de chauffage : 
+0 - Autre
+1 - Plancher chauffant
+2 - Radiateurs à eau
+3 - Air pulsé</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="generateur_principal_ecs" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Générateur principal d'ECS :
+1 - Chaudière gaz à condensation
+2 - Chaudière gaz basse température
+3 - Chaudière gaz standard
+5 - Accumulateur gaz standard
+6 - Accumulateur gaz condensation
+7 - Mini cogénération (de 36 kWe à 215 kWe) à appoint séparé ou intégré
+8 - Micro cogénération (inférieure à 36 kWe) à appoint séparé ou intégré
+9 - Réseau de chaleur 
+10 - Chauffe-eau thermodynamique électrique sur air extérieur
+11 - Chauffe-eau thermodynamique électrique sur eau de nappe
+12 - Chauffe-eau thermodynamique électrique sur eau glycolée
+13 - Chauffe-eau thermodynamique électrique sur air extrait
+14 - Chauffe-eau thermodynamique électrique sur air ambiant
+15 - Chauffe-eau thermodynamique électrique sur sol
+16 - Chauffe-eau thermodynamique gaz sur air extérieur
+17 - Chauffe-eau thermodynamique gaz sur eau glycolée
+18 - Chauffe-eau thermodynamique gaz sur eau
+19 - Chauffe-eau solaire avec appoint intégré
+20 - Chauffe-eau solaire avec appoint dans stockage séparé
+21 - Chauffe-eau solaire avec appoint séparé instantané
+22 - Générateur CESC installation solaire collective centralisée appoint intégré
+23 - Générateur CESC installation solaire collective centralisée appoint dans stockage séparé
+24 - Générateur CESCI Installation solaire collective avec appoint individualisé
+25 - Générateur CESCAI Installation solaire avec stockage collectif centralisé et appoint individualisé  
+26 - Générateur SSC Système solaire combiné avec appoint chauffage indépendant
+27 - Générateur SSC Système solaire combiné avec appoint chauffage raccordé à l’assemblage
+28 - Chaudière fioul à condensation
+29 - Chaudière fioul basse température
+30 - Chaudière fioul standard
+31 - Chaudière bois (granulés ou bûches)
+32 - Chauffe-eau électrique
+33 - Chauffe-eau gaz
+34 - PAC moteur gaz sur air 
+35 - PAC moteur gaz sur eau glycolée
+36 - PAC moteur gaz sur eau</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+																<xs:enumeration value="16"/>
+																<xs:enumeration value="17"/>
+																<xs:enumeration value="18"/>
+																<xs:enumeration value="19"/>
+																<xs:enumeration value="20"/>
+																<xs:enumeration value="21"/>
+																<xs:enumeration value="22"/>
+																<xs:enumeration value="23"/>
+																<xs:enumeration value="24"/>
+																<xs:enumeration value="25"/>
+																<xs:enumeration value="26"/>
+																<xs:enumeration value="27"/>
+																<xs:enumeration value="28"/>
+																<xs:enumeration value="29"/>
+																<xs:enumeration value="30"/>
+																<xs:enumeration value="31"/>
+																<xs:enumeration value="32"/>
+																<xs:enumeration value="33"/>
+																<xs:enumeration value="34"/>
+																<xs:enumeration value="35"/>
+																<xs:enumeration value="36"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="generateur_principal_fr" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Générateur principal de production de froid :
+0 - Sans 
+1 - Réseau de froid
+2 - PAC air / eau
+3 - PAC air extérieur / air recyclé
+4 - PAC air extrait / air neuf
+5 - PAC eau de nappe / eau
+6 - PAC eau glycolée / eau
+7 - PAC eau de nappe / air
+8 - PAC eau de boucle / air
+9 - PAC air extrait / eau
+10 - PAC air ambiant / eau 
+11 - PAC sol / eau 
+12 - PAC sol / sol
+14 - Thermofrigopompes
+15 - Système DRV
+16 - GAHP air / eau classique
+17 - GAHP eau glycolée / eau classique
+18 - GAHP eau / eau
+19 - PAC moteur gaz sur air 
+20 - PAC moteur gaz sur eau glycolée
+21 - PAC moteur gaz sur eau</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="14"/>
+																<xs:enumeration value="15"/>
+																<xs:enumeration value="16"/>
+																<xs:enumeration value="17"/>
+																<xs:enumeration value="18"/>
+																<xs:enumeration value="19"/>
+																<xs:enumeration value="20"/>
+																<xs:enumeration value="21"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="type_ventilation_principale">
+														<xs:annotation>
+															<xs:documentation>Système principal de ventilation :
+1 - VMC simple flux par extraction fixe ou autoréglable
+2 - VMC simple flux par extraction hygroréglable A et B
+3 - VMC simple flux par extraction modulée (tertiaire)
+4 - VMC simple flux par insufflation
+5 - VMC simple flux par insufflation modulée (tertiaire)
+6 - VMC double flux individuelle avec échangeur individuel (maison individuelle ou par appartement)
+7 - VMC double flux collective avec échangeur collectif (logements collectifs)
+8 - VMC double flux modulée (tertiaire)
+9 - Ventilation naturelle par conduit
+10 - Ventilation hybride par conduit
+11 - Aération par ouverture des fenêtres
+12 - CTA à débit d’air constant 
+13 - CTA à débit d’air variable</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+																<xs:enumeration value="7"/>
+																<xs:enumeration value="8"/>
+																<xs:enumeration value="9"/>
+																<xs:enumeration value="10"/>
+																<xs:enumeration value="11"/>
+																<xs:enumeration value="12"/>
+																<xs:enumeration value="13"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="commentaires_prod_electricite" type="p_string500" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Commentaire libre sur la production locale d'électricité. Précisez ici si le bâtiment produit de l'électricité avec d'autres dispositifs techniques que le photovoltaïque ou la cogénération</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="stockage_electricite" minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>Précision sur le mode stockage de l'électricité produite localement (uniquement si production locale d'énergie) :
+0 - Autre
+1 - Aucun
+2 - Batteries</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="gestion_active">
+														<xs:annotation>
+															<xs:documentation>Précision sur la présence potentielle d'un système de gestion active (hors thermostat et programmateur de chauffage) de l'énergie :
+0 - Absence de GTB
+1 - Présence de GTB</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="type_eclairage">
+														<xs:annotation>
+															<xs:documentation>Système d'éclairage artificiel :
+0 - Autre
+1 - Halogène
+2 - Fluorocompacte
+3 - Fluorescente 
+4 - Halogénures métalliques 
+5 - Sodium haute pression 
+6 - LED </xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:int">
+																<xs:enumeration value="0"/>
+																<xs:enumeration value="1"/>
+																<xs:enumeration value="2"/>
+																<xs:enumeration value="3"/>
+																<xs:enumeration value="4"/>
+																<xs:enumeration value="5"/>
+																<xs:enumeration value="6"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="maquette_numerique">
+											<xs:annotation>
+												<xs:documentation>Utilisation d'une maquette numérique :
+0 - Non
+1 - Oui</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:enumeration value="0"/>
+													<xs:enumeration value="1"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="zone_br" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Zone de bruit :
+1 - BR1
+2 - BR2
+3 - BR3</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:enumeration value="1"/>
+													<xs:enumeration value="2"/>
+													<xs:enumeration value="3"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="nb_place_parking_surface_plu">
+											<xs:annotation>
+												<xs:documentation>Nombre de places de parking en surface (donnée PLU)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="nb_place_parking_ssol_plu">
+											<xs:annotation>
+												<xs:documentation>Nombre de places de parking en sous-sol (donnée PLU)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="nb_place_parking_surface">
+											<xs:annotation>
+												<xs:documentation>Nombre de places de parking en surface (donnée effective)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="nb_place_parking_ssol">
+											<xs:annotation>
+												<xs:documentation>Nombre de places de parking en sous-sol (donnée effective)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:decimal">
+													<xs:minInclusive value="0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="version" use="required">
+				<xs:annotation>
+					<xs:documentation>Numero de version du RSEnv</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:whiteSpace value="collapse"/>
+						<xs:enumeration value="1.1.0.0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="phase" use="required">
+				<xs:annotation>
+					<xs:documentation>Phase du projet
+1 - Programmation
+2 - Esquisse
+3 - APS
+4 - APD
+5 - PRO DCE
+6 - EXE
+7 - Construction
+8 - Exploitation</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="4"/>
+						<xs:enumeration value="5"/>
+						<xs:enumeration value="6"/>
+						<xs:enumeration value="7"/>
+						<xs:enumeration value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="t_calculette_chantier">
+		<xs:all>
+			<xs:element name="terres_evacuees" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Quantité de terres évacuées lors du terrassement du chantier [tonne] 
+Cette variable ne doit pas être directement saisie par les utilisateurs. Elle doit être déduite d'autres données par les Editeurs de Logiciel
+=1.12 * emprise_au_sol * (SDP_zone/SDP_bat)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="terres_excavees">
+				<xs:annotation>
+					<xs:documentation>Quantité de terres excavées lors du terrassement du chantier (fraction pour cette zone de bâtiment) [m3]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="distance_terrassement">
+				<xs:annotation>
+					<xs:documentation>Distance jusqu’au site de traitement des déchets de terrassement [km]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="surf_parc" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fraction de surface de parcelle pour cette zone de bâtiment [m²]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="grue" minOccurs="0">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="duree_ete_avec" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Nombre de mois d'été (d'avril à septembre) avec grue</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="duree_ete_sans" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Nombre de mois d'été (d'avril à septembre) sans grue</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="duree_hiv_avec" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Nombre de mois d'hiver (d'octobre à mars) avec grue</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="duree_hiv_sans" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Nombre de mois d'hiver (d'octobre à mars) sans grue</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="t_calculette_eau">
+		<xs:all>
+			<xs:element name="reseau_collecte">
+				<xs:annotation>
+					<xs:documentation>Réseau de collecte des eaux usées et pluviales :
+1 - Réseau séparatif
+2 - Réseau unitaire</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="reseau_assainissement">
+				<xs:annotation>
+					<xs:documentation>Réseau d’assainissement des eaux usées et pluviales :
+1 - Assainissement collectif
+2 - Assainissement non collectif</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nb_usager">
+				<xs:annotation>
+					<xs:documentation>Nombre d'usagers (occupants ou autre selon usage) dans la zone (pour dimensionner les consommations d'eau)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="surf_parc_arrosee">
+				<xs:annotation>
+					<xs:documentation>Fraction de surface de parcelle végétalisée et arrosée pour cette zone de bâtiment [m²]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="vol_collecte_ep_parc">
+				<xs:annotation>
+					<xs:documentation>Volume d'eau de pluie colectée sur la fraction de surface de parcelle associée à cette zone de bâtiment [m3/an]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="conso_particuliere">
+				<xs:annotation>
+					<xs:documentation>Consommations d'eau particulières (piscine, spa, etc.) par an associée à cette zone de bâtiment [m3/an]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="conso_ep_usage_int">
+				<xs:annotation>
+					<xs:documentation>Consommation d'eau de pluie pour les usages intérieurs [m3/an]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="fg_equipement" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Facteur de correction de la consommation conventionnelle en fonction des équipements disponibles dans cette zone du bâtiment. [sans unité]</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="toilettes" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Données sur les toilettes</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="taux_seches" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taux d’équipement en toilettes sèches de la zone [%] (maisons uniquement) </xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="taux_3l_6l" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taux d’équipement en toilettes double flux 3L / 6L de la zone [%]</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="taux_2l_4l" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taux d’équipement en toilettes double flux 3L / 6L de la zone [%]</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="taux_urinoirs" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taux d’équipement en urinoirs de la zone [%] (hors résidentiel)</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="regulateur_debit" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Données sur les réducteurs de pression</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="taux_lavabo" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taux d’équipement en robinets de lavabos avec régulateur de la zone [%]</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="taux_evier" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taux d’équipement en robinets d’éviers  avec régulateur de la zone [%] (résidentiel uniquement)</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="taux_douche" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taux d’équipement en douches économes de la zone [%] (résidentiel uniquement)</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:decimal">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="taux_puis_sup_8m" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Part des points de puisage de la zone dont la distance à la production est supérieure à 8m [%] (résidentiel uniquement)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="t_donnee_composant">
+		<xs:annotation>
+			<xs:documentation>Donnée composant</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="id_base" default="0">
+				<xs:annotation>
+					<xs:documentation>Identifiant de la base de données (ou du configurateur) de fiches environnementales d'où provient l'élément :
+0 - INIES
+1001 - BETIE
+1002 - SAVE
+1003 - DE-Bois
+1004 - Fichier extrapolation PEP
+1005 - AKacia 
+1006 - Environnement IB
+1007 - CIELE</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="id_fiche" type="p_string500" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifiant de la fiche FDES/EPD/Autre de l'élément </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="id_fiche_configurateur" type="p_string500" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifiant de la fiche FDES/EPD/Autre de l'élément générée par un configurateur</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="version_configurateur" type="p_string500" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numéro de version du configurateur utilisé</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="id_produit" type="p_string500" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Clé nationale du produit / Serial Identifier</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nom" type="p_string500">
+				<xs:annotation>
+					<xs:documentation>Nom du composant</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="unite_uf"/>
+			<xs:element name="quantite">
+				<xs:annotation>
+					<xs:documentation>Quantité de UF de l'élément</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minExclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dve">
+				<xs:annotation>
+					<xs:documentation>Durée de vie estimée</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minExclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="type_donnees">
+				<xs:annotation>
+					<xs:documentation>Nature des données environnementales :
+1 - FDES
+2 - PEP
+3 - MDEGD_FDES 
+4 - MDEGD_PEP
+5 - DES 
+6 - Lot forfaitaire
+7 - Configurateurs
+8 - Composant vide</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="4"/>
+						<xs:enumeration value="5"/>
+						<xs:enumeration value="6"/>
+						<xs:enumeration value="7"/>
+						<xs:enumeration value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="commentaire" type="p_string500" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Commentaire libre lié à l'élément</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="donnees_configurateur" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Données issues du configurateur utilisé</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="parametre" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Paramètre(s) du configurateur</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="nom" type="p_string500">
+										<xs:annotation>
+											<xs:documentation>Nom</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="valeur">
+										<xs:annotation>
+											<xs:documentation>Valeur</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:whiteSpace value="collapse"/>
+												<xs:minLength value="1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="unite" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Unité</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:minLength value="1"/>
+												<xs:whiteSpace value="collapse"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attribute name="numero" type="xs:int" use="required">
+									<xs:annotation>
+										<xs:documentation>Numéro du paramètre</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="t_indicateur">
+		<xs:annotation>
+			<xs:documentation>Indicateur</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="indicateur" minOccurs="7" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Indicateurs</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="valeur" type="xs:decimal">
+							<xs:annotation>
+								<xs:documentation>Valeur de l'indicateur sur tout le cycle de vie</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="nom" type="p_string500" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Nom de l'indicateur (peut être déduit de la référence)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="unite" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Unité de l'indicateur (peut être déduit de la référence)</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:whiteSpace value="collapse"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="valeur_phase_acv" minOccurs="0" maxOccurs="7">
+							<xs:annotation>
+								<xs:documentation>Valeur de l'indicateur, par phase du cycle de vie</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:decimal">
+										<xs:attribute name="ref" use="required">
+											<xs:annotation>
+												<xs:documentation>1 - Production
+2 - Construction
+3 - Exploitation
+4 - Fin de vie
+5 - Bénéfices et charges au-delà du cycle de vie
+6 - Bénéfices et charges liés à l'export d'énergie
+7 - Bénéfices et charges liés à la valorisation des produits de construction et équipements</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+													<xs:enumeration value="1"/>
+													<xs:enumeration value="2"/>
+													<xs:enumeration value="3"/>
+													<xs:enumeration value="4"/>
+													<xs:enumeration value="5"/>
+													<xs:enumeration value="6"/>
+													<xs:enumeration value="7"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:attribute>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="ref" use="required">
+						<xs:annotation>
+							<xs:documentation>Liste d'énumération des indicateurs calculés lors du calcul :
+renouvelables
+1 - Potentiel de réchauffement climatique (GWP)[kg éq. CO2]
+2 - Potentiel de destruction de la couche d’ozone stratosphérique (ODP) [kg éq. CFC 11]
+3 - Potentiel d’acidification du sol et de l’eau (AP) [kg éq. SO2-]
+4 - Potentiel d’eutrophisation (EP) [kg éq. (PO4)3-]
+5 - Potentiel de formation d’oxydants photochimiques de l’ozone troposphérique (POCP) [kg éq. éthylène]
+6 - Potentiel de dégradation abiotique des ressources pour les éléments (ADP_éléments) [kg éq. Sb]
+7 - Potentiel de dégradation abiotique des combustibles fossiles (ADP_combustibles fossiles) [MJ, valeur calorifique nette]
+8 - Pollution de l'air* [m3]
+9 - Pollution de l'eau* [m3]
+10 - Utilisation de l’énergie primaire renouvelable à l’exclusion des ressources d’énergie employées en tant que matière première [MJ, pouvoir calorifique inférieur]
+11 - Utilisation de ressources énergétiques primaires renouvelables employées en tant que matière première [MJ, pouvoir calorifique inférieur]
+12 - Utilisation totale des ressources d’énergie primaire renouvelables (énergie primaire et ressources d’énergie primaire employées en tant que matières premières)* [MJ, pouvoir calorifique inférieur]
+13 - Utilisation de l’énergie primaire non renouvelable à l’exclusion des ressources d’énergie primaire employées en tant que matière première [MJ, pouvoir calorifique inférieur]
+14 - Utilisation de ressources énergétiques primaires non renouvelables employées en tant que matière première [MJ, pouvoir calorifique inférieur]
+15 - Utilisation totale des ressources d’énergie primaire non renouvelables (énergie primaire et ressources d’énergie primaire employées en tant que matières premières)* [MJ, pouvoir calorifique inférieur]
+16 - Utilisation totale des ressources d’énergie primaire (énergie primaire et ressources d’énergie primaire employées en tant que matières premières)* [MJ, pouvoir calorifique inférieur]
+17 - Utilisation de matières secondaires [kg]
+18 - Utilisation de combustibles secondaires renouvelables [MJ]
+19 - Utilisation de combustibles secondaires non renouvelables [MJ]
+20 - Utilisation nette d’eau douce[m3]
+21 - Déchets dangereux éliminés [kg]
+22 - Déchets non dangereux éliminés [kg]
+23 - Composants destinés à la réutilisation [kg]
+24 - Matières pour le recyclage [kg]
+25 - Matières pour la récupération d’énergie (à l’exception de l’incinération)[kg]
+26 - Énergie fournie à l’extérieur [MJ pour chaque vecteur énergétique]
+</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:int">
+								<xs:enumeration value="1"/>
+								<xs:enumeration value="2"/>
+								<xs:enumeration value="3"/>
+								<xs:enumeration value="4"/>
+								<xs:enumeration value="5"/>
+								<xs:enumeration value="6"/>
+								<xs:enumeration value="7"/>
+								<xs:enumeration value="8"/>
+								<xs:enumeration value="9"/>
+								<xs:enumeration value="10"/>
+								<xs:enumeration value="11"/>
+								<xs:enumeration value="12"/>
+								<xs:enumeration value="13"/>
+								<xs:enumeration value="14"/>
+								<xs:enumeration value="15"/>
+								<xs:enumeration value="16"/>
+								<xs:enumeration value="17"/>
+								<xs:enumeration value="18"/>
+								<xs:enumeration value="19"/>
+								<xs:enumeration value="20"/>
+								<xs:enumeration value="21"/>
+								<xs:enumeration value="22"/>
+								<xs:enumeration value="23"/>
+								<xs:enumeration value="24"/>
+								<xs:enumeration value="25"/>
+								<xs:enumeration value="26"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+				<xs:unique name="t_unique_ind_phase">
+					<xs:selector xpath="valeur_phase_acv"/>
+					<xs:field xpath="@ref"/>
+				</xs:unique>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="unite_uf">
+		<xs:annotation>
+			<xs:documentation>Unité de l'Unité Fonctionnelle :
+1 - dm²
+2 - m²
+3 - kg
+4 - m³
+5 - m
+6 - MJ
+7 - kWh
+8 - Litre (L) 
+9 - g
+10 - cm
+11 - ml
+12 - %
+13 - unité
+14 - kg eq. CO2
+15 - kg eq. SO2
+16 - kg CFC eq. R11 
+17 - kg eq. éthylène (C2H4)
+18 - mg
+19 - mm³
+20 - g  eq. SO2
+21 - g  eq. éthylène
+22 - g/m²
+23 - kg eq. Antimoine (Sb) 
+24 - m3/UF
+25 - kg/m²
+26 - kWhep
+27 - "-"
+28 - m³ d'air
+29 - kg eq. C2H4
+30 - kg eq. PO4³-
+31 - t
+32 - m³ d'eau
+33 - Person Réserve
+34 - kg eq. sb
+35 - Mole eq. H+
+36 - Mole eq. N
+37 - km
+38 - mL (mètre linéaire)
+39 - g.eq.CO2
+40 - g.eq.CFC-11
+41 - g.eq.P04 3-
+43 - g.eq.H+
+44 - dm³
+45 - year-1
+46 - kWc
+47 - t.km
+48 - daN
+49 - m3/h
+50 - mm
+51 - kg/m3
+52 - kW
+53 - kWc
+54 - dB
+55 - K/W
+56 - W/m²K
+57 - cm²
+58 - mm²
+59 - Wc
+60 - étage
+61 - m².K/W
+</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:int"/>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

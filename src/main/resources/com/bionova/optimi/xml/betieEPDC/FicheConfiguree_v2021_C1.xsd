@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+  <!--Enumeration of Configurators-->
+  <xsd:simpleType name="ConfiguratorIdEnum">
+    <xsd:restriction base="xsd:integer">
+      <xsd:enumeration value="1001">
+        <xsd:annotation>
+          <xsd:documentation>
+            BETIE
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1002">
+        <xsd:annotation>
+          <xsd:documentation>
+            SAVE
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="1003">
+        <xsd:annotation>
+          <xsd:documentation>
+            DE-BOIS
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	<xsd:enumeration value="1004">
+        <xsd:annotation>
+          <xsd:documentation>
+            Fichier extrapolation PEP
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	<xsd:enumeration value="1005">
+        <xsd:annotation>
+          <xsd:documentation>
+            AKacia
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	<xsd:enumeration value="1006">
+        <xsd:annotation>
+          <xsd:documentation>
+            Environnement IB
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	<xsd:enumeration value="1007">
+        <xsd:annotation>
+          <xsd:documentation>
+            CIELE
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	<xsd:enumeration value="1008">
+        <xsd:annotation>
+          <xsd:documentation>
+            DE_BoisDeFrance.fr
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	  <xsd:enumeration value="1009">
+        <xsd:annotation>
+          <xsd:documentation>
+            Hoffmann Green Cement Technologies
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	  <xsd:enumeration value="1010">
+        <xsd:annotation>
+          <xsd:documentation>
+            Bankiz
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <!--Enumeration of Standards-->
+  <xsd:simpleType name="StandardIdEnum">
+    <xsd:restriction base="xsd:integer">
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>
+            NF EN 15804 + NF EN 15804/CN
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:documentation>
+            PEP PCR ed 3.0
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--Enumeration of units for UF-->
+  <xsd:simpleType name="UnitIdEnum">
+
+    <xsd:restriction base="xsd:integer">
+
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation>
+            dm²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>
+            m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:documentation>
+            m³
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="5">
+        <xsd:annotation>
+          <xsd:documentation>
+            m
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="6">
+        <xsd:annotation>
+          <xsd:documentation>
+            MJ
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="7">
+        <xsd:annotation>
+          <xsd:documentation>
+            kWh
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="8">
+        <xsd:annotation>
+          <xsd:documentation>
+            L
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="9">
+        <xsd:annotation>
+          <xsd:documentation>
+            g
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="10">
+        <xsd:annotation>
+          <xsd:documentation>
+            Cm
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="11">
+        <xsd:annotation>
+          <xsd:documentation>
+            ml
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="12">
+        <xsd:annotation>
+          <xsd:documentation>
+            %
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="13">
+        <xsd:annotation>
+          <xsd:documentation>
+            unité
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="14">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. CO2
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="15">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. SO2
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="16">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. CFC
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="17">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. éthylène
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="18">
+        <xsd:annotation>
+          <xsd:documentation>
+            mg
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="19">
+        <xsd:annotation>
+          <xsd:documentation>
+            mm³
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="20">
+        <xsd:annotation>
+          <xsd:documentation>
+            g  eq. SO2
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="21">
+        <xsd:annotation>
+          <xsd:documentation>
+            g  eq. éthylène
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="22">
+        <xsd:annotation>
+          <xsd:documentation>
+            g/m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="23">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. Antimoine
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="24">
+        <xsd:annotation>
+          <xsd:documentation>
+            m3/UF
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="25">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg/m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="26">
+        <xsd:annotation>
+          <xsd:documentation>
+            kWhep
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="27">
+        <xsd:annotation>
+          <xsd:documentation>
+            -
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="28">
+        <xsd:annotation>
+          <xsd:documentation>
+            m³ d'air
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="29">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. C2H4
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="30">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. PO43-
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="31">
+        <xsd:annotation>
+          <xsd:documentation>
+            tonne
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="32">
+        <xsd:annotation>
+          <xsd:documentation>
+            m³ d'eau
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="33">
+        <xsd:annotation>
+          <xsd:documentation>
+            person réserve
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="34">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg eq. Sb
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="35">
+        <xsd:annotation>
+          <xsd:documentation>
+            mole eq. H+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="36">
+        <xsd:annotation>
+          <xsd:documentation>
+            mole eq. N
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="37">
+        <xsd:annotation>
+          <xsd:documentation>
+            km
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="38">
+        <xsd:annotation>
+          <xsd:documentation>
+            m  <!-- mètre -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="46">
+        <xsd:annotation>
+          <xsd:documentation>
+           kWc  <!-- mètre -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="62">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg/m  <!-- mètre -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	  <xsd:enumeration value="63">
+        <xsd:annotation>
+          <xsd:documentation>
+            kW  <!-- mètre -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--Enumeration of units for parameters-->
+  <xsd:simpleType name="ParamUnitIdEnum">
+
+    <xsd:restriction base="xsd:integer">
+
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation>
+            dm²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>
+            m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="4">
+        <xsd:annotation>
+          <xsd:documentation>
+            m³
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="5">
+        <xsd:annotation>
+          <xsd:documentation>
+            m
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="6">
+        <xsd:annotation>
+          <xsd:documentation>
+            MJ
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="7">
+        <xsd:annotation>
+          <xsd:documentation>
+            kWh
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="8">
+        <xsd:annotation>
+          <xsd:documentation>
+            L
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="9">
+        <xsd:annotation>
+          <xsd:documentation>
+            g
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="10">
+        <xsd:annotation>
+          <xsd:documentation>
+            Cm
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="11">
+        <xsd:annotation>
+          <xsd:documentation>
+            ml
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="12">
+        <xsd:annotation>
+          <xsd:documentation>
+            %
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="13">
+        <xsd:annotation>
+          <xsd:documentation>
+            unité
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="18">
+        <xsd:annotation>
+          <xsd:documentation>
+            mg
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="19">
+        <xsd:annotation>
+          <xsd:documentation>
+            mm³
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="22">
+        <xsd:annotation>
+          <xsd:documentation>
+            g/m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="24">
+        <xsd:annotation>
+          <xsd:documentation>
+            m3/UF
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="25">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg/m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="26">
+        <xsd:annotation>
+          <xsd:documentation>
+            kWhep
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="27">
+        <xsd:annotation>
+          <xsd:documentation>
+            -
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="31">
+        <xsd:annotation>
+          <xsd:documentation>
+            tonne
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="37">
+        <xsd:annotation>
+          <xsd:documentation>
+            km
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="38">
+        <xsd:annotation>
+          <xsd:documentation>
+            mL  <!-- mètre linéaire -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="39">
+        <xsd:annotation>
+          <xsd:documentation>
+            Mpa  <!-- betie -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="40">
+        <xsd:annotation>
+          <xsd:documentation>
+            an  <!-- dvt -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="41">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg/m3  <!-- DE Bois -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="42">
+        <xsd:annotation>
+          <xsd:documentation>
+            kWh/m3  <!-- DE Bois -->
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+        <xsd:enumeration value="43">
+          <xsd:annotation>
+            <xsd:documentation>
+              mm  <!-- millimètre -->
+            </xsd:documentation>
+          </xsd:annotation>
+        </xsd:enumeration>
+        <xsd:enumeration value="44">
+            <xsd:annotation>
+              <xsd:documentation>
+                kg/mL  <!-- Kilogramme / mètre linéaire -->
+              </xsd:documentation>
+            </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="45">
+        <xsd:annotation>
+          <xsd:documentation>
+            ml/m²   
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="47">
+        <xsd:annotation>
+          <xsd:documentation>
+            m3/m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="48">
+        <xsd:annotation>
+          <xsd:documentation>
+           m/m²
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="49">
+        <xsd:annotation>
+          <xsd:documentation>
+           litres/m3
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="50">
+        <xsd:annotation>
+          <xsd:documentation>
+            mm x mm
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="51">
+        <xsd:annotation>
+          <xsd:documentation>
+            kg/2 ml
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="52">
+        <xsd:annotation>
+          <xsd:documentation>
+            Kg/4 ml
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	  <xsd:enumeration value="53">
+        <xsd:annotation>
+          <xsd:documentation>
+            kW
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+	  <xsd:enumeration value="54">
+        <xsd:annotation>
+          <xsd:documentation>
+            m2.K/W
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+ 
+  <!-- Configured EPD -->
+  <xsd:element name="EPDC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EPDCId" type="xsd:string" />
+        <xsd:element name="Name" type="xsd:string" />
+        <xsd:element name="ConfiguratorName" type="xsd:string" minOccurs ="0" />
+        <xsd:element name="ConfiguratorCode" type="ConfiguratorIdEnum" />
+        <xsd:element name="ConfiguratorVersion" type="xsd:string" />
+        <xsd:element name="PublicAddress" type="xsd:string" />
+        <xsd:element name="ParentDataBase" type="xsd:integer" />
+        <xsd:element name="ParentEPDId" type="xsd:integer" />
+        <xsd:element name="ParentEPDSerialId" type="xsd:string" minOccurs ="0"/>
+        <xsd:element name="TLD" type="xsd:decimal" />
+        <xsd:element name="Quantity" type="xsd:decimal" />
+        <xsd:element name="UnitId" type="UnitIdEnum"  />
+        <xsd:element name="FunctionalUnit" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="Standard" type="StandardIdEnum" minOccurs="0"/>
+        <xsd:element name="ProductionDate" type="xsd:date" />
+		
+		<!-- Biogenic carbon storage (Unit: Kg C) -->
+		<!-- L'aspect optionnel de cette balise est temporaire pour assurer la rétrocompatibilité avec les anciennes versions -->
+        <xsd:element name="BiogenicCarbonStorage" type="xsd:decimal" minOccurs="0" />
+        
+        <!-- Configuration parameters -->
+        <xsd:element name="Parameters">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="Parameter">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="ParameterId" type="xsd:integer" />
+                    <xsd:element name="Name" type="xsd:string" minOccurs="0"/>
+                    <xsd:element name="Value" type="xsd:string" />
+                    <xsd:element name="ParamUnitId" type="ParamUnitIdEnum" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <!-- HEALTH -->
+        <!-- AirRating : 0 = Non concerné ; 1 = A+ ; 2 = A ; 3 = B ; 4 = C ; 9 = Information non communiquée  -->
+        <xsd:element name="AirRating" type="xsd:integer" minOccurs="0"/>
+        <xsd:element name="IsHealthNumExist" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="HealthNum" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="IsContactDrinkingWater" type="xsd:boolean" minOccurs="0"/>
+        <xsd:element name="InfosDrinkingWater" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="IsContactNotDrinkingWater" type="xsd:boolean" minOccurs="0"/>
+        <xsd:element name="InfosNotDrinkingWater" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="OtherHealthInfo" type="xsd:string" minOccurs="0"/>
+
+        <!-- COMFORT -->
+        <xsd:element name="ComfortA" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="ComfortO" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="ComfortV" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="ComfortH" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="OtherComfort" type="xsd:string" minOccurs="0"/>
+
+        <!--Collection of indicators -->
+        <xsd:element name="Indicators" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="Indicator">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <!--Collection of phases -->
+                    <xsd:element name="Phases">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element maxOccurs="unbounded" name="Phase">
+                            <xsd:complexType>
+                              <xsd:simpleContent>
+                                <xsd:extension base="xsd:string">
+                                  <xsd:attribute name="PhaseCode" type="xsd:string" use="required" />
+                                </xsd:extension>
+                              </xsd:simpleContent>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute name="IndicatorCode" type="xsd:string" use="required" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

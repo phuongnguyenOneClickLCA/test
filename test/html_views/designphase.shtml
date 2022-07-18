@@ -1,0 +1,661 @@
+<!--#include virtual="./includes/header.html" -->
+<!--#include virtual="./includes/navi.html" -->
+<div class="container contentscreen tabbable building-item-view">	      
+      	    
+        	  <div class="alert alert-success fadetoggle" style="display: none;">Uusi vertailukohde luotiin onnistuneesti</div>
+        	 
+        	
+      	             	
+ 
+ 			        	
+			
+			     		  
+		
+	    
+	  <div class="row row-border-tabs">
+        <div class="span6 span">
+    <div class="innerset">
+	  <h1 class="screenheader">
+	    <a class="building" href="/360optimi/sec/entity/show/50f3bf8324ac165f5dffd5ae">
+	      <i class="layout-icon-buildings"></i>
+	      Villentestirakennus
+	    </a>
+	  </h1>
+	</div>			
+</div> 
+        
+        <div class="span6 span span-tab-container">
+		  <ul class="nav nav-tabs pull-right">
+		    <li>
+			  <a data-toggle="tab-summary" href="#tab-summary">
+			    Perustiedot
+			  </a>
+			</li>
+			<li class="active">
+			  <a data-toggle="tab-designs" href="#tab-designs">
+			    Suunnitteluvaihe
+			  </a>
+			</li>
+			<li>
+			  <a data-toggle="tab-operatingPeriod" href="#tab-operatingPeriod">
+			    Käyttövaihe
+			  </a>
+			</li>	
+			
+			  <li>
+			    <a data-toggle="tab-tasks" href="#tab-tasks">
+			      Rakennuksen tehtävät
+			    </a>
+			  </li>
+			
+		  </ul>
+		 <div class="clearfix"></div>
+	   </div>
+	 </div>
+			                    	
+	<div class="clearfix"></div>  
+	<div class="tab-content">
+      <div id="tab-summary" class="tab-pane">
+        <div class="row-fluid row-bordered">
+  <div class="span4">	
+    <div class="content-area">	
+   
+      <h2>
+		<i class="layout-icon-details"></i>
+	    Tiedot
+	  </h2>
+	   
+	  
+	     
+	     
+	       <i class="buildingtype buildingtype-smallhouse"></i>
+	     
+	  
+	   
+	  <table class="table table-striped table-condensed">
+		<tbody><tr>
+		  <th>Omistaja</th>
+		  <td>Agileus Software</td>
+		</tr>
+		<tr>
+		  <th>Rakennuksen status</th>
+		  <td>Suunnittelu</td>
+		</tr>
+		<tr>
+		  <th>Rakennuksen tyyppi</th>
+		  <td>Rivi- ja ketjutalot</td>
+		</tr>
+		<tr>
+		  <th>Bruttopinta-ala (m²)</th>
+		  <td>120</td>
+		</tr>
+		<tr>
+		  <th>Rakennusvuosi</th>
+		  <td>2001</td>
+		</tr>
+		<tr>
+		  <th>Julkinen</th>
+	      <td>Ei</td>
+	    </tr>
+	  </tbody></table>						
+		
+	  
+	    <a class="btn btn-primary" href="/360optimi/sec/entity/form/50f3bf8324ac165f5dffd5ae">
+	      Muokkaa tietoja
+	    </a>
+	  
+	</div>
+  </div>
+   
+  
+  <div class="span4">
+    <div class="content-area">	
+	  <h2>
+	    <i class="layout-icon-tasks"></i>
+	    Rakennuksen tehtävät
+	  </h2>
+	  <ul class="common-item-list">
+	    
+	  </ul>
+	  
+        <div class="btn-group">
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Anna tehtävä<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+              <li>
+                <a href="/360optimi/sec/task/form?entityId=50f3bf8324ac165f5dffd5ae&amp;userId=50f3b78f24ac165f5dffd5a1"> Ville Muittari</a>
+              </li>
+            
+            <li class="divider"></li>
+            <li>
+			  <a href="/360optimi/sec/task/form?entityId=50f3bf8324ac165f5dffd5ae"> Muu käyttäjä</a>
+			</li>
+          </ul>
+        </div>
+      
+	</div>
+  </div>
+  <div class="span4">
+    <div class="content-area">
+	  <h2>
+	    <i class="layout-icon-users"></i>
+		Organisaatiot &amp; käyttäjät
+	  </h2>
+      
+      
+
+      
+	    <table class="table table-striped table-condensed">
+	      <tbody><tr>
+	        <th>Käyttäjät</th>
+	      </tr>
+	    	      
+	      
+	        <tr> 
+	          <td>Ville Muittari</td>
+	        </tr>
+	      
+	    </tbody></table>	  	  
+	  
+      
+      
+	    <a class="btn btn-primary" href="/360optimi/sec/entity/usersandorganizations/50f3bf8324ac165f5dffd5ae">
+	      Muokkaa tietoja
+	    </a>
+	  
+    </div>
+  </div>
+  
+</div>
+      </div>
+			
+	  <div id="tab-designs" "="" class="tab-pane active">
+        <div class="row-fluid tablelayout">
+  
+  <div class="span12">
+    <div class="content-area">
+      <div class="well well-controls">
+        <div style="text-align: left; float: left;">
+        
+          Vertaa toteutussuunnitelmien suoritustasoa valituilla mittareilla
+         
+        </div>
+        
+          <a class="btn btn-primary" href="/360optimi/sec/design/form">Lisää</a>
+          <a class="btn btn-primary" onclick="$('#designIndicators').modal();" href="javascript: ;">Valitse mittarit</a>
+        
+      </div>
+      
+      
+      <div id="benchmarking">
+        <table cellspacing="0" class="table table-striped table-condensed table-cellvalignmiddle">
+          <thead>
+            <tr>
+            <th style="width: 20%;">&nbsp;</th>
+            
+              <th>
+                <div class="btn-group"> 
+                  
+	                  <a data-toggle="dropdown" href="#" class="dropdown-toggle btn btn-small"> 0-energia<span class="caret"></span></a>
+	                  <ul class="dropdown-menu">
+	                    
+	                    
+	                      <li><a href="/360optimi/sec/design/form/50f3bfa124ac165f5dffd5af"><i class="icon-tags"></i> Muokkaa</a></li>
+	                    
+	                    
+	                    
+	                    <li><a href="/360optimi/sec/design/form?originalEntityId=50f3bfa124ac165f5dffd5af"><i class="icon-tags"></i> Kopioi</a></li>
+	                    
+	                    <!--  Sending allowed if commitable -->
+	                    
+	                      <li><a class="disabled" href="#"><i class="icon-share-alt"></i> Lähetä </a></li>
+	                    
+	                    
+	                    
+	                    
+	                      <li><a data-titlestr="Suunnitelman poistaminen" data-falsestr="Peruuta" data-truestr="Poista" data-questionstr="Oletko varma, että haluat poistaa suunnitelman?" onclick="return modalConfirm(this);" href="/360optimi/sec/design/delete/50f3bfa124ac165f5dffd5af"><i class="icon-trash"></i> Poista</a></li>
+	                    
+	                  </ul>
+                  
+                </div>
+              </th>
+            
+            <th></th>
+            <th></th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            
+              <tr class="" rel="#">
+                <td>
+                  E-luku (D3 2012)<br>
+                </td>
+                
+                  <td>
+                    <div class="btn-group"> 
+                      <a data-toggle="dropdown" href="#" class="dropdown-toggle smallaction">
+                        
+                          Tietoja puuttuu
+                        
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                       <li>  
+                         <a href="/360optimi/sec/design/results?designId=50f3bfa124ac165f5dffd5af&amp;indicatorId=E-luku"><i class="icon-results"></i>  Tulosraportti</a>
+                       </li>
+                          <li>
+                              <a href="#">
+                                <i class="icon-"></i> Kyselyn ikoni
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="icon-"></i> Kysely ilman ikonia toimii myös
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="icon-done"></i> Kysely on valmis
+                              </a>
+                            </li>
+                          
+                        
+                      </ul>
+                    </div>
+                  </td>
+                
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            
+              <tr class="" rel="#">
+                <td>
+                  Sisäilmaluokitus<br>
+                </td>
+                
+                  <td>
+                    <div class="btn-group"> 
+                      <a data-toggle="dropdown" href="#" class="dropdown-toggle smallaction">
+                        
+                          Tietoja puuttuu
+                        
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                       <li>  
+                         <a href="/360optimi/sec/design/results?designId=50f3bfa124ac165f5dffd5af&amp;indicatorId=IndoorAirQualityClass">Tulosraportti</a>
+                       </li>
+                       
+                          
+                            <li>
+                              <a href="/360optimi/sec/query/form?indicatorId=IndoorAirQualityClass&amp;entityId=50f3bfa124ac165f5dffd5af&amp;queryId=IndoorAirQualityClass">
+                                Kysely: Sisäilmaluokitus
+                              </a>
+                            </li>
+                          
+                        
+                      </ul>
+                    </div>
+                  </td>
+                
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            
+              <tr class="" rel="#">
+                <td>
+                  Käyttäjäpalaute<br>
+                </td>
+                
+                  <td>
+                    <div class="btn-group"> 
+                      <a data-toggle="dropdown" href="#" class="dropdown-toggle smallaction">
+                        
+                          Tietoja puuttuu
+                        
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                       <li>  
+                         <a href="/360optimi/sec/design/results?designId=50f3bfa124ac165f5dffd5af&amp;indicatorId=userFeedback">Tulosraportti</a>
+                       </li>
+                       
+                          
+                            <li>
+                              <a href="/360optimi/sec/query/form?indicatorId=userFeedback&amp;entityId=50f3bfa124ac165f5dffd5af&amp;queryId=feedbackQuery">
+                                Kysely: Käyttäjäpalaute
+                              </a>
+                            </li>
+                          
+                        
+                      </ul>
+                    </div>
+                  </td>
+                
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            
+              <tr class="" rel="#">
+                <td>
+                  Elinkaaren hiilijalanjälki, yksinkertaistettu<br>
+                </td>
+                
+                  <td>
+                    <div class="btn-group"> 
+                      <a data-toggle="dropdown" href="#" class="dropdown-toggle smallaction">
+                        
+                          Tietoja puuttuu
+                        
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                       <li>  
+                         <a href="/360optimi/sec/design/results?designId=50f3bfa124ac165f5dffd5af&amp;indicatorId=BuildingCarbonFootprint-Simplified">Tulosraportti</a>
+                       </li>
+                       
+                          
+                            <li>
+                              <a href="/360optimi/sec/query/form?indicatorId=BuildingCarbonFootprint-Simplified&amp;entityId=50f3bfa124ac165f5dffd5af&amp;queryId=buildingMainStructuresQuery">
+                                Kysely: Rakennuksen päärakenteet
+                              </a>
+                            </li>
+                          
+                            <li>
+                              <a href="/360optimi/sec/query/form?indicatorId=BuildingCarbonFootprint-Simplified&amp;entityId=50f3bfa124ac165f5dffd5af&amp;queryId=buildingEarthAndSiteConstructionQuery">
+                                Kysely: Tontti ja maarakentaminen
+                              </a>
+                            </li>
+                          
+                            <li>
+                              <a href="/360optimi/sec/query/form?indicatorId=BuildingCarbonFootprint-Simplified&amp;entityId=50f3bfa124ac165f5dffd5af&amp;queryId=buildingPlannedEnergyAndWaterConsumptionQuery">
+                                Kysely: Käyttöenergian ja käyttöveden kulutus
+                              </a>
+                            </li>
+                          
+                            <li>
+                              <a href="/360optimi/sec/query/form?indicatorId=BuildingCarbonFootprint-Simplified&amp;entityId=50f3bfa124ac165f5dffd5af&amp;queryId=buildingLifecycleCalculationData">
+                                Kysely: Elinkaarilaskennan perustiedot
+                              </a>
+                            </li>
+                          
+                        
+                      </ul>
+                    </div>
+                  </td>
+                
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              
+          </tbody>
+        </table>
+        
+      </div>
+
+      <div id="designIndicators" class="modal hide fade bigModal">
+  <div class="modal-header">
+    <button data-dismiss="modal" class="close" type="button">×</button>
+    <h2>Valitse mittarit</h2>
+  </div>
+  <div class="modal-body">
+    <div class="clearfix"></div>
+    <div class="tab-content">
+	  <div id="tab-details" class="tab-pane active">
+        
+        <form method="post" action="/360optimi/sec/entity/%23">
+<input type="hidden" id="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_KEY" value="5abfdb9f-f0e2-481c-9a4b-83d79f920a2f" name="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_KEY">
+<input type="hidden" id="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_URI" value="/360optimi/sec/entity/show/50f3bf8324ac165f5dffd5ae" name="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_URI">
+          <input type="hidden" id="indicatorUse" value="design" name="indicatorUse">
+          <fieldset>
+            <div class="control-group">
+              <div class="controls">
+                <table class="indicators">
+                  
+                    <tbody><tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="E-luku" checked="checked" name="indicatorIds"> 
+                        <strong>E-luku (D3 2012)</strong>
+                        
+                         
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="IndoorAirQualityClass" checked="checked" name="indicatorIds"> 
+                        <strong>Sisäilmaluokitus</strong>
+                        
+                         
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="userFeedback" checked="checked" name="indicatorIds"> 
+                        <strong>Käyttäjäpalaute</strong>
+                        
+                         
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="BuildingCarbonFootprint-Simplified" checked="checked" name="indicatorIds"> 
+                        <strong>Elinkaaren hiilijalanjälki, yksinkertaistettu</strong>
+                        Rakennuksen elinkaaren hiilijalanjälki eurooppalaisen standardin EN 15978 mukaisesti tietyin yksinke...
+                        
+                          <a data-content="Rakennuksen elinkaaren hiilijalanjälki eurooppalaisen standardin EN 15978 mukaisesti tietyin yksinkertaistuksin. Sallii oletusarvojen käytön." rel="popover" href="javascript:;" data-original-title="">Näytä lisää</a>              
+                         
+                      </td>
+                    </tr>
+                  
+                </tbody></table>
+              </div>
+            </div>
+          </fieldset>
+          <div class="modal-footer"> 
+	        <input type="submit" class="btn btn-primary" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="Tallenna" name="_action_addIndicators"> 
+            <a data-dismiss="modal" class="btn" href="#">Peruuta</a> 
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+            
+    </div>
+  </div>
+</div>
+	  </div>
+	  
+	  <div id="tab-operatingPeriod" class="tab-pane">
+        <div class="row-fluid tablelayout">
+  <div class="span12">
+    <div class="content-area">
+      <div class="well well-controls">
+        <div style="text-align: left; float: left;">
+          
+            Yhtään seurantajaksoa ei ole vielä luotu. Lisää seurantajakso.
+          
+        </div>
+        
+          <a class="btn btn-primary" href="/360optimi/sec/operatingPeriod/form">Lisää</a>
+          <a class="btn btn-primary" onclick="$('#operatingIndicators').modal();" href="javascript: ;">Valitse mittarit</a>
+        
+      </div>
+           
+      <div id="benchmarking">
+        <table cellspacing="0" class="table table-striped table-condensed table-cellvalignmiddle">
+          <thead>
+            <tr><th>&nbsp;</th>
+            
+          </tr></thead>
+          
+          <tbody>
+            
+              <tr class="" rel="#">
+                <td>Tyytyväisten käyttäjien osuus<br></td>
+                                
+              </tr>        
+            
+              <tr class="" rel="#">
+                <td>Energiankulutus<br></td>
+                                
+              </tr>        
+            
+              <tr class="" rel="#">
+                <td>Pohjateho - beta<br></td>
+                                
+              </tr>        
+            
+              <tr class="" rel="#">
+                <td>Ympäristömenot 5 vuotta<br></td>
+                                
+              </tr>        
+            
+              <tr class="" rel="#">
+                <td>Käytön hiilijalanjälki<br></td>
+                                
+              </tr>        
+            
+          </tbody>
+        </table>
+        
+      </div>
+  
+      <div id="operatingIndicators" class="modal hide fade bigModal">
+  <div class="modal-header">
+    <button data-dismiss="modal" class="close" type="button">×</button>
+    <h2>Valitse mittarit</h2>
+  </div>
+  <div class="modal-body">
+    <div class="clearfix"></div>
+    <div class="tab-content">
+	  <div id="tab-details" class="tab-pane active">
+        
+        <form method="post" action="/360optimi/sec/entity/%23">
+<input type="hidden" id="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_KEY" value="e9d0525a-4a4b-45c2-874c-9ee47ab7ce5b" name="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_KEY">
+<input type="hidden" id="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_URI" value="/360optimi/sec/entity/show/50f3bf8324ac165f5dffd5ae" name="org.grails.web.servlet.mvc.SynchronizerTokensHolder.TOKEN_URI">
+          <input type="hidden" id="indicatorUse" value="operating" name="indicatorUse">
+          <fieldset>
+            <div class="control-group">
+              <div class="controls">
+                <table class="indicators">
+                  
+                    <tbody><tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="ShareOfSatisfiedUsers" checked="checked" name="indicatorIds"> 
+                        <strong>Tyytyväisten käyttäjien osuus</strong>
+                        
+                         
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="EnergyConsumption" checked="checked" name="indicatorIds"> 
+                        <strong>Energiankulutus</strong>
+                        
+                         
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="BuildingBaseLoadPower" checked="checked" name="indicatorIds"> 
+                        <strong>Pohjateho - beta</strong>
+                        Rakennuksen pohjateho...
+                         
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="environmentalCosts5Years" checked="checked" name="indicatorIds"> 
+                        <strong>Ympäristömenot 5 vuotta</strong>
+                        Viiden vuoden jatkuvan käytön aiheuttamat ympäristömenot: energia, jäte- ja vesihuolto....
+                         
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td>
+                        <input type="hidden" name="_indicatorIds"><input type="checkbox" id="indicatorIds" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="BuildingOperatingCarbonFootprint-complex" checked="checked" name="indicatorIds"> 
+                        <strong>Käytön hiilijalanjälki</strong>
+                        Rakennuksen käytön hiilijalanjälki Greenhouse Gas Protocol, revised edition mukaisesti....
+                         
+                      </td>
+                    </tr>
+                  
+                </tbody></table>
+              </div>
+            </div>
+          </fieldset>
+          <div class="modal-footer"> 
+	        <input type="submit" class="btn btn-primary" entity="com.bionova.optimi.core.domain.mongo.Entity : 50f3bf8324ac165f5dffd5ae" value="Tallenna" name="_action_addIndicators"> 
+            <a data-dismiss="modal" class="btn" href="#">Peruuta</a> 
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+</div>
+	  </div>	  
+      
+      
+        <div id="tab-tasks" class="tab-pane">
+          				<div class="row-fluid tablelayout">
+						<div class="span12">
+							<div class="content-area">
+							
+				               <div class="well well-controls">
+	                             
+                                   <div class="btn-group">
+                                     <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Anna tehtävä<span class="caret"></span></a>
+                                     <ul class="dropdown-menu">
+                                       
+                                         <li>
+                                           <a href="/360optimi/sec/task/form?entityId=50f3bf8324ac165f5dffd5ae&amp;userId=50f3b78f24ac165f5dffd5a1&amp;fromQuery=true"> Ville Muittari</a>
+                                         </li>
+                                       
+                                       <li class="divider"></li>
+			                           <li>
+			                             <a href="/360optimi/sec/task/form?entityId=50f3bf8324ac165f5dffd5ae&amp;fromQuery=true"> Muu käyttäjä</a>
+			                           </li>
+                                     </ul>
+                                   </div>
+                                 
+                                 <div class="clearfix"></div>
+                               </div>	
+                               		
+								<table id="task-search" class="table table-striped table-condensed">
+								    <thead>
+										<tr>
+										    <th>&nbsp;</th>
+											<th>Tehtävän antaja</th>
+											<th>Luontipäivä</th>
+											<th>Määräaika</th>
+											<th>Suorittaja</th>
+											<th>Kuvaus</th>
+										</tr>
+									</thead>
+								    <tbody>
+								        
+								        							    
+								    </tbody>
+								</table>
+					        </div>
+						</div>
+					</div>
+
+        </div>
+      
+    </div>
+  
+   	 	
+          </div>
+<!--#include virtual="./includes/footer.html" -->

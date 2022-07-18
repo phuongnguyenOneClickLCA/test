@@ -1,0 +1,237 @@
+<!--#include virtual="./includes/header.html" -->
+<!--#include virtual="./includes/navi.html" -->
+<div class="container contentscreen">	      
+	      <div class="row-fluid">
+		  <div class="span12">
+      	    
+        	
+      	            	
+        	
+        	   
+         							 
+      	      
+        	
+      	              	
+        	        				
+			        	
+			
+			  
+          
+	    
+    <div class="content-area">
+      
+      <div class="span6 span">
+    <div class="innerset">
+	  <h1 class="screenheader">
+	    <a class="building" href="/360optimi/sec/entity/show/51011a1824acc3bae3d37af5">
+	      <i class="layout-icon-buildings"></i>
+	      Villentestirakennus
+	    </a>
+	  </h1>
+	</div>			
+</div>
+      
+      <div class="clearfix"></div>      
+	  
+	  <p>&nbsp;</p>
+	  <p><a class="btn" href="/360optimi/sec/entity/show/51011a1824acc3bae3d37af5?activeTab=designs"><i class="icon-chevron-left"></i> Takaisin</a></p>
+
+      <div class="tab-content">
+	    <div id="tab-details" class="tab-pane active">
+					<script>
+					$(document).ready(function() {
+						var colors = ['red', 'blue', 'fuchsia', 'green', 'olive', 'teal', 'black', 'navy', 'purple'];
+
+						
+						
+						
+						var indicators = {
+		12: "Liikkumisesteettömyys",
+		13: "Rakennuksen elinkaaren hiilijalanjälki, yksinkertaistettu",
+		14: "Joku muu indikaattori",
+		15: "Joku testi",
+		16: "Indikaattor"
+	};
+
+	var designs = [
+		{
+			id: 12,
+			name: '0-verrokki',
+			color: 'red',
+			visible: true,
+			indicators: [
+				{
+					id: 12,
+					score: 6
+				},
+				{
+					id: 13,
+					score: 2
+				},
+				{
+					id: 14,
+					score: 8
+				},
+				{
+					id: 15,
+					score: 8
+				},
+				{
+					id: 16,
+					score: 0
+				}
+			]
+		},
+		{
+			id: 13,
+			name: 'Passiivi',
+			color: 'green',
+			visible: true,
+			indicators: [
+				{
+					id: 12,
+					score: 9
+				},
+				{
+					id: 13,
+					score: 12
+				},
+				{
+					id: 14,
+					score: 6
+				},
+				{
+					id: 15,
+					score: 0
+				},
+				{
+					id: 16,
+					score: 0
+				}
+			]
+		},
+		{
+			id: 14,
+			name: 'Määräysten mukaan',
+			color: 'blue',
+			visible: true,
+			indicators: [
+				{
+					id: 12,
+					score: 2
+				},
+				{
+					id: 13,
+					score: 11
+				},
+				{
+					id: 14,
+					score: 12
+				},
+				{
+					id: 15,
+					score: 25
+				},
+				{
+					id: 16,
+					score: 1
+				}
+			]
+		}
+	];
+						/*
+						var spider = new DesignChart({
+							type: 'spider',
+							data_designs: designs,
+							data_indicators: indicators,
+							design_controls_container_id: 'container_chart_designs_spider',
+							indicator_controls_container_id: 'container_chart_indicators_spider',
+							chart_container_id: 'spider_chart'
+						}); 
+						*/
+						
+						/*var bar = new DesignChart({
+							type: 'bar',
+							data_designs: designs,
+							data_indicators: indicators,
+							design_controls_container_id: 'container_chart_designs_bar',
+							indicator_controls_container_id: 'container_chart_indicators_bar',
+							chart_container_id: 'bar_chart'
+						}); */
+						
+						var chart;
+						
+						$("#selectChart").on('change', function () {
+							var val = $(this).val();
+							
+							if(val=='spider') {
+								chart = new DesignChart({
+									type: 'spider',
+									data_designs: designs,
+									data_indicators: indicators,
+									design_controls_container_id: 'container_chart_designs',
+									indicator_controls_container_id: 'container_chart_indicators',
+									chart_container_id: 'the_chart'
+								}); 
+								showChart();						
+							} else if(val=='bar') {
+								chart = new DesignChart({
+									type: 'bar',
+									data_designs: designs,
+									data_indicators: indicators,
+									design_controls_container_id: 'container_chart_designs',
+									indicator_controls_container_id: 'container_chart_indicators',
+									chart_container_id: 'the_chart'
+								});
+								showChart();
+							} else {
+								hideChart();
+							}
+						});
+						hideChart();
+					});
+					
+					function showChart(){
+						$("#chart_controls").show();
+						$("#the_chart").show();
+						$("#no_chart").hide();					
+					}
+					
+					function hideChart(){
+						$("#chart_controls").hide();
+						$("#the_chart").hide();
+						$("#no_chart").show();					
+					}
+					</script>
+
+					<div class="row-fluid">
+						<div class="span4">
+							<div class="well">			
+								<label><select id="selectChart"><option selected="selected" value="none">-- Valitse kuvaaja --</option><option value="bar">Bar</option><option value="spider">Spider</option></select></label>
+								<hr>
+								<div id="chart_controls">
+								<h4>Suunnitelmat</h4>
+								<div id="container_chart_designs"></div>
+								<h4>Mittarit</h4>
+								<div id="container_chart_indicators"></div>		
+								</div>
+							</div>
+						</div>
+						<div class="span8">
+							<div class="well">
+								<div class="spider_chart" id="the_chart"></div>	
+								<div class="spider_chart" id="no_chart">
+									<p>Valitse ensin kuvaaja</p>
+								</div>										
+							</div>
+						</div>						
+				</div>
+        </div>
+      </div>
+    </div>
+  
+   	 	
+       	  </div>
+      	  </div>
+      	  </div>
+<!--#include virtual="./includes/footer.html" -->

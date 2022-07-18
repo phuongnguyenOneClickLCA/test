@@ -1,0 +1,2101 @@
+{
+  "name" : "10",
+  "parentName" : "UNIT CONVERSION test  DO NOT EDIT",
+  "datasets" : [ {
+    "manualId" : "5baba3588e202b0e1f9b5d00",
+    "questionId" : "serviceLifeDefault",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "calculationDefaults",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "serviceLifeTechnical" ],
+    "projectLevelDataset" : null,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5baba3588e202b0e1f9b5d01",
+    "questionId" : "projectType",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "lcaScope",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "newConstruction" ],
+    "projectLevelDataset" : null,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5baba3588e202b0e1f9b5d02",
+    "questionId" : "frameType",
+    "queryId" : "LCAParametersQuery",
+    "sectionId" : "lcaScope",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "notDetermined" ],
+    "projectLevelDataset" : null,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3e5",
+    "questionId" : "costRegion",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "costRegion",
+    "resourceId" : "finland",
+    "profileId" : "default",
+    "answerIds" : [ "finland" ],
+    "projectLevelDataset" : null,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "default"
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3e6",
+    "questionId" : "currencySymbol",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "currencyParameters",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "€" ],
+    "projectLevelDataset" : null,
+    "quantity" : null,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3e7",
+    "questionId" : "currencyExchangeRate",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "currencyParameters",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "1.0" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3e8",
+    "questionId" : "regionalCostAdjustmentIndex",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "costRegionalisationParameters",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "1.0" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3e9",
+    "questionId" : "labourCostWorker",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "costRegionalisationParameters",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "28.3" ],
+    "projectLevelDataset" : null,
+    "quantity" : 28.3,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3ea",
+    "questionId" : "labourCostCraftsman",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "costRegionalisationParameters",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "38.1" ],
+    "projectLevelDataset" : null,
+    "quantity" : 38.1,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3eb",
+    "questionId" : "discountRate",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "discountFactors",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "7" ],
+    "projectLevelDataset" : null,
+    "quantity" : 7.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3ec",
+    "questionId" : "inflationRate",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "discountFactors",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "2" ],
+    "projectLevelDataset" : null,
+    "quantity" : 2.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3ed",
+    "questionId" : "energyInflationRate",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "discountFactors",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "2" ],
+    "projectLevelDataset" : null,
+    "quantity" : 2.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3ee",
+    "questionId" : "waterInflationRate",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "discountFactors",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "2" ],
+    "projectLevelDataset" : null,
+    "quantity" : 2.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c76551b8e202b425ed4a3ef",
+    "questionId" : "eolPercentage",
+    "queryId" : "LCCProjectParametersQuery",
+    "sectionId" : "discountFactors",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "2.5" ],
+    "projectLevelDataset" : null,
+    "quantity" : 2.5,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "comment_long" : ""
+    },
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5c8a30cd8e202b40bdd6808c",
+    "questionId" : "surfaceDefinitionsShared",
+    "queryId" : "surfaceDefinitionsShared",
+    "sectionId" : "surfaceDefinitionsShared",
+    "resourceId" : "surfaceGIFA",
+    "profileId" : "default",
+    "answerIds" : [ "1" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "default",
+      "comment" : ""
+    },
+    "userGivenUnit" : "m2",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 1.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 0.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5d849bea8e202b42d49267ab",
+    "questionId" : "surfaceDefinitionsShared",
+    "queryId" : "surfaceDefinitionsShared",
+    "sectionId" : "surfaceDefinitionsShared",
+    "resourceId" : "surfaceGFA-sqft",
+    "profileId" : "default",
+    "answerIds" : [ "1" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "default",
+      "comment" : ""
+    },
+    "userGivenUnit" : "sq ft",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 0.09290304,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 0.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "5e2184fb8e202b461b71e99d",
+    "questionId" : "service_life_value",
+    "queryId" : "serviceLifeBuildingQuery",
+    "sectionId" : "serviceLife",
+    "resourceId" : null,
+    "profileId" : null,
+    "answerIds" : [ "60" ],
+    "projectLevelDataset" : null,
+    "quantity" : 60.0,
+    "points" : null,
+    "additionalQuestionAnswers" : null,
+    "userGivenUnit" : null,
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : null,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : null,
+    "calculatedMass" : null,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : null,
+    "uniqueConstructionIdentifier" : null,
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "6176555d00755b4b8bf7b01d",
+    "questionId" : "buildingElectricityConsumption_kWh",
+    "queryId" : "buildingOperatingEnergyAndWater",
+    "sectionId" : "importedElectricitySection",
+    "resourceId" : "averageElectricityMayotteEPD",
+    "profileId" : "IEA2018",
+    "answerIds" : [ "10" ],
+    "projectLevelDataset" : null,
+    "quantity" : 10.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "profileId" : "IEA2018",
+      "comment" : "",
+      "energyUse" : "overall",
+      "costPerUnit" : 0.13,
+      "totalCost" : 1
+    },
+    "userGivenUnit" : "kWh",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 10.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "kwh",
+    "calculatedMass" : 0.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c408f5c10e566ed7c459ad",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "83" ],
+    "projectLevelDataset" : null,
+    "quantity" : 83.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "1",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 7.52,
+      "totalCost" : 624,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "m2",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 83.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1224.25,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c4090a832ecb455feede2a",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "1" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "1",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 601.43,
+      "totalCost" : 601,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "m3",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 80.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1180.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c40912423c2202450e88f4",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "1180" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1180.0,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "1",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 0.51,
+      "totalCost" : 601,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "kg",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 80.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1180.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c409182616b4193c4202ef",
+    "questionId" : "externalWalls",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "1,18" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.18,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "1",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 509.69,
+      "totalCost" : 601,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "ton",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 80.0,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1180.0,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c4096bc10e566ed7c45a63",
+    "questionId" : "columnsLoadBearing",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "893.405" ],
+    "projectLevelDataset" : null,
+    "quantity" : 893.405,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "5",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 0.7,
+      "totalCost" : 624,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "sq ft",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 83.00004045120001,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1224.2505966551998,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c4097913e821e12b361f88",
+    "questionId" : "columnsLoadBearing",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "35.3147" ],
+    "projectLevelDataset" : null,
+    "quantity" : 35.3147,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "5",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 17.03,
+      "totalCost" : 601,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "cu ft",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 80.00007541000161,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1180.0011122975238,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c4098834b00fef658bce81",
+    "questionId" : "columnsLoadBearing",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "1,3" ],
+    "projectLevelDataset" : null,
+    "quantity" : 1.3,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "5",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 459.83,
+      "totalCost" : 598,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "cu yd",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 79.513705232,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1172.827152172,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  }, {
+    "manualId" : "61c40990856748bfb1114ca9",
+    "questionId" : "columnsLoadBearing",
+    "queryId" : "buildingMaterialsQuery",
+    "sectionId" : "verticalStructures",
+    "resourceId" : "ibuPlasterBoardFermac125mm_fixAug2021",
+    "profileId" : "Fermacell2016",
+    "answerIds" : [ "2601.455" ],
+    "projectLevelDataset" : null,
+    "quantity" : 2601.455,
+    "points" : null,
+    "additionalQuestionAnswers" : {
+      "transportDistance_kmleg2" : "0",
+      "transportResourceId" : "trailerCombinationFullLoad",
+      "wasteShareInUsePhase" : "12.5",
+      "BREEAMIntlElement" : "5",
+      "profileId" : "Fermacell2016",
+      "Aswathyscompanytestpc" : "test_noclassification",
+      "comment" : "",
+      "serviceLife" : "default",
+      "annualRepairRate" : "0.0",
+      "costPerUnit" : 0.23,
+      "totalCost" : 601,
+      "ignoreReusedMaterial" : "false"
+    },
+    "userGivenUnit" : "lbs",
+    "defaultDatasetOriginalManualId" : null,
+    "calculatedQuantity" : 80.00000948738521,
+    "calculatedMonthlyQuantity" : null,
+    "calculatedQuarterlyQuantity" : null,
+    "calculatedUnit" : "m2",
+    "calculatedMass" : 1180.0001399389319,
+    "resultCategoryIds" : null,
+    "resultCategoryIdsWithStages" : null,
+    "mapToResource" : null,
+    "mapToResourceType" : null,
+    "occurrencePeriods" : null,
+    "parentConstructionId" : "",
+    "uniqueConstructionIdentifier" : "",
+    "preResultFormula" : null,
+    "result" : null,
+    "productDescription" : null
+  } ],
+  "queryReady" : {
+    "buildingMaterialsQuery" : true,
+    "LCCConstructionQuery" : false,
+    "usePhaseScenariosQuery" : false,
+    "surfaceDefinitionsShared" : true,
+    "LCCProjectParametersQuery" : false,
+    "LCAParametersQuery" : true,
+    "serviceLifeBuildingQuery" : true,
+    "taulukkoarvot_YM" : false,
+    "buildingUseIntensity" : false,
+    "consturctionProcessQuery" : false,
+    "sharedWaterQuery" : false,
+    "buildingOperatingEnergyAndWater" : true,
+    "LCCOperatingQuery" : false,
+    "marketBasedEnergyMix" : false
+  },
+  "disabledSections" : [ "verticalStructures", "horizontalStructures", "otherStructuresMaterials", "externalAreas", "buildingTechnology" ],
+  "disabledIndicators" : [ "BuildingOperating-EnergyConsumption", "BuildingOperatingCarbonFootprint", "EN15804ProductEPDA1A5", "EN50598LCA", "EPDReport", "GHGProcotolScope1", "GHGProcotolScope2", "GHGProcotolScope3", "GHGProcotolScope3IndirectEnergy", "GHGProcotolScopes1-2", "GHGProcotolScopes1-3", "GRIG4Labour", "GRIG4ProductResponsibility", "HotelCarbonFootprint", "asphaltCarbonFootprint", "buildingEnergyUse", "concreteCarbonFootPrint", "concreteEnvironmentalReport", "emissionsToAir", "environmentalCosts1Years", "externalEnergy-Consumption", "foodProcurementCarbonFootprint", "heatGenerationDirectGHG", "heatGenerationLCA", "hotelEnvironmentalProgram", "hotelLaundry", "hotelWidgetIndicator", "infraLCA", "infraLCAEnvision", "infraLCAEnvisionIntl", "infraLCATRACI", "infraPAS2080", "infraPAS2080HS2", "koneEPDGenerator", "norgeEPDGenerator", "powerGenerationDirectGHG", "powerGenerationLCA", "publishingTool", "rtsEPDGenerator", "specificCost", "wasteGeneration", "waterConsumption" ],
+  "scope" : {
+    "scopeId" : null,
+    "frameType" : "notDetermined",
+    "projectType" : "newConstruction",
+    "lcaCheckerList" : [ "foundation", "structure" ]
+  },
+  "managerIds" : [ "5a378dcf5d96ff30af33c25b", "57164b067d1ec846f40f4b5b" ],
+  "defaults" : {
+    "serviceLife" : "serviceLifeTechnical"
+  },
+  "entityClass" : "design",
+  "queryReadyPerIndicator" : {
+    "globalLifeCycleCarbon" : {
+      "buildingMaterialsQuery" : true,
+      "usePhaseScenariosQuery" : false,
+      "surfaceDefinitionsShared" : true,
+      "LCAParametersQuery" : true,
+      "consturctionProcessQuery" : false,
+      "sharedWaterQuery" : false,
+      "buildingOperatingEnergyAndWater" : true,
+      "serviceLifeBuildingQuery" : true
+    },
+    "lcaForBREEAM" : {
+      "buildingMaterialsQuery" : true,
+      "usePhaseScenariosQuery" : false,
+      "surfaceDefinitionsShared" : true,
+      "LCAParametersQuery" : true,
+      "consturctionProcessQuery" : false,
+      "sharedWaterQuery" : false,
+      "buildingOperatingEnergyAndWater" : false
+    },
+    "xBenchmarkEmbodied" : {
+      "buildingMaterialsQuery" : true,
+      "surfaceDefinitionsShared" : true,
+      "LCAParametersQuery" : true,
+      "buildingOperatingEnergyAndWater" : true
+    },
+    "lcaForRakennuksen2" : {
+      "buildingMaterialsQuery" : true,
+      "usePhaseScenariosQuery" : false,
+      "surfaceDefinitionsShared" : false,
+      "LCAParametersQuery" : true,
+      "buildingOperatingEnergyAndWater" : false,
+      "serviceLifeBuildingQuery" : false,
+      "taulukkoarvot_YM" : false
+    },
+    "BuildingLifecycleAssessment_LEED_2" : {
+      "buildingMaterialsQuery" : true,
+      "surfaceDefinitionsShared" : true,
+      "LCAParametersQuery" : true
+    },
+    "lcaForLEEDTraci" : {
+      "buildingMaterialsQuery" : true,
+      "surfaceDefinitionsShared" : true,
+      "LCAParametersQuery" : true
+    },
+    "LCC_LCA_Automated" : {
+      "buildingMaterialsQuery" : true,
+      "LCCConstructionQuery" : false,
+      "LCCProjectParametersQuery" : false,
+      "LCAParametersQuery" : true,
+      "sharedWaterQuery" : false,
+      "buildingOperatingEnergyAndWater" : true,
+      "serviceLifeBuildingQuery" : true,
+      "LCCOperatingQuery" : false
+    },
+    "xBenchmarkEmbodiedA1-A3" : {
+      "buildingMaterialsQuery" : true,
+      "surfaceDefinitionsShared" : false,
+      "LCAParametersQuery" : true
+    },
+    "BuildingLifecycleAssessment_LEED_International" : {
+      "buildingMaterialsQuery" : true,
+      "surfaceDefinitionsShared" : true,
+      "LCAParametersQuery" : true
+    },
+    "LCC_NS_3454" : {
+      "buildingMaterialsQuery" : true,
+      "LCCConstructionQuery" : false,
+      "LCCProjectParametersQuery" : true,
+      "sharedWaterQuery" : false,
+      "buildingOperatingEnergyAndWater" : false,
+      "serviceLifeBuildingQuery" : false,
+      "LCCOperatingQuery" : false
+    },
+    "GHGProcotolScope2_market" : {
+      "buildingUseIntensity" : false,
+      "buildingOperatingEnergyAndWater" : true,
+      "marketBasedEnergyMix" : false
+    },
+    "GHGProcotolScope2_location" : {
+      "buildingUseIntensity" : false,
+      "buildingOperatingEnergyAndWater" : true
+    },
+    "lcaForGreenGlobesTraci" : {
+      "buildingMaterialsQuery" : true,
+      "surfaceDefinitionsShared" : false,
+      "LCAParametersQuery" : true,
+      "buildingOperatingEnergyAndWater" : false,
+      "serviceLifeBuildingQuery" : false
+    },
+    "LCC_LCA_Automated_TRACI" : {
+      "buildingMaterialsQuery" : true,
+      "LCCConstructionQuery" : false,
+      "LCCProjectParametersQuery" : true,
+      "LCAParametersQuery" : true,
+      "sharedWaterQuery" : false,
+      "buildingOperatingEnergyAndWater" : false,
+      "serviceLifeBuildingQuery" : false,
+      "LCCOperatingQuery" : false
+    }
+  },
+  "childEntities" : [ ],
+  "deleted" : false,
+  "commited" : false,
+  "master" : false,
+  "component" : false,
+  "tempCalculationResults" : [ ],
+  "calculationResults" : [ {
+    "result" : 1.581648234931389,
+    "calculationRuleId" : "GWP",
+    "resultCategoryId" : "electricity",
+    "indicatorId" : "GHGProcotolScope2_location",
+    "id" : {
+      "timestamp" : 1635145069,
+      "counter" : 16232593,
+      "time" : 1635145069000,
+      "date" : 1635145069000,
+      "machineIdentifier" : 30043,
+      "processIdentifier" : 19339,
+      "timeSecond" : 1635145069
+    },
+    "calculationResultDatasets" : {
+      "6176555d00755b4b8bf7b01d" : {
+        "result" : 1.581648234931389,
+        "resourceId" : "averageElectricityMayotteEPD",
+        "profileId" : "IEA2018"
+      }
+    }
+  }, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ],
+  "calculationTotalResults" : [ {
+    "indicatorId" : "lcaForGreenGlobesTraci",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "traciPOCP_kgO3e" : 0.0,
+      "traciEP_kgNe" : 0.0,
+      "traciODP_kgCFC11e" : 0.0,
+      "traciGWP_kgCO2e" : 0.0,
+      "totalPrimaryEnergy" : 12195.899619156839,
+      "traciAP_kgSO2e" : 0.0,
+      "fossilFuelPrimaryEnergy" : 10151.6619120326
+    },
+    "denominatorValues" : null,
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "C1-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B6" : {
+        "buildingOperatingEnergyAndWater" : [ "heatingFuelsSection", "districtHeatingSection", "importedElectricitySection", "districtCoolingSection" ]
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-B5-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-core-miles" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "lcaForRakennuksen2",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "GWP" : 735.885766861869,
+      "GWP_only" : 735.885766861869
+    },
+    "denominatorValues" : null,
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "taulukkoarvot_YM_C3–4" : {
+        "taulukkoarvot_YM" : [ "taulukkoarvot_YM" ]
+      },
+      "A5-benefit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5-benefit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "taulukkoarvot_YM_B3–4" : {
+        "taulukkoarvot_YM" : [ "taulukkoarvot_YM" ]
+      },
+      "A5w-material" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "taulukkoarvot_YM_A5" : {
+        "taulukkoarvot_YM" : [ "taulukkoarvot_YM" ]
+      },
+      "B4-replacement" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "taulukkoarvot_YM_A4" : {
+        "taulukkoarvot_YM" : [ "taulukkoarvot_YM" ]
+      },
+      "A1-A3" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C-sum" : null,
+      "taulukkoarvot_YM_C2" : {
+        "taulukkoarvot_YM" : [ "taulukkoarvot_YM" ]
+      },
+      "taulukkoarvot_YM_C1" : {
+        "taulukkoarvot_YM" : [ "taulukkoarvot_YM" ]
+      },
+      "total_FI" : null,
+      "D-material" : null,
+      "B1-carbonisation" : {
+        "usePhaseScenariosQuery" : [ "carbonisationPhase" ]
+      },
+      "C3-benefit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B6" : {
+        "buildingOperatingEnergyAndWater" : [ "heatingFuelsSection", "districtHeatingSection", "importedElectricitySection" ]
+      },
+      "A1-A5" : null,
+      "B3-B4-B6" : null,
+      "total_FI_D" : null,
+      "D-exported-energy" : {
+        "buildingOperatingEnergyAndWater" : [ "exportedEnergySection" ]
+      },
+      "biogenic-FI" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "BuildingLifecycleAssessment_LEED_2",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "bio-CO2" : 0.0,
+      "GWP" : 1570.6764740263336,
+      "nonRenewableEnergy_MJ" : 25036.01741698115,
+      "POCP" : 0.11139648859712878,
+      "ODP" : 0.00001444121088115041,
+      "EP" : 0.5013750915336543,
+      "AP" : 2.78593000636227
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "A4-full" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "C1-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-B5-full" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "BuildingLifecycleAssessment_LEED_International",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "bio-CO2" : 0.0,
+      "GWP" : 1570.6764740263336,
+      "nonRenewableEnergy_MJ" : 25036.01741698115,
+      "POCP" : 0.11139648859712878,
+      "ODP" : 0.00001444121088115041,
+      "EP" : 0.5013750915336543,
+      "AP" : 2.78593000636227
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "A4-full" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "C1-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-B5-full" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "LCC_LCA_Automated_TRACI",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "LCCdiscounted-automated" : 11362.125,
+      "LCCreal-automated" : 11362.125
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "A0-A5-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      },
+      "B1-B3-LCCextra" : {
+        "LCCOperatingQuery" : ""
+      },
+      "B6-LCC4LCA" : {
+        "buildingOperatingEnergyAndWater" : ""
+      },
+      "A0-A5-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5-virtual" : null,
+      "A0-A5-virtual" : null,
+      "B4-B5-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B7-LCC4LCA" : {
+        "sharedWaterQuery" : ""
+      },
+      "C1-C4-virtual" : null,
+      "B4-B5-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      },
+      "C1-C4-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "LCC_NS_3454",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "LCCdiscounted-automated" : 11362.125,
+      "LCCreal-automated" : 11362.125
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "9-LCC" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "4-LCC-material" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "4-LCC" : null,
+      "1-LCC-material" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "1-LCC-EOL" : null,
+      "2-LCC" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "5-LCC-renovation" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "7-LCC" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "4-LCC-other" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "5-LCC-energy" : {
+        "buildingOperatingEnergyAndWater" : ""
+      },
+      "1-LCC-EOL-B" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "1-LCC-EOL-A" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "5-LCC" : null,
+      "3-LCC" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "1-LCC" : null,
+      "5-LCC-water" : {
+        "sharedWaterQuery" : ""
+      },
+      "6-LCC" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "8-LCC" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      },
+      "1-LCC-other" : {
+        "LCCConstructionQuery" : "",
+        "LCCOperatingQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "lcaForBREEAM",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "bio-CO2" : 0.0,
+      "GWP" : 1570.6764740263336,
+      "mass" : 19042.65800212731,
+      "POCP" : 0.11139648859712878,
+      "wasteNonHazardous_kg" : 30.79372821050231,
+      "ODP" : 0.00001444121088115041,
+      "EP" : 0.5013750915336543,
+      "AP" : 2.78593000636227
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "C1-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-refrigerantLoss" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "D-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-carbonisation" : {
+        "usePhaseScenariosQuery" : [ "carbonisationPhase" ]
+      },
+      "B4-B5-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5-transport" : {
+        "consturctionProcessQuery" : [ "constructionWasteSection" ]
+      },
+      "B1-vegetation" : {
+        "usePhaseScenariosQuery" : [ "vegetationImpacts" ]
+      },
+      "B1" : null,
+      "A4-full" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "A5" : {
+        "consturctionProcessQuery" : [ "constructionEnergyUseSection", "constructionWaterSection", "constructionWasteSection", "averageSiteImpacts" ]
+      },
+      "B6" : {
+        "buildingOperatingEnergyAndWater" : [ "heatingFuelsSection", "districtHeatingSection", "importedElectricitySection", "districtCoolingSection" ]
+      },
+      "B7" : {
+        "sharedWaterQuery" : [ "water" ]
+      },
+      "B1-refrigerantLeakage" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5-full" : null,
+      "A5a1" : {
+        "consturctionProcessQuery" : [ "constructionEnergyUseSection" ]
+      },
+      "A5a2" : {
+        "consturctionProcessQuery" : [ "constructionWaterSection" ]
+      },
+      "A5b3" : {
+        "consturctionProcessQuery" : [ "constructionWasteSection" ]
+      },
+      "A4c2" : {
+        "consturctionProcessQuery" : "additionalTransport"
+      },
+      "D-exported-energy" : {
+        "buildingOperatingEnergyAndWater" : [ "exportedEnergySection" ]
+      },
+      "B1-refrigerantLossF" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "A4c1" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "lcaForLEEDTraci",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "bio-CO2" : 0.0,
+      "traciNRPE_MJ" : 0.0,
+      "traciPOCP_kgO3e" : 0.0,
+      "traciODP_kgCFC11e" : 0.0,
+      "traciEP_kgNe" : 0.0,
+      "traciGWP_kgCO2e" : 0.0,
+      "traciAP_kgSO2e" : 0.0
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "C1-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-B5-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-core-miles" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "GHGProcotolScope2_location",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "GWP" : 1.581648234931389
+    },
+    "denominatorValues" : null,
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "districtCooling" : {
+        "buildingOperatingEnergyAndWater" : "districtCoolingSection"
+      },
+      "districtHeat" : {
+        "buildingOperatingEnergyAndWater" : "districtHeatingSection"
+      },
+      "electricity" : {
+        "buildingOperatingEnergyAndWater" : "importedElectricitySection"
+      }
+    }
+  }, {
+    "indicatorId" : "LCC_LCA_Automated",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "LCCdiscounted-automated" : 4876.421810167426,
+      "LCCreal-automated" : 5376.611463721689
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "A0-A5-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      },
+      "B1-B3-LCCextra" : {
+        "LCCOperatingQuery" : ""
+      },
+      "B6-LCC4LCA" : {
+        "buildingOperatingEnergyAndWater" : ""
+      },
+      "A0-A5-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5-virtual" : null,
+      "A0-A5-virtual" : null,
+      "B4-B5-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B7-LCC4LCA" : {
+        "sharedWaterQuery" : ""
+      },
+      "C1-C4-virtual" : null,
+      "B4-B5-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      },
+      "C1-C4-LCC4LCA" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4-LCCextra" : {
+        "LCCConstructionQuery" : ""
+      }
+    }
+  }, {
+    "indicatorId" : "globalLifeCycleCarbon",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "bio-CO2" : 0.0,
+      "socialCost_failover" : 53.388573939409575,
+      "GWP_failover" : 1067.7714787881914
+    },
+    "denominatorValues" : {
+      "5c8a30cd8e202b40bdd6808c" : 1.0,
+      "5d849bea8e202b42d49267ab" : 1.0
+    },
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "B3-transport" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5w-transport-leg2" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4_EOL" : null,
+      "D-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-carbonisation" : {
+        "usePhaseScenariosQuery" : [ "carbonisationPhase" ]
+      },
+      "A5w-benefit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B3-waste" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "A5" : {
+        "consturctionProcessQuery" : [ "constructionEnergyUseSection", "constructionWaterSection", "constructionWasteSection", "averageSiteImpacts", "materialUseOnSiteSection" ]
+      },
+      "A5m-benefit" : {
+        "consturctionProcessQuery" : "materialUseOnSiteSection"
+      },
+      "B4-B5b-leg2" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full-leg2" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "B4-B5-sum" : null,
+      "C3-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-refrigerantLossF" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "fullBuilding" : null,
+      "B4-B5a" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5w-material" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B1-refrigerantLoss" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "B3-benefit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5d" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5b" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B3-full" : null,
+      "B4-B5c" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B3-transport-leg2" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5m-waste" : {
+        "consturctionProcessQuery" : "materialUseOnSiteSection"
+      },
+      "D-complete" : null,
+      "A5-transport" : {
+        "consturctionProcessQuery" : [ "constructionWasteSection" ]
+      },
+      "B1-vegetation" : {
+        "usePhaseScenariosQuery" : [ "vegetationImpacts" ]
+      },
+      "B1" : null,
+      "A4-2legs" : null,
+      "B3-material" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B6" : {
+        "buildingOperatingEnergyAndWater" : [ "heatingFuelsSection", "districtHeatingSection", "importedElectricitySection", "districtCoolingSection" ]
+      },
+      "B7" : {
+        "sharedWaterQuery" : [ "water" ]
+      },
+      "B1-refrigerantLeakage" : {
+        "usePhaseScenariosQuery" : [ "refrigerants" ]
+      },
+      "A5w-waste" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A5-full" : null,
+      "A5w-transport" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "D-exported-energy" : {
+        "buildingOperatingEnergyAndWater" : [ "exportedEnergySection" ]
+      }
+    }
+  }, {
+    "indicatorId" : "xBenchmarkEmbodied",
+    "displayResult" : null,
+    "totalByCalculationRule" : {
+      "GWP" : 864.7756308376073,
+      "mass" : 9521.329001063656
+    },
+    "denominatorValues" : null,
+    "monthlyDenominatorValues" : null,
+    "monthlyTotalsPerCalculationRule" : null,
+    "quarterlyTotalsPerCalculationRule" : null,
+    "dataValidity" : {
+      "carpets" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "superStructure" : null,
+      "ventilationDuctsChannels" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixFoundations" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "precastCmu" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "fiberboard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glue" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "insulatedWoodElements" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticBased" : null,
+      "energyProdSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "acousticInsulationPanels" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "alumiumWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "gypsumPlaster" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "communicationSystem" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "ceramicTiles" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "pirInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "purInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "tileAdhesive" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixWallsFloors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "othermetal" : null,
+      "bricksceramics" : null,
+      "timberwood" : null,
+      "specialGypsymBoard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "specialtyConcrete" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "zinc" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "othermaterials" : null,
+      "otherElements" : null,
+      "specialConcreteFiber" : null,
+      "plumbingAndPipes" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "doorswindows" : null,
+      "foundations" : {
+        "buildingMaterialsQuery" : "foundations"
+      },
+      "allSteel" : null,
+      "lighting" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "suspendedCeilingSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "raisedFlooringSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "steelFramedGlassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "doorWindowParts" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "rockwoolInsulationBatted" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-core-TRACI-km" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "gypsumBased" : null,
+      "organicInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "cellularGlassInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aeratedConcrete" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "regularGlass" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "woodenDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "coatedGlass" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "sealants" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "regularGypsumBoard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "etics" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "internalWallSystemsWindowless" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "partitioningWallSystemsWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "woodenFramedGlassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "precastStructural" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "copper" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherStructuresMaterials" : {
+        "buildingMaterialsQuery" : "otherStructuresMaterials"
+      },
+      "precastFibreCement" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aluminiumFramedGlassDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "externalAreas" : {
+        "buildingMaterialsQuery" : "externalAreas"
+      },
+      "precastSlab" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "sandwitchPanelMetal" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "coatingsPastes" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "paints" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "cement" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "buildingTechSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "softwood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aluminium" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "metalDoors" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "galvanizedSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "aboveGroundBuilding" : {
+        "buildingMaterialsQuery" : [ "horizontalStructures", "verticalStructures", "otherStructuresMaterials", "buildingTechnology" ]
+      },
+      "electrificationSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "treatedWood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "asphaltRoadParking" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readymix" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "Total_60" : null,
+      "foilMembrane" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "earthMasses" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "textiles" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "C1-C4_EOL" : null,
+      "precastOther" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "HVAC" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "furniture" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "brickClay" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "cltWood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "verticalStructures" : {
+        "buildingMaterialsQuery" : [ "verticalStructures" ]
+      },
+      "xpsInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glasswoolInsulationBatted" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "naturalStone" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "horizontalStructures" : {
+        "buildingMaterialsQuery" : [ "horizontalStructures" ]
+      },
+      "recycledEarthMasses" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherFlooring" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixHighStrength" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "glass" : null,
+      "cables" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherChemicals" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "asphaltBindersBitumens" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "laminateFlooring" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "refrigerants" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "partitioningSystems" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "laminatedGlass" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "B4-B5-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "insulation" : null,
+      "buildingTechnology" : {
+        "buildingMaterialsQuery" : "buildingTechnology"
+      },
+      "resin" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "sanitaryware" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "otherMetals" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "woodenWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticFlooring" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "linoleum" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "structuralSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "flooring" : null,
+      "specialConcrete" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "mortar" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "bitumenRoofing" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticMembraneRoofing" : null,
+      "cementBased" : null,
+      "readyMixLightweight" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "allopenings" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plywood" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "pvcWindows" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full" : {
+        "buildingMaterialsQuery" : "",
+        "consturctionProcessQuery" : [ "additionalTransport" ]
+      },
+      "alternativeConcreteBinders" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A1-A3-full" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "particleboard" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "reinforcement" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "earthmassesAsphalt" : null,
+      "pipes" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "stainlessSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "concreteMasonryUnit" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "epsInsulation" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "plasticsOther" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "allconcrete" : null,
+      "otherSteel" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "readyMixStructures" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "wallElementUninsulated" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "technology" : null,
+      "engineeredAggregates" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "windowGlazing" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "elevators" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-full-bench" : null,
+      "levelingScreed" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "A4-core-miles" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "concreteAdmixtures" : {
+        "buildingMaterialsQuery" : ""
+      },
+      "osb" : {
+        "buildingMaterialsQuery" : ""
+      }
+    }
+  } ],
+  "lcaCheckerResult" : {
+    "letter" : "F",
+    "color" : "#F78521",
+    "percentage" : 21,
+    "resultByCheck" : {
+      "check19" : null,
+      "check39" : 0.0,
+      "check17" : null,
+      "check18" : null,
+      "check15" : 100.0,
+      "check37" : 0.0,
+      "check38" : 0.0,
+      "check16" : null,
+      "check35" : null,
+      "check14" : 1.0,
+      "check36" : null,
+      "check11" : null,
+      "check33" : null,
+      "check34" : null,
+      "check31" : null,
+      "check10" : null,
+      "check32" : null,
+      "check30" : null,
+      "check8" : 864.7756308376072,
+      "check9" : 9521.329001063656,
+      "check28" : 9521.329001063656,
+      "check1" : 0.0,
+      "check29" : 0.0,
+      "check2" : 9521.329001063656,
+      "check26" : null,
+      "check4" : null,
+      "check25" : 0.0,
+      "check5" : null,
+      "check22" : 0.0,
+      "check6" : null,
+      "check23" : null,
+      "check20" : null,
+      "check21" : null,
+      "check40" : 0.0
+    },
+    "passed" : [ "check2", "check8", "check39" ],
+    "acceptable" : [ ],
+    "failed" : [ "check1", "check9", "check14", "check15", "check22", "check25", "check28", "check29", "check37", "check38", "check40", "check4", "check5", "check6", "check10", "check11", "check16", "check17", "check18", "check19", "check20", "check21", "check23", "check30", "check31", "check32", "check33", "check34", "check35", "check26", "check36" ]
+  }
+}
