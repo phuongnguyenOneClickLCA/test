@@ -2,4 +2,4 @@
 echo "deploying"
 sudo chown -R yllapito:yllapito /home/maintenance/app.war
 /home/maintenance/JenkinsDeployOptimi.sh
-sleep 30
+sleep 10
