@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "stop tomcat"
-sudo /home/maintenance/killTomcat.sh
+pkill -9 -f tomcat
+echo stopped tomcat process!
